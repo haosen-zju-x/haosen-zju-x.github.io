@@ -1,7 +1,7 @@
 ##########################################
 # Site Settings
 
-baseURL = "https://example.com/"
+baseURL = "https://haosen-zju-x.github.io/"
 title = "L'Astéroïde de Haosen"
 languageCode = "zh-cn"
 hasCJKLanguage = true
