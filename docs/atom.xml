@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-09-02T00:07:36&#43;02:00</updated>
+    <updated>2023-09-02T18:42:06&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">my third article</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/my-third-article/" />
             <id>https://haosen-zju-x.github.io/posts/my-third-article/</id>
-            <updated>2023-09-02T00:07:10&#43;02:00</updated>
+            <updated>2023-09-02T17:00:03&#43;02:00</updated>
             <published>2023-08-30T01:43:25&#43;00:00</published>
             <author>
                     <name>Haosen</name>
@@ -29,7 +29,9 @@
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Ceci est une description</summary>
             
-                <content type="html">&lt;p&gt;this is a change&lt;/p&gt;
+                <content type="html">&lt;p&gt;Soient $X_1,\cdots,X_n$ des variables aléatoire réelle indépendantes telles que, pour tout $i\in {1,\cdots,n}$, $\mathbb{E}[X_i]=0$ et $a_i\le X_i\le b_i$. Alors pour tout $t&amp;gt;0$, on a
+[\mathbb{P}(\overline{X}&lt;em&gt;n\ge t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n}(b_i-a_i)^2},]
+[\mathbb{P}(\overline{X}&lt;em&gt;n\le -t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n}(b_i-a_i)^2}.]&lt;/p&gt;
 </content>
             
             

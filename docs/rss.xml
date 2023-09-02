@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sat, 02 Sep 2023 00:07:36 &#43;0200</lastBuildDate>
+        <lastBuildDate>Sat, 02 Sep 2023 18:42:06 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://haosen-zju-x.github.io/rss.xml" />
         
@@ -38,7 +38,9 @@
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
-                    <description>&lt;p&gt;this is a change&lt;/p&gt;
+                    <description>&lt;p&gt;Soient $X_1,\cdots,X_n$ des variables aléatoire réelle indépendantes telles que, pour tout $i\in {1,\cdots,n}$, $\mathbb{E}[X_i]=0$ et $a_i\le X_i\le b_i$. Alors pour tout $t&amp;gt;0$, on a
+[\mathbb{P}(\overline{X}&lt;em&gt;n\ge t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n}(b_i-a_i)^2},]
+[\mathbb{P}(\overline{X}&lt;em&gt;n\le -t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n}(b_i-a_i)^2}.]&lt;/p&gt;
 </description>
                 
                 
