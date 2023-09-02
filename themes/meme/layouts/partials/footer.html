@@ -1,3 +1,8 @@
+<script type="text/javascript"
+  src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+
+
 {{ if or (and .IsHome .Site.Params.displayFooterInHome) (and (not .IsHome) (.Site.Params.displayFooter | default .Site.Params.enableFooter)) }}
     <footer id="footer" class="footer">
         <div class="footer-inner">

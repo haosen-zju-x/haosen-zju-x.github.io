@@ -574,7 +574,7 @@ uglyURLs = false
     # MathJax 公式支援（包括化學方程式）
 
     # 是否開啟（全域性設定）
-    enableMathJax = false
+    enableMathJax = true
     # 說明：文章的 Front Matter 中的 `mathjax`
     #      的優先順序高於此處
 
