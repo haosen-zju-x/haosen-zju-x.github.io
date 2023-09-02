@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sat, 02 Sep 2023 22:30:08 &#43;0200</lastBuildDate>
+        <lastBuildDate>Sat, 02 Sep 2023 23:04:12 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://haosen-zju-x.github.io/rss.xml" />
         
@@ -44,9 +44,9 @@ class=&#34;math inline&#34;&gt;\(i\in \{1,\cdots,n\}\)&lt;/span&gt;, &lt;span
 class=&#34;math inline&#34;&gt;\(\mathbb{E}[X_i]=0\)&lt;/span&gt; et &lt;span
 class=&#34;math inline&#34;&gt;\(a_i\le X_i\le b_i\)&lt;/span&gt;. Alors pour tout &lt;span
 class=&#34;math inline&#34;&gt;\(t&amp;gt;0\)&lt;/span&gt;, on a &lt;span
-class=&#34;math inline&#34;&gt;\(\mathbb{P}(\bar{X}\_n\ge t)\le
-e^{-2n^2t^2/\sum\_{i=1}^{n}(b_i-a_i)^2},\mathbb{P}(\bar{X}\_n\le -t)\le
-e^{-2n^2t^2/\sum\_{i=1}^{n}(b_i-a_i)^2}.\)&lt;/span&gt;&lt;/p&gt;
+class=&#34;math inline&#34;&gt;\(\mathbb{P}(\bar{X}_n\ge t)\le
+e^{-2n^2t^2/\sum_{i=1}^{n}(b_i-a_i)^2},\mathbb{P}(\bar{X}_n\le -t)\le
+e^{-2n^2t^2/\sum_{i=1}^{n}(b_i-a_i)^2}.\)&lt;/span&gt;&lt;/p&gt;
 </description>
                 
                 
