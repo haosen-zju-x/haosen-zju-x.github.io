@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-09-02T19:54:51&#43;02:00</updated>
+    <updated>2023-09-02T22:30:08&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -12,7 +12,7 @@
             <name>Haosen</name>
             <uri>https://haosen-zju-x.github.io/</uri>
             
-                <email>haosen.chen@polytecnique.edu</email>
+                <email>chenhaosen@yandex.com</email>
             </author>
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.117.0">Hugo</generator>
@@ -20,17 +20,24 @@
             <title type="text">my third article</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/my-third-article/" />
             <id>https://haosen-zju-x.github.io/posts/my-third-article/</id>
-            <updated>2023-09-02T19:25:47&#43;02:00</updated>
+            <updated>2023-09-02T22:29:09&#43;02:00</updated>
             <published>2023-08-30T01:43:25&#43;00:00</published>
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
-                    <email>haosen.chen@polytecnique.edu</email>
+                    <email>chenhaosen@yandex.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Ceci est une description</summary>
             
-                <content type="html">&lt;p&gt;Soient $X_1,\cdots,X_n$ des variables aléatoire réelle indépendantes telles que, pour tout $i\in {1,\cdots,n}$, $\mathbb{E}[X_i]=0$ et $a_i\le X_i\le b_i$. Alors pour tout $t&amp;gt;0$, on a
-$\mathbb{P}(\overline{X}&lt;em&gt;n\ge t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n}(b_i-a_i)^2},\mathbb{P}(\overline{X}&lt;em&gt;n\le -t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n}(b_i-a_i)^2}.$&lt;/p&gt;
+                <content type="html">&lt;p&gt;Soient &lt;span class=&#34;math inline&#34;&gt;\(X_1,\cdots,X_n\)&lt;/span&gt; des
+variables aléatoire réelle indépendantes telles que, pour tout &lt;span
+class=&#34;math inline&#34;&gt;\(i\in \{1,\cdots,n\}\)&lt;/span&gt;, &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{E}[X_i]=0\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(a_i\le X_i\le b_i\)&lt;/span&gt;. Alors pour tout &lt;span
+class=&#34;math inline&#34;&gt;\(t&amp;gt;0\)&lt;/span&gt;, on a &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{P}(\bar{X}\_n\ge t)\le
+e^{-2n^2t^2/\sum\_{i=1}^{n}(b_i-a_i)^2},\mathbb{P}(\bar{X}\_n\le -t)\le
+e^{-2n^2t^2/\sum\_{i=1}^{n}(b_i-a_i)^2}.\)&lt;/span&gt;&lt;/p&gt;
 </content>
             
             
@@ -76,7 +83,7 @@ $\mathbb{P}(\overline{X}&lt;em&gt;n\ge t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
-                    <email>haosen.chen@polytecnique.edu</email>
+                    <email>chenhaosen@yandex.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">This is a description</summary>
             
@@ -126,7 +133,7 @@ $\mathbb{P}(\overline{X}&lt;em&gt;n\ge t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
-                    <email>haosen.chen@polytecnique.edu</email>
+                    <email>chenhaosen@yandex.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Ceci est une description</summary>
             

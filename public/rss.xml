@@ -15,15 +15,15 @@
             <language>zh-cn</language>
         
         
-            <managingEditor>haosen.chen@polytecnique.edu (Haosen)</managingEditor>
+            <managingEditor>chenhaosen@yandex.com (Haosen)</managingEditor>
         
         
-            <webMaster>haosen.chen@polytecnique.edu (Haosen)</webMaster>
+            <webMaster>chenhaosen@yandex.com (Haosen)</webMaster>
         
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sat, 02 Sep 2023 19:54:51 &#43;0200</lastBuildDate>
+        <lastBuildDate>Sat, 02 Sep 2023 22:30:08 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://haosen-zju-x.github.io/rss.xml" />
         
@@ -34,12 +34,19 @@
                 <guid isPermaLink="true">https://haosen-zju-x.github.io/posts/my-third-article/</guid>
                 <pubDate>Wed, 30 Aug 2023 01:43:25 &#43;0000</pubDate>
                 
-                    <author>haosen.chen@polytecnique.edu (Haosen)</author>
+                    <author>chenhaosen@yandex.com (Haosen)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
-                    <description>&lt;p&gt;Soient $X_1,\cdots,X_n$ des variables aléatoire réelle indépendantes telles que, pour tout $i\in {1,\cdots,n}$, $\mathbb{E}[X_i]=0$ et $a_i\le X_i\le b_i$. Alors pour tout $t&amp;gt;0$, on a
-$\mathbb{P}(\overline{X}&lt;em&gt;n\ge t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n}(b_i-a_i)^2},\mathbb{P}(\overline{X}&lt;em&gt;n\le -t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n}(b_i-a_i)^2}.$&lt;/p&gt;
+                    <description>&lt;p&gt;Soient &lt;span class=&#34;math inline&#34;&gt;\(X_1,\cdots,X_n\)&lt;/span&gt; des
+variables aléatoire réelle indépendantes telles que, pour tout &lt;span
+class=&#34;math inline&#34;&gt;\(i\in \{1,\cdots,n\}\)&lt;/span&gt;, &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{E}[X_i]=0\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(a_i\le X_i\le b_i\)&lt;/span&gt;. Alors pour tout &lt;span
+class=&#34;math inline&#34;&gt;\(t&amp;gt;0\)&lt;/span&gt;, on a &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{P}(\bar{X}\_n\ge t)\le
+e^{-2n^2t^2/\sum\_{i=1}^{n}(b_i-a_i)^2},\mathbb{P}(\bar{X}\_n\le -t)\le
+e^{-2n^2t^2/\sum\_{i=1}^{n}(b_i-a_i)^2}.\)&lt;/span&gt;&lt;/p&gt;
 </description>
                 
                 
@@ -82,7 +89,7 @@ $\mathbb{P}(\overline{X}&lt;em&gt;n\ge t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n
                 <guid isPermaLink="true">https://haosen-zju-x.github.io/posts/article/</guid>
                 <pubDate>Wed, 30 Aug 2023 01:08:36 &#43;0000</pubDate>
                 
-                    <author>haosen.chen@polytecnique.edu (Haosen)</author>
+                    <author>chenhaosen@yandex.com (Haosen)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
@@ -129,7 +136,7 @@ $\mathbb{P}(\overline{X}&lt;em&gt;n\ge t)\le e^{-2n^2t^2/\sum&lt;/em&gt;{i=1}^{n
                 <guid isPermaLink="true">https://haosen-zju-x.github.io/posts/world/</guid>
                 <pubDate>Tue, 29 Aug 2023 23:13:35 &#43;0000</pubDate>
                 
-                    <author>haosen.chen@polytecnique.edu (Haosen)</author>
+                    <author>chenhaosen@yandex.com (Haosen)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 

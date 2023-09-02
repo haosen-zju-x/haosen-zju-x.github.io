@@ -100,7 +100,7 @@ uglyURLs = false
     # Name
     name = "Haosen"
     # Email
-    email = "haosen.chen@polytecnique.edu"
+    email = "chenhaosen@yandex.com"
     # Motto or introduction
     motto = "Riemann vous retrouve pour une fête"
     # Avatar
@@ -1187,25 +1187,25 @@ uglyURLs = false
     ######################################
     # Post Share
 
-    enablePostShare = true
+    enablePostShare = false
 
-    displayPostShare = true
+    displayPostShare = false
     # Note: *global settings*
     #       `share` in post’s Front Matter
     #       has a higher priority than here
 
     displayShareOnText = false
 
-    shareOnTwitter = true
-    shareOnFacebook = true
-    shareOnLinkedIn = true
-    shareOnTelegram = true
-    shareOnWeibo = true
-    shareOnDouban = true
-    shareOnQQ = true
-    shareOnQzone = true
+    shareOnTwitter = false
+    shareOnFacebook = false
+    shareOnLinkedIn = false
+    shareOnTelegram = false
+    shareOnWeibo = false
+    shareOnDouban = false
+    shareOnQQ = false
+    shareOnQzone = false
 
-    shareViaQRCode = true
+    shareViaQRCode = false
 
 
     ######################################
@@ -1477,3 +1477,19 @@ uglyURLs = false
         valine = "/npm/valine@1.4.14/dist/Valine.min.js"
         busuanzi = "https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"
         utterances = "https://utteranc.es/client.js"
+        
+    ######################################
+    # Below is Hugo's default security block.
+
+    [security]
+        enableInlineShortcodes = false
+        [security.exec]
+            allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^npx$', '^postcss$', 'pandoc']
+            osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG)$']
+        [security.funcs]
+            getenv = ['^HUGO_', '^CI$']
+        [security.goTemplates]
+            allowActionJSTmpl = false
+        [security.http]
+            methods = ['(?i)GET|POST']
+            urls = ['.*']
