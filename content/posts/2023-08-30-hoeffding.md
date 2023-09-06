@@ -1,14 +1,13 @@
 ---
-title: my third article
-date: '2023-08-30T01:43:25.643Z'
-draft: false
-description: Ceci est une description
-slug: my-third-article
+title: Hoeffding 不等式
+date: 2023-08-30T01:43:25.643Z
+draft: true
+description: null
+slug: hoeffding
 categories:
-  - Débutant
+  - 概率统计
 tags:
-  - tag1
-  - tag2
+  - 统计学习
 markup: pandoc
 ---
 
