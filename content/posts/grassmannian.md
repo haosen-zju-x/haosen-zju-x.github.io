@@ -5,9 +5,9 @@ draft: false
 description: null
 slugs: grassmannian
 categories:
-    - 几何
-tags: 
-    - 微分流形
+  - 几何
+tags:
+  - 微分流形
 ---
 
 ![](/DM1(1).jpg)

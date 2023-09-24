@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-09-24T22:44:02&#43;02:00</updated>
+    <updated>2023-09-25T00:46:07&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -20,8 +20,8 @@
             <title type="text">Grassmann 流形</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/grassmannian/" />
             <id>https://haosen-zju-x.github.io/posts/grassmannian/</id>
-            <updated>2023-09-24T22:42:50&#43;02:00</updated>
-            <published>2023-09-24T20:33:22&#43;00:00</published>
+            <updated>2023-09-25T00:45:58&#43;02:00</updated>
+            <published>2023-09-24T20:33:22&#43;02:00</published>
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
@@ -29,13 +29,27 @@
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html"></summary>
             
-                <content type="html"></content>
+                <content type="html">&lt;p&gt;&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(1).jpg&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(2).jpg&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(3).jpg&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(4).jpg&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(5).jpg&#34; alt=&#34;&#34;&gt;
+&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(6).jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+</content>
             
             
             
             
             
                 
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/categories/%E5%87%A0%E4%BD%95/" term="几何" label="几何" />
+                            
+                        
                     
                 
                     
