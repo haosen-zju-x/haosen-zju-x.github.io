@@ -11,4 +11,3 @@ tags:
 markup: pandoc
 ---
 
-Nothing has been written...

@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-09-07T16:29:59&#43;02:00</updated>
+    <updated>2023-09-24T22:44:02&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -17,10 +17,45 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.117.0">Hugo</generator>
         <entry>
+            <title type="text">Grassmann 流形</title>
+            <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/grassmannian/" />
+            <id>https://haosen-zju-x.github.io/posts/grassmannian/</id>
+            <updated>2023-09-24T22:42:50&#43;02:00</updated>
+            <published>2023-09-24T20:33:22&#43;00:00</published>
+            <author>
+                    <name>Haosen</name>
+                    <uri>https://haosen-zju-x.github.io/</uri>
+                    <email>chenhaosen@yandex.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html"></summary>
+            
+                <content type="html"></content>
+            
+            
+            
+            
+            
+                
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/tags/%E5%BE%AE%E5%88%86%E6%B5%81%E5%BD%A2/" term="微分流形" label="微分流形" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">曲率</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/curvature/" />
             <id>https://haosen-zju-x.github.io/posts/curvature/</id>
-            <updated>2023-09-06T19:40:56&#43;02:00</updated>
+            <updated>2023-09-07T16:41:32&#43;02:00</updated>
             <published>2023-09-06T19:39:42&#43;02:00</published>
             <author>
                     <name>Haosen</name>
@@ -64,7 +99,7 @@
             <title type="text">Gauss-Bonnet 定理</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/gauss-bonnet/" />
             <id>https://haosen-zju-x.github.io/posts/gauss-bonnet/</id>
-            <updated>2023-09-06T09:17:21&#43;02:00</updated>
+            <updated>2023-09-07T16:41:20&#43;02:00</updated>
             <published>2023-09-06T09:15:09&#43;02:00</published>
             <author>
                     <name>Haosen</name>
@@ -109,16 +144,16 @@
             <title type="text">微分形式</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/forms/" />
             <id>https://haosen-zju-x.github.io/posts/forms/</id>
-            <updated>2023-09-06T09:07:48&#43;02:00</updated>
+            <updated>2023-09-07T16:41:26&#43;02:00</updated>
             <published>2023-09-06T09:05:43&#43;02:00</published>
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
                     <email>chenhaosen@yandex.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Nothing has been written…</summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html"></summary>
             
-                <content type="html">&lt;p&gt;Nothing has been written…&lt;/p&gt;
+                <content type="html">
 </content>
             
             
