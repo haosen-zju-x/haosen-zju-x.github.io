@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-09-30T21:09:29&#43;02:00</updated>
+    <updated>2023-10-01T01:35:40&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -17,10 +17,676 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.117.0">Hugo</generator>
         <entry>
+            <title type="text">Problems in Linear Algebra</title>
+            <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/" />
+            <id>https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/</id>
+            <updated>2023-10-01T01:31:54&#43;02:00</updated>
+            <published>2023-09-30T22:04:40&#43;00:00</published>
+            <author>
+                    <name>Haosen</name>
+                    <uri>https://haosen-zju-x.github.io/</uri>
+                    <email>chenhaosen@yandex.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">What’s next?
+— No.3 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the way we do math.
+Problem [Existence of a suitable orthogonal projection]</summary>
+            
+                <content type="html">&lt;p&gt;What’s next?&lt;/p&gt;
+&lt;p align=&#34;center&#34; style=&#34;font-size:40px;&#34;&gt;
+&lt;strong&gt;— No.3 —&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;Shihe asked me the following problem on October 23, 2022. After a
+while, we exchanged our proofs, which I felt faithfully reflected the
+differences in the way we do math.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem [Existence of a &lt;em&gt;suitable&lt;/em&gt; orthogonal
+projection]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(L\subset \mathbb{R}^{n+l}\)&lt;/span&gt;
+(&lt;span class=&#34;math inline&#34;&gt;\(n,l\ge 1\)&lt;/span&gt;) be an &lt;span
+class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;-dimensional subspace and &lt;span
+class=&#34;math inline&#34;&gt;\(\{v_1,\cdots,v_{n+l}\}\)&lt;/span&gt; a basis of &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{R}^{n+l}\)&lt;/span&gt;. Show that there exist
+&lt;span class=&#34;math inline&#34;&gt;\(1\le j_1&amp;lt;\cdots&amp;lt;j_n\le n+l\)&lt;/span&gt;
+such that the restriction &lt;span
+class=&#34;math inline&#34;&gt;\(P_{j_1,\cdots,j_n}|_L:L\to
+\mathbb{R}^{n+l}\)&lt;/span&gt; is injective (and hence induces an isomphism),
+where &lt;span class=&#34;math inline&#34;&gt;\(P_{j_1,\cdots,j_n}\)&lt;/span&gt; denotes
+the orthogonal projection of &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{R}^{n+l}\)&lt;/span&gt; onto &lt;span
+class=&#34;math inline&#34;&gt;\(\text{span}\{v_{j_1},\cdots,v_{j_n}\}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proof I [Haosen]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;The orthogonal complement of the kernel of &lt;span
+class=&#34;math inline&#34;&gt;\(P_{j_1,\cdots,j_n}|_L\)&lt;/span&gt; is &lt;span
+class=&#34;math display&#34;&gt;\[\begin{align*}
+    \ker(P_{j_1,\cdots,j_n}|_L)^{\perp}
+    &amp;amp;=\left(\ker(P_{j_1,\cdots,j_n})\cap L\right)^{\perp}\\
+    &amp;amp;=\left(\text{span}(\{v_{j_1},\cdots,v_{j_n}\})^{\perp}\cap
+L\right)^{\perp}\\
+    &amp;amp;=\text{span}(\{v_{j_1},\cdots,v_{j_n}\})+L^{\perp}.
+\end{align*}\]&lt;/span&gt; Therefore &lt;span
+class=&#34;math inline&#34;&gt;\(P_{j_1,\cdots,j_n}|_L\)&lt;/span&gt; is injective iff
+&lt;span
+class=&#34;math inline&#34;&gt;\(\text{span}(\{v_{j_1},\cdots,v_{j_n}\})+L^{\perp}=\mathbb{R}^{n+l}\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(\{w_1,\cdots,w_l\}\)&lt;/span&gt; be a
+basis of the &lt;span class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt;-dimensional subspace
+&lt;span class=&#34;math inline&#34;&gt;\(L^{\perp}\)&lt;/span&gt;. There exists &lt;span
+class=&#34;math inline&#34;&gt;\(A\in M_{(n+l)\times l}(\mathbb{R})\)&lt;/span&gt; of
+rank &lt;span class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt; such that &lt;span
+class=&#34;math display&#34;&gt;\[
+(w_1\ \cdots\ w_l)=(v_1\ \cdots\ v_{n+l})A.
+\]&lt;/span&gt; Now we note that there exists a sequence of elementary column
+operations that transforms &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; into a
+matrix with exactly &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; zero rows, in
+other words, there exists &lt;span class=&#34;math inline&#34;&gt;\(Q\in
+GL_{l}(\mathbb{R})\)&lt;/span&gt; such that &lt;span
+class=&#34;math inline&#34;&gt;\(AQ\)&lt;/span&gt; has exactly &lt;span
+class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; zero rows, with the other &lt;span
+class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt; nonzero rows being linearly
+independent. We claim that the labels of the zero rows, denoted by &lt;span
+class=&#34;math inline&#34;&gt;\(1\le j_1&amp;lt;\cdots&amp;lt;j_n\le n+l\)&lt;/span&gt;, will
+fulfill the proof. For clarity, denote by &lt;span
+class=&#34;math inline&#34;&gt;\(1\le i_1&amp;lt;\cdots&amp;lt;i_l\le n+l\)&lt;/span&gt; the
+labels of the nonzero rows.&lt;/p&gt;
+&lt;p&gt;In fact, &lt;span
+class=&#34;math inline&#34;&gt;\(L^{\perp}=\text{span}(\{w_1,\cdots,w_l\})=\)&lt;/span&gt;
+the column space of the matrix &lt;span class=&#34;math inline&#34;&gt;\((w_1\ \cdots\
+w_l)=\)&lt;/span&gt; the column space of the matrix &lt;span
+class=&#34;math inline&#34;&gt;\((w_1\ \cdots\ w_l)Q=\)&lt;/span&gt; the column space of
+the matrix &lt;span class=&#34;math inline&#34;&gt;\((v_1\ \cdots\
+v_{n+l})AQ=\text{span}(\{v_{i_1},\cdots,v_{i_l}\})\)&lt;/span&gt;. Therefore,
+&lt;span
+class=&#34;math inline&#34;&gt;\(\text{span}(\{v_{j_1},\cdots,v_{j_n}\})+L^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\})=\mathbb{R}^{n+l}\)&lt;/span&gt;.
+&lt;span class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proof II [Shihe]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Shehe’s proof is more geometrically intuitive. For each &lt;span
+class=&#34;math inline&#34;&gt;\(1\le k\le n+l\)&lt;/span&gt;, take a nonzero vector
+&lt;span class=&#34;math inline&#34;&gt;\(w_k\in \mathbb{R}^{n+l}\)&lt;/span&gt; such that
+&lt;span
+class=&#34;math inline&#34;&gt;\(\text{span}(\{w_k\})=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_k\})^{\perp}\)&lt;/span&gt;.
+We claim that &lt;span class=&#34;math inline&#34;&gt;\(w_1,\cdots,w_{n+l}\)&lt;/span&gt;
+are linearly independent.&lt;/p&gt;
+&lt;p&gt;In fact, if &lt;span class=&#34;math inline&#34;&gt;\(\sum_{k=1}^{n+l}\lambda_k
+w_k=0\)&lt;/span&gt; (&lt;span
+class=&#34;math inline&#34;&gt;\(\lambda_1,\cdots,\lambda_{n+l}\in
+\mathbb{R}\)&lt;/span&gt;), then by applying &lt;span
+class=&#34;math inline&#34;&gt;\(\langle \cdot,v_k\rangle\)&lt;/span&gt; to both sides we
+get &lt;span class=&#34;math inline&#34;&gt;\(\lambda_k\langle
+w_k,v_k\rangle=0\)&lt;/span&gt; (&lt;span
+class=&#34;math inline&#34;&gt;\(k=1,\cdots,n+l\)&lt;/span&gt;). Clearly &lt;span
+class=&#34;math inline&#34;&gt;\(\langle w_k,v_k\rangle\neq 0\)&lt;/span&gt;, because
+otherwise &lt;span class=&#34;math inline&#34;&gt;\(w_k\)&lt;/span&gt; is orthogonal to
+every vector in the basis &lt;span
+class=&#34;math inline&#34;&gt;\(\{v_1,\cdots,v_{n+l}\}\)&lt;/span&gt; and hence must be
+zero, contradiction. Thus &lt;span class=&#34;math inline&#34;&gt;\(\lambda_k=0\
+(k=1,\cdots,n+l)\)&lt;/span&gt;, showing that &lt;span
+class=&#34;math inline&#34;&gt;\(w_1,\cdots,w_{n+l}\)&lt;/span&gt; are linearly
+independent.&lt;/p&gt;
+&lt;p&gt;Since &lt;span class=&#34;math inline&#34;&gt;\(\dim L=n&amp;lt;n+l\)&lt;/span&gt;, there
+exists some &lt;span class=&#34;math inline&#34;&gt;\(w_{k_1}\)&lt;/span&gt; that is not in
+&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;. The orthogonal projection of
+&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{R}^{n+l}\)&lt;/span&gt; along &lt;span
+class=&#34;math inline&#34;&gt;\(\text{span}(\{w_{k_1}\})\)&lt;/span&gt;, denoted by
+&lt;span class=&#34;math inline&#34;&gt;\(P_{w_{k_1}}:\mathbb{R}^{n+l}\to
+\mathbb{R}^{n+l}\)&lt;/span&gt;, induces an isomorphism when restricted to
+&lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;, as &lt;span
+class=&#34;math inline&#34;&gt;\(\ker(P_{w_{k_1}}|_L)=\text{span}(\{w_{k_1}\})\cap
+L=0\)&lt;/span&gt;. Moreover, &lt;span class=&#34;math display&#34;&gt;\[
+\text{Im}(P_{w_{k_1}})=\ker(P_{w_{k_1}})^{\perp}=\text{span}(\{w_{k_1}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1}\}).
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;If &lt;span class=&#34;math inline&#34;&gt;\(l=1\)&lt;/span&gt;, we’re done. If &lt;span
+class=&#34;math inline&#34;&gt;\(l\ge 2\)&lt;/span&gt;, then &lt;span
+class=&#34;math inline&#34;&gt;\(\dim P_{w_{k_1}}(L)=n&amp;lt;n+l-1\)&lt;/span&gt; and so
+there exists &lt;span class=&#34;math inline&#34;&gt;\(k_2\neq k_1\)&lt;/span&gt; such that
+&lt;span class=&#34;math inline&#34;&gt;\(w_{k_2}\notin P_{w_{k_1}}(L)\)&lt;/span&gt;. The
+orthogonal projection of &lt;span
+class=&#34;math inline&#34;&gt;\(\text{Im}(P_{k_1})\)&lt;/span&gt; along &lt;span
+class=&#34;math inline&#34;&gt;\(\text{span}(\{w_{k_2}\})\)&lt;/span&gt;, denoted by
+&lt;span class=&#34;math inline&#34;&gt;\(P_{w_2}:\text{Im}(P_{w_1})\to
+\text{Im}(P_{w_1})\)&lt;/span&gt;, induces an isomorphism when restricted to
+&lt;span class=&#34;math inline&#34;&gt;\(P_{w_{k_1}}(L)\)&lt;/span&gt;, as &lt;span
+class=&#34;math inline&#34;&gt;\(\ker(P_{w_{k_2}}|_{P_{w_{k_1}}(L)})=\text{span}(\{w_{k_2}\})\cap
+P_{w_1}(L)=0\)&lt;/span&gt;. Moreover, &lt;span class=&#34;math display&#34;&gt;\[
+\text{Im}(P_{w_{k_2}})=\ker(P_{w_{k_2}})^{\perp}=\text{span}(\{w_{k_2}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},v_{k_2}\}).
+\]&lt;/span&gt; Continue this process inductively until we get &lt;span
+class=&#34;math inline&#34;&gt;\(P_{w_l}\)&lt;/span&gt;. Then &lt;span
+class=&#34;math display&#34;&gt;\[
+P:\mathbb{R}^{n+l}\to \mathbb{R}^{n+l}\quad
+P(v):=P_{w_l}\circ\cdots\circ P_{w_2}\circ P_{w_1}(v)
+\]&lt;/span&gt; is a well-defined orthogonal projection of &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{R}^{n+l}\)&lt;/span&gt; on &lt;span
+class=&#34;math inline&#34;&gt;\(\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},\cdots,v_{k_l}\})\)&lt;/span&gt;,
+fulfilling the proof. &lt;span
+class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34; style=&#34;font-size:40px;&#34;&gt;
+&lt;strong&gt;— No.2 —&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;In early February 2023, I asked myself the following seemingly naive
+question.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem [The Gramian determines the
+&lt;em&gt;shape&lt;/em&gt;]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(\{v_1,\cdots,v_s\}\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\{w_1,\cdots,w_s\}\)&lt;/span&gt; be two subsets of
+&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{R}^n\)&lt;/span&gt;. Show that there
+exists &lt;span class=&#34;math inline&#34;&gt;\(A\in O(n)\)&lt;/span&gt; such that &lt;span
+class=&#34;math inline&#34;&gt;\(Av_i=w_i\ (1\le i\le s)\)&lt;/span&gt; iff &lt;span
+class=&#34;math inline&#34;&gt;\(\langle v_{i}, v_{j}\rangle=\langle w_{i},
+w_{j}\rangle\ (1\le i,j\le s)\)&lt;/span&gt;, i.e., the two Gramians are
+equal.&lt;/p&gt;
+&lt;p&gt;(Similarly, if &lt;span
+class=&#34;math inline&#34;&gt;\(\{v_1,\cdots,v_s\}\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\{w_1,\cdots,w_s\}\)&lt;/span&gt; are two subsets of
+&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{C}^n\)&lt;/span&gt;, then there exists
+&lt;span class=&#34;math inline&#34;&gt;\(A\in U(n)\)&lt;/span&gt; such that &lt;span
+class=&#34;math inline&#34;&gt;\(Av_i=w_i\ (1\le i\le s)\)&lt;/span&gt; iff &lt;span
+class=&#34;math inline&#34;&gt;\(\langle v_{i}, v_{j}\rangle=\langle w_{i},
+w_{j}\rangle\ (1\le i,j\le s)\)&lt;/span&gt;, i.e., the two Gramians are
+equal.)&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proof [Haosen]&lt;/strong&gt; We summarize the idea of proving
+&lt;span class=&#34;math inline&#34;&gt;\((\Leftarrow)\)&lt;/span&gt; as follows. Given the
+data &lt;span class=&#34;math inline&#34;&gt;\(\langle v_i,v_j \rangle\ (1\le i,j\le
+s)\)&lt;/span&gt;, we may focus on a maximal linearly independent subset of
+&lt;span class=&#34;math inline&#34;&gt;\(\{v_1,\cdots,v_s\}\)&lt;/span&gt; to study the
+shape formed by these &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; vectors in
+&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{R}^n\)&lt;/span&gt;. Suppose that &lt;span
+class=&#34;math inline&#34;&gt;\(\{v_{k_1},\cdots,v_{k_r}\}\)&lt;/span&gt; is a maximal
+linearly independent subset of &lt;span
+class=&#34;math inline&#34;&gt;\(\{v_1,\cdots,v_s\}\)&lt;/span&gt;, then &lt;span
+class=&#34;math inline&#34;&gt;\(\{w_{k_1},\cdots,w_{k_r}\}\)&lt;/span&gt; is
+automatically a maximal linearly independent subset of &lt;span
+class=&#34;math inline&#34;&gt;\(\{w_1,\cdots,w_s\}\)&lt;/span&gt;. Perform Gram-Schmidt
+on them simultaneously and extend the resulted orthonormal subsets to
+two orthonormal bases for &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{R}^n\)&lt;/span&gt;. The associated change of
+coordinates matrix then fulfills the proof. (The Gram-Schmidt process
+can be embodied by QR decomposition.)&lt;/p&gt;
+&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\((\Rightarrow)\)&lt;/span&gt;: Obvious. &lt;span
+class=&#34;math display&#34;&gt;\[
+\begin{align*}
+G(w_1,\cdots,w_s)&amp;amp;=(w_{1}\ \cdots\ w_{s})^{T}(w_{1}\ \cdots\
+w_{s})\\
+&amp;amp;=(v_{1}\ \cdots\ v_{s})^{T}A^TA(v_{1}\ \cdots\ v_{s})\\
+&amp;amp;=(v_{1}\ \cdots\ v_{s})^{T}(v_{1}\ \cdots\
+v_{s})=G(v_1,\cdots,v_s).\end{align*}
+\]&lt;/span&gt; &lt;span class=&#34;math inline&#34;&gt;\((\Leftarrow)\)&lt;/span&gt;: Note that
+&lt;span class=&#34;math display&#34;&gt;\[\begin{align*}\text{rank}(v_{1}\ \cdots\
+v_{s})&amp;amp;=\text{rank}\, G(v_1,\cdots,v_{s})\\ &amp;amp;=\text{rank}\,
+G(w_1,\cdots,w_s)=\text{rank}(w_{1}\ \cdots\ w_{s})\end{align*}\]&lt;/span&gt;
+Denote &lt;span class=&#34;math inline&#34;&gt;\(r:=\text{rank}(v_{1}\ \cdots\
+v_{s})\)&lt;/span&gt;. Without loss of generality, assume that &lt;span
+class=&#34;math inline&#34;&gt;\(v_1,\cdots,v_r\)&lt;/span&gt; are linearly independent.
+We claim that &lt;span class=&#34;math inline&#34;&gt;\(w_1,\cdots,w_r\)&lt;/span&gt; are
+linearly independent as well. Indeed, &lt;span class=&#34;math display&#34;&gt;\[
+\begin{align*}
+\text{Null}\,(w_1\ \cdots\ w_r)&amp;amp;=\text{Null}\,(w_1\ \cdots\
+w_r)^T(w_1\ \cdots\ w_r)\\
+&amp;amp;=\text{Null}\,(v_1\ \cdots\ v_r)^T(v_1\ \cdots\
+v_r)=\text{Null}\,(v_1\ \cdots\ v_r)=0.
+\end{align*}
+\]&lt;/span&gt; Therefore, there exist &lt;span class=&#34;math inline&#34;&gt;\(B,C\in
+M_{r\times (s-r)}(\mathbb{R})\)&lt;/span&gt; such that &lt;span
+class=&#34;math display&#34;&gt;\[
+\begin{align*}
+(v_1\ \cdots\ v_s)&amp;amp;=(v_1\ \cdots\ v_r)(I_r\ |\ B),\\
+(w_1\ \cdots\ w_s)&amp;amp;=(w_1\ \cdots\ w_r)(I_r\ |\ C).
+\end{align*}
+\]&lt;/span&gt; Denote &lt;span
+class=&#34;math inline&#34;&gt;\(G:=G(v_1,\cdots,v_r)=G(w_1,\cdots,w_r)\)&lt;/span&gt;.
+Since &lt;span class=&#34;math inline&#34;&gt;\(\text{rank}(G)=\text{rank}(v_1\
+\cdots\ v_r)=r\)&lt;/span&gt;, the matrix &lt;span
+class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt; is invertible. Thus we have &lt;span
+class=&#34;math display&#34;&gt;\[
+\begin{pmatrix}
+I_r\\\hline B^T
+\end{pmatrix}\,G\,(I_r\ |\ B)=\begin{pmatrix}
+I_r\\\hline C^T
+\end{pmatrix}\,G\,(I_r\ |\ C)\implies GB=GC\implies B=C.
+\]&lt;/span&gt; Now, it suffices to find some &lt;span class=&#34;math inline&#34;&gt;\(A\in
+O(n)\)&lt;/span&gt; such that &lt;span class=&#34;math display&#34;&gt;\[
+A(v_1\ \cdots\ v_r)=(w_1\ \cdots\ w_r)
+\]&lt;/span&gt; By QR decomposition, we have &lt;span class=&#34;math display&#34;&gt;\[
+(v_1\ \cdots\ v_r)=Q_1R_1,\quad (w_1\ \cdots\ w_r)=Q_2R_2
+\]&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(R_i\in M_{r\times
+r}(\mathbb{R})\)&lt;/span&gt; is an upper triangular matrix with positive
+diagonal entries and &lt;span class=&#34;math inline&#34;&gt;\(Q_i\in M_{n\times
+r}(\mathbb{R})\)&lt;/span&gt; satisfies &lt;span
+class=&#34;math inline&#34;&gt;\(Q_i^TQ_i=I_r\)&lt;/span&gt; (semi-orthogonal). Thus we
+have &lt;span class=&#34;math display&#34;&gt;\[
+(Q_1R_1)^TQ_1R_1=(Q_2R_2)^TQ_2R_2\implies R_1^TR_1=R_2^TR_2.
+\]&lt;/span&gt; By the uniqueness of Cholesky decomposition for
+positive-definite matrices, we have &lt;span
+class=&#34;math inline&#34;&gt;\(R_1=R_2\)&lt;/span&gt;. Indeed, &lt;span
+class=&#34;math inline&#34;&gt;\(R_1R_2^{-1}=(R_1^{T})^{-1}R_2^T\)&lt;/span&gt; is upper
+triangular and lower triangular, and hence a diagonal matrix, denoted by
+&lt;span class=&#34;math inline&#34;&gt;\(D\)&lt;/span&gt;. Thus we have &lt;span
+class=&#34;math display&#34;&gt;\[
+R_1=DR_2,\ R_2^T=R_1^TD\implies D=I_r\implies R_1=R_2.
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Therefore, it suffices to find some &lt;span class=&#34;math inline&#34;&gt;\(A\in
+O(n)\)&lt;/span&gt; such that &lt;span class=&#34;math display&#34;&gt;\[
+AQ_1=Q_2.
+\]&lt;/span&gt; Since the columns of &lt;span class=&#34;math inline&#34;&gt;\(Q_i\)&lt;/span&gt;
+forms an orthonormal subset of &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{R}^n\)&lt;/span&gt; and thus extends to an
+orthonormal basis for &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{R}^n\)&lt;/span&gt;,
+there exists &lt;span class=&#34;math inline&#34;&gt;\(\widetilde{Q}_i\in
+O(n)\)&lt;/span&gt; such that &lt;span
+class=&#34;math inline&#34;&gt;\(\widetilde{Q}_i=(Q_i\ |\ X_i)\)&lt;/span&gt; for some
+&lt;span class=&#34;math inline&#34;&gt;\(X_i\in M_{n\times
+(n-r)}(\mathbb{R})\)&lt;/span&gt;. Define &lt;span
+class=&#34;math inline&#34;&gt;\(A:=\widetilde{Q}_2\widetilde{Q}_1^{-1}\)&lt;/span&gt;.
+Then &lt;span class=&#34;math inline&#34;&gt;\(A\in O(n)\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(AQ_1=Q_2\)&lt;/span&gt;, as desired. &lt;span
+class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34; style=&#34;font-size:40px;&#34;&gt;
+&lt;strong&gt;— No.1 —&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;The next was one of the problems in my entrance examination of École
+Polytechnique, in November 2021. It estimates the size of a set of unit
+vectors that are “almost orthonormal”.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem [&lt;em&gt;Almost&lt;/em&gt; orthonormal]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Show that if &lt;span class=&#34;math inline&#34;&gt;\(v_1,\cdots,v_m\)&lt;/span&gt; are
+&lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt; unit vectors in &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{C}^n\)&lt;/span&gt; such that &lt;span
+class=&#34;math inline&#34;&gt;\(|\langle v_i,v_j \rangle|\le
+\frac{1}{2\sqrt{n}}\)&lt;/span&gt; for any &lt;span class=&#34;math inline&#34;&gt;\(i\neq
+j\)&lt;/span&gt;, then &lt;span class=&#34;math inline&#34;&gt;\(m&amp;lt;2n\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Proof [Haosen, under the guidance of the
+examiner]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(G:=G(v_1,\cdots,v_m)\)&lt;/span&gt; be the
+Gramian, i.e., &lt;span class=&#34;math inline&#34;&gt;\(G(i,j)=\langle v_i,v_j
+\rangle\)&lt;/span&gt; for &lt;span class=&#34;math inline&#34;&gt;\(1\le i,j\le m\)&lt;/span&gt;.
+Define &lt;span class=&#34;math inline&#34;&gt;\(H:=G-I_m\)&lt;/span&gt;. Since &lt;span
+class=&#34;math inline&#34;&gt;\(H\)&lt;/span&gt; is Hermitian, we have &lt;span
+class=&#34;math display&#34;&gt;\[
+\begin{align*}
+\text{tr}(H^2)&amp;amp;=\text{tr}(H^*H)\\
+&amp;amp;=\sum_{i,j=1}^{m}|H(i,j)|^2\\
+&amp;amp;=\sum_{1\le i\neq j\le m}|\langle v_i,v_j\rangle|^2\\
+&amp;amp;\le (m^2-m)\cdot (\tfrac{1}{2\sqrt{n}})^2=\frac{m^2-m}{4n}.
+\end{align*}
+\]&lt;/span&gt; On the other hand, since &lt;span
+class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt; is positive semi-definite, &lt;span
+class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt; has &lt;span
+class=&#34;math inline&#34;&gt;\(r:=\text{rank}(G)=\text{rank}(v_1\ \cdots\ v_m)\le
+n\)&lt;/span&gt; positive eigenvalues, and the other &lt;span
+class=&#34;math inline&#34;&gt;\(m-r\)&lt;/span&gt; eigenvalues of &lt;span
+class=&#34;math inline&#34;&gt;\(G\)&lt;/span&gt; are all zero. (In fact, we only use the
+latter.) Consequently, the eigenvalues of &lt;span
+class=&#34;math inline&#34;&gt;\(H\)&lt;/span&gt; are &lt;span
+class=&#34;math inline&#34;&gt;\(\underbrace{\lambda_1,\cdots,\lambda_r}_{\in
+(-1,+\infty)},\underbrace{-1,\cdots,-1}_{m-r}\)&lt;/span&gt;, and the
+eigenvalues of &lt;span class=&#34;math inline&#34;&gt;\(H^2\)&lt;/span&gt; are &lt;span
+class=&#34;math inline&#34;&gt;\(\underbrace{\lambda_1^2,\cdots,\lambda_r^2}_{\in
+[0,+\infty)},\underbrace{1,\cdots,1}_{m-r}\)&lt;/span&gt;. Therefore, &lt;span
+class=&#34;math display&#34;&gt;\[
+\text{tr}(H^2)=\sum_{i=1}^{r}\lambda_i^2+(m-r)\ge m-n.
+\]&lt;/span&gt; Combining the two estimates, we conclude that &lt;span
+class=&#34;math display&#34;&gt;\[
+m-n\le \frac{m^2-m}{4n},
+\]&lt;/span&gt; from which &lt;span class=&#34;math inline&#34;&gt;\(m&amp;lt;2n\)&lt;/span&gt;
+follows. &lt;span class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&lt;/p&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/categories/algebra/" term="Algebra" label="Algebra" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/tags/undergraduate/" term="Undergraduate" label="Undergraduate" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/tags/linear-algebra/" term="Linear Algebra" label="Linear Algebra" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/tags/problem-solving/" term="Problem Solving" label="Problem Solving" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
+            <title type="text">Poincaré Duality</title>
+            <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/poincare-duality/" />
+            <id>https://haosen-zju-x.github.io/posts/poincare-duality/</id>
+            <updated>2023-10-01T01:34:14&#43;02:00</updated>
+            <published>2023-09-30T20:16:07&#43;00:00</published>
+            <author>
+                    <name>Haosen</name>
+                    <uri>https://haosen-zju-x.github.io/</uri>
+                    <email>chenhaosen@yandex.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Explain the ideas behind the construction of the chain homotopy in the proof of the Poincaré lemma for compactly supported homology (cf. Bott-Tu, *Differential Forms in Algebraic Topology*).</summary>
+            
+                <content type="html">&lt;!-- &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://tikzjax.com/v1/fonts.css&#34;&gt;
+&lt;script src=&#34;https://tikzjax.com/v1/tikzjax.js&#34;&gt;&lt;/script&gt;
+&lt;script type=&#34;text/tikz&#34;&gt;
+  \begin{tikzpicture}
+    \draw (0,0) circle (1in);
+  \end{tikzpicture}
+&lt;/script&gt; --&gt;
+&lt;h1 id=&#34;the-poincaré-lemma-for-compactly-supported-cohomology&#34;&gt;The
+Poincaré Lemma for Compactly Supported Cohomology&lt;/h1&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; be a smooth manifold. Then
+the product manifold &lt;span class=&#34;math inline&#34;&gt;\(M\times
+\mathbb{R}^1\)&lt;/span&gt; is a smooth manifold as well, and the projection
+&lt;span class=&#34;math inline&#34;&gt;\(\pi:M\times \mathbb{R}^1\to M\)&lt;/span&gt; is a
+smooth map. The pullback &lt;span
+class=&#34;math inline&#34;&gt;\(\pi^*:\Omega^*(M)\to \Omega^*(M\times
+\mathbb{R}^1)\)&lt;/span&gt; [&lt;a href=&#34;https://haosen-zju-x.github.io/posts/poincare-duality/#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;
+role=&#34;doc-noteref&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;] does not map &lt;span
+class=&#34;math inline&#34;&gt;\(\Omega_c^*(M)\)&lt;/span&gt; into &lt;span
+class=&#34;math inline&#34;&gt;\(\Omega_c^*(M\times \mathbb{R}^1)\)&lt;/span&gt;, so
+instead we consider the pushforward known as integration along the fiber
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{equation*}
+    \pi_*:\Omega_c^*(M\times \mathbb{R}^1)\to \Omega_c^{*-1}(M)\quad
+\begin{cases}
+        f(x,t)\pi^*\phi\mapsto 0\\
+        f(x,t)\mathrm{d}{t}\wedge\pi^*\phi\mapsto
+\left(\displaystyle\int_{-\infty}^{\infty} f(x,t)
+\,\mathrm{d}t\right)\phi
+    \end{cases}
+\end{equation*}
+\]&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(\phi\in \Omega^*(M)\)&lt;/span&gt;
+and &lt;span class=&#34;math inline&#34;&gt;\(f\in C_c^{\infty}(M\times
+\mathbb{R};\mathbb{R})\)&lt;/span&gt;. (These two types of elements in &lt;span
+class=&#34;math inline&#34;&gt;\(\Omega_c^*(M\times \mathbb{R}^1)\)&lt;/span&gt; will
+soon be revisited.) It’s quick to check that &lt;span
+class=&#34;math inline&#34;&gt;\(\pi_*\)&lt;/span&gt; is a chain map. We will show that
+the induced map &lt;span class=&#34;math inline&#34;&gt;\(\pi_*:H_c^*(M\times
+\mathbb{R}^1)\to H_c^{*-1}(M)\)&lt;/span&gt; is an isomorphism.&lt;/p&gt;
+&lt;p&gt;Take &lt;span class=&#34;math inline&#34;&gt;\(e=e(t)\mathrm{d}{t}\in
+\Omega_c^1(\mathbb{R}^1)\)&lt;/span&gt; such that &lt;span
+class=&#34;math inline&#34;&gt;\(\displaystyle\int_{\mathbb{R}^1} e=1\)&lt;/span&gt;.
+Define &lt;span class=&#34;math display&#34;&gt;\[
+\begin{equation*}
+    e_*:\Omega_c^*(M)\to \Omega_c^{*+1}(M\times \mathbb{R}^1)\quad
+\psi\mapsto e(t)\mathrm{d}{t}\wedge\pi^*\psi
+\end{equation*}
+\]&lt;/span&gt; where the map &lt;span class=&#34;math inline&#34;&gt;\(t\mapsto
+e(t)\)&lt;/span&gt; has been identified with the composition &lt;span
+class=&#34;math inline&#34;&gt;\((x,t)\mapsto t\mapsto e(t)\)&lt;/span&gt;. It’s quick to
+check that &lt;span class=&#34;math inline&#34;&gt;\(e_*\)&lt;/span&gt; is a chain map, and
+&lt;span class=&#34;math inline&#34;&gt;\(\pi_*\circ e_*=\text{id}\)&lt;/span&gt; on &lt;span
+class=&#34;math inline&#34;&gt;\(\Omega_c^*(M)\)&lt;/span&gt;. We will show that there is
+a chain homotopy &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; connecting &lt;span
+class=&#34;math inline&#34;&gt;\(e_*\circ \pi_*\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\text{id}\)&lt;/span&gt; on &lt;span
+class=&#34;math inline&#34;&gt;\(\Omega_c^*(M\times \mathbb{R}^1)\)&lt;/span&gt;, so that
+the induced map &lt;span class=&#34;math inline&#34;&gt;\(e_*:H_c^{*}(M)\to
+H_c^{*+1}(M\times \mathbb{R}^1)\)&lt;/span&gt; is the inverse of &lt;span
+class=&#34;math inline&#34;&gt;\(\pi_*:H_c^*(M\times \mathbb{R}^1)\to
+H_c^{*-1}(M)\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;We shall construct the desired chain homotopy &lt;span
+class=&#34;math inline&#34;&gt;\(K:\Omega_c^*(M\times \mathbb{R}^1)\to
+\Omega_c^{*-1}(M\times \mathbb{R}^1)\)&lt;/span&gt; from the basic relation
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{equation*}
+    \text{id}-e_*\circ \pi_*=\mathrm{d}K+K \mathrm{d}
+\end{equation*}
+\]&lt;/span&gt; To proceed, interpret this relation on the aforementioned two
+types of elements in &lt;span class=&#34;math inline&#34;&gt;\(\Omega_c^*(M\times
+\mathbb{R}^1)\)&lt;/span&gt;, and be reminded that computations will be done
+w.r.t. some specific local coordinates.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For &lt;span class=&#34;math inline&#34;&gt;\(f(x,t)\pi^*\phi\)&lt;/span&gt;, we require
+&lt;span class=&#34;math display&#34;&gt;\[
+  \begin{equation*}
+      f(x,t)\pi^*\phi=\mathrm{d}K(f(x,t)\pi^*\phi)+K
+\left[\left(\displaystyle\sum_i \dfrac{\partial f}{\partial
+x^i}(x,t)\mathrm{d}{x^i}+\dfrac{\partial f}{\partial
+t}(x,t)\mathrm{d}{t}\right)\wedge
+\pi^*\phi+f(x,t)\pi^*\mathrm{d}{\phi}\right]
+  \end{equation*}
+\]&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;For &lt;span
+class=&#34;math inline&#34;&gt;\(f(x,t)\mathrm{d}{t}\wedge\pi^*\phi\)&lt;/span&gt;, we
+require &lt;span class=&#34;math display&#34;&gt;\[
+  \begin{align*}
+      &amp;amp;f(x,t)\mathrm{d}{t}\wedge\pi^*\phi-e(t)\mathrm{d}{t}\wedge\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
+f(x,t) \,\mathrm{d}t\right)\phi\right]\\
+      &amp;amp;=\mathrm{d}K(f(x,t)\mathrm{d}{t}\wedge\pi^*\phi)+K
+\left[-\displaystyle\sum_i \dfrac{\partial f}{\partial
+x^i}(x,t)\mathrm{d}{t}\wedge\mathrm{d}{x^i}\wedge\pi^*\phi-f(x,t)\mathrm{d}{t}\wedge\pi^*\mathrm{d}{\phi}\right]
+  \end{align*}
+\]&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We observe that when &lt;span
+class=&#34;math inline&#34;&gt;\(\displaystyle\int_{-\infty}^{\infty} f(x,t)
+\,\mathrm{d}t=0\)&lt;/span&gt;, or equivalently, &lt;span
+class=&#34;math inline&#34;&gt;\(f\in \dfrac{\partial }{\partial
+t}(C_c^{\infty}(M\times \mathbb{R}^1))\)&lt;/span&gt;, the two requirements
+become very close. An immediate guess follows: &lt;span
+class=&#34;math display&#34;&gt;\[
+\begin{equation*}
+    K_1(f(x,t)\pi^*\phi)=0,\quad
+K_1(f(x,t)\mathrm{d}{t}\wedge\pi^*\phi)=\left(\displaystyle\int_{-\infty}^{t}
+f(x,t) \,\mathrm{d}t\right)\pi^*\phi
+\end{equation*}
+\]&lt;/span&gt; whenever &lt;span class=&#34;math inline&#34;&gt;\(\phi\in
+\Omega^*(M)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(f\in C_c^*(M\times
+\mathbb{R}^1)\)&lt;/span&gt;. While &lt;span class=&#34;math inline&#34;&gt;\(K_1\)&lt;/span&gt;
+solves the first requirement, it does not reconcile with the second:
+&lt;span class=&#34;math display&#34;&gt;\[
+\begin{align*}
+    &amp;amp;\mathrm{d}K_1(f(x,t)\mathrm{d}{t}\wedge\pi^*\phi)+K_1
+\left[-\displaystyle\sum_i \dfrac{\partial f}{\partial
+x^i}(x,t)\mathrm{d}{t}\wedge\mathrm{d}{x^i}\wedge\pi^*\phi-f(x,t)\mathrm{d}{t}\wedge\pi^*\mathrm{d}{\phi}\right]\\
+    =&amp;amp;\mathrm{d}\left[\left(\displaystyle\int_{-\infty}^{t} f(x,t)
+\,\mathrm{d}t\right)\pi^*\phi\right]-\displaystyle\sum_i
+\left(\displaystyle\int_{-\infty}^{t} \dfrac{\partial f}{\partial
+x^i}(x,t) \,\mathrm{d}t\right)\mathrm{d}{x^i}\wedge
+\pi^*\phi-\left(\displaystyle\int_{-\infty}^{t} f(x,t)
+\,\mathrm{d}t\right)\pi^*\mathrm{d}{\phi}\\
+    =&amp;amp;f(x,t)\mathrm{d}{t}\wedge \pi^*\phi
+\end{align*}
+\]&lt;/span&gt; However, the computation also indicates that we are not far
+away from success, with only one term involving &lt;span
+class=&#34;math inline&#34;&gt;\(e=e(t)\mathrm{d}{t}\)&lt;/span&gt; missing.&lt;/p&gt;
+&lt;p&gt;As a remedy, consider &lt;span class=&#34;math inline&#34;&gt;\(K_2=K-K_1\)&lt;/span&gt;.
+It suffices to construct &lt;span class=&#34;math inline&#34;&gt;\(K_2\)&lt;/span&gt; in the
+same fashion:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;For &lt;span class=&#34;math inline&#34;&gt;\(f(x,t)\pi^*\phi\)&lt;/span&gt;, we require
+&lt;span class=&#34;math display&#34;&gt;\[
+  \begin{equation*}
+      0=\mathrm{d}K_2(f(x,t)\pi^*\phi)+K_2
+\left[\left(\displaystyle\sum_i \dfrac{\partial f}{\partial
+x^i}(x,t)\mathrm{d}{x^i}+\dfrac{\partial f}{\partial
+t}(x,t)\mathrm{d}{t}\right)\wedge
+\pi^*\phi+f(x,t)\pi^*\mathrm{d}{\phi}\right]
+  \end{equation*}
+\]&lt;/span&gt;&lt;/li&gt;
+&lt;li&gt;For &lt;span
+class=&#34;math inline&#34;&gt;\(f(x,t)\mathrm{d}{t}\wedge\pi^*\phi\)&lt;/span&gt;, we
+require &lt;span class=&#34;math display&#34;&gt;\[
+  \begin{align*}
+      &amp;amp;-e(t)\mathrm{d}{t}\wedge\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
+f(x,t) \,\mathrm{d}t\right)\phi\right]\\
+      &amp;amp;=\mathrm{d}K_2(f(x,t)\mathrm{d}{t}\wedge\pi^*\phi)+K_2
+\left[-\displaystyle\sum_i \dfrac{\partial f}{\partial
+x^i}(x,t)\mathrm{d}{t}\wedge\mathrm{d}{x^i}\wedge\pi^*\phi-f(x,t)\mathrm{d}{t}\wedge\pi^*\mathrm{d}{\phi}\right]
+  \end{align*}
+\]&lt;/span&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;It is again natural to set &lt;span
+class=&#34;math inline&#34;&gt;\(K_2(f(x,t)\pi^*\phi)=0\)&lt;/span&gt;, and so the first
+requirement simplifies to &lt;span class=&#34;math display&#34;&gt;\[
+\begin{equation*}
+    K_2 \left(\dfrac{\partial f}{\partial t}(x,t)\mathrm{d}{t}\wedge
+\pi^*\phi\right)=0
+\end{equation*}
+\]&lt;/span&gt; Now we focus on the second requirement. Note that &lt;span
+class=&#34;math display&#34;&gt;\[
+\begin{align*}
+    &amp;amp;\hphantom{=}e(t)\mathrm{d}{t}\wedge\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
+f(x,t) \,\mathrm{d}t\right)\phi\right]\\
+    &amp;amp;=\mathrm{d}\left(\displaystyle\int_{-\infty}^{t} e(t)
+\,\mathrm{d}t\right)\wedge\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
+f(x,t)
+\,\mathrm{d}t\right)\phi\right]+\left(\displaystyle\int_{-\infty}^{t}
+e(t)
+\,\mathrm{d}t\right)\mathrm{d}\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
+f(x,t) \,\mathrm{d}t\right)\phi\right]\\
+    &amp;amp;\hphantom{=\mathrm{d}\left(\displaystyle\int_{-\infty}^{t} e(t)
+\,\mathrm{d}t\right)\wedge\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
+f(x,t)
+\,\mathrm{d}t\right)\phi\right]}-\left(\displaystyle\int_{-\infty}^{t}
+e(t)
+\,\mathrm{d}t\right)\mathrm{d}\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
+f(x,t) \,\mathrm{d}t\right)\phi\right]\\
+    &amp;amp;=\mathrm{d}\left\{\left(\displaystyle\int_{-\infty}^{t} e(t)
+\,\mathrm{d}t\right)\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
+f(x,t) \,\mathrm{d}t\right)\phi\right]\right\}\\
+    &amp;amp;\hphantom{=}-\left(\displaystyle\int_{-\infty}^{t} e(t)
+\,\mathrm{d}t\right)\pi^*\left[\displaystyle\sum_i
+\left(\displaystyle\int_{-\infty}^{\infty} \dfrac{\partial f}{\partial
+x^i}(x,t) \,\mathrm{d}t\right)\mathrm{d}{x^i}\wedge
+\phi+\left(\displaystyle\int_{-\infty}^{\infty} f(x,t)
+\,\mathrm{d}t\right)\mathrm{d}{\phi}\right]
+\end{align*}
+\]&lt;/span&gt; An immediate guess follows: &lt;span class=&#34;math display&#34;&gt;\[
+\begin{equation*}
+    K_2(f(x,t)\mathrm{d}{t}\wedge
+\pi^*\phi)=-\left(\displaystyle\int_{-\infty}^{t} e(t)
+\,\mathrm{d}t\right)\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
+f(x,t) \,\mathrm{d}t\right)\phi\right]
+\end{equation*}
+\]&lt;/span&gt; which indeed solves the second requirement, and together with
+&lt;span class=&#34;math inline&#34;&gt;\(K_2(f(x,t)\pi^*\phi)=0\)&lt;/span&gt;, solves the
+first, since &lt;span class=&#34;math display&#34;&gt;\[
+\begin{equation*}
+    \displaystyle\int_{-\infty}^{\infty} \dfrac{\partial f}{\partial
+t}(x,t) \,\mathrm{d}t=0
+\end{equation*}
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;Conclusion: The map &lt;span
+class=&#34;math inline&#34;&gt;\(K:\Omega_c^{*}(M\times \mathbb{R}^1)\to
+\Omega_c^{*-1}(M\times \mathbb{R}^1)\)&lt;/span&gt; defined by &lt;span
+class=&#34;math display&#34;&gt;\[
+\begin{equation*}
+    \begin{cases}
+        f(x,t)\pi^*\phi\mapsto 0\\
+        f(x,t)\mathrm{d}{t}\wedge\pi^*\phi\mapsto
+\left(\displaystyle\int_{-\infty}^{t} f(x,t)
+\,\mathrm{d}t\right)\pi^*\phi-\left(\displaystyle\int_{-\infty}^{t} e(t)
+\,\mathrm{d}t\right)\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
+f(x,t) \,\mathrm{d}t\right)\phi\right]
+    \end{cases}
+\end{equation*}
+\]&lt;/span&gt; is a chain homotopy connecting &lt;span
+class=&#34;math inline&#34;&gt;\(e_*\circ \pi_*\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(\text{id}\)&lt;/span&gt; on &lt;span
+class=&#34;math inline&#34;&gt;\(\Omega_c^*(M\times \mathbb{R}^1)\)&lt;/span&gt;, and
+consequently the maps &lt;span class=&#34;math display&#34;&gt;\[
+\begin{equation*}
+        H_c^{*+1}(M\times \mathbb{R})\begin{matrix}\xrightarrow{\pi_*}\\
+\xleftarrow[e_*]{}\end{matrix}H_c^*(M)
+\end{equation*}
+\]&lt;/span&gt; are isomorphisms.&lt;/p&gt;
+&lt;p&gt;As a corollary, for each positive integer &lt;span
+class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;, there holds &lt;span
+class=&#34;math display&#34;&gt;\[
+\begin{equation*}
+    H_c^*(\mathbb{R}^n)=\begin{cases}
+        \mathbb{R}, &amp;amp;\text{in dimension $n$}\\
+        0, &amp;amp;\text{elsewhere}
+    \end{cases}
+\end{equation*}
+\]&lt;/span&gt; where the isomorphism &lt;span
+class=&#34;math inline&#34;&gt;\(H_c^*(\mathbb{R}^n)\xrightarrow{\cong}\mathbb{R}\)&lt;/span&gt;
+is given by iterated &lt;span class=&#34;math inline&#34;&gt;\(\pi_*\)&lt;/span&gt;, i.e.,
+by integration over &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{R}^n\)&lt;/span&gt;,
+thanks to Fubini’s theorem. Besides, by iterating &lt;span
+class=&#34;math inline&#34;&gt;\(e_*\)&lt;/span&gt;, we see that a generator of &lt;span
+class=&#34;math inline&#34;&gt;\(H_c^n(\mathbb{R}^n)\)&lt;/span&gt; is represented by a
+bump &lt;span class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;-form &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha=\alpha(x)\mathrm{d}{x^1}\wedge\cdots\wedge
+\mathrm{d}{x^n}\)&lt;/span&gt; with &lt;span
+class=&#34;math inline&#34;&gt;\(\displaystyle\int_{\mathbb{R}^n}
+\alpha=1\)&lt;/span&gt;, whose support can be made as small as possible.&lt;/p&gt;
+&lt;section class=&#34;footnotes footnotes-end-of-document&#34;
+role=&#34;doc-endnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34; role=&#34;doc-endnote&#34;&gt;&lt;p&gt;[To be explicit, if &lt;span
+class=&#34;math inline&#34;&gt;\(\phi\in \Omega^r(M)\)&lt;/span&gt; is represented as
+&lt;span class=&#34;math inline&#34;&gt;\(\sum_{i_1&amp;lt;\cdots&amp;lt;i_r}\phi_{i_1\cdots
+i_r}(x)\mathrm{d}{x^{i_1}}\wedge\cdots\wedge
+\mathrm{d}{x^{i_r}}\)&lt;/span&gt; w.r.t. some chosen local coordinates on
+&lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt;, then &lt;span
+class=&#34;math inline&#34;&gt;\(\pi^*\phi\in \Omega^r(M\times \mathbb{R})\)&lt;/span&gt;
+is simply represented as &lt;span
+class=&#34;math inline&#34;&gt;\(\sum_{i_1&amp;lt;\cdots&amp;lt;i_r}\phi_{i_1\cdots
+i_r}\circ \pi(x,t)\mathrm{d}{x^{i_1}}\wedge\cdots\wedge
+\mathrm{d}{x^{i_r}}\)&lt;/span&gt; w.r.t. the associated local coordinates on
+&lt;span class=&#34;math inline&#34;&gt;\(M\times \mathbb{R}^1\)&lt;/span&gt;.]&lt;a
+href=&#34;#fnref1&#34; class=&#34;footnote-back&#34; role=&#34;doc-backlink&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/categories/topology/" term="Topology" label="Topology" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/tags/algebraic-topology/" term="Algebraic Topology" label="Algebraic Topology" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/tags/differentiable-manifolds/" term="Differentiable Manifolds" label="Differentiable Manifolds" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Tangent Staffs</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/tangent/" />
             <id>https://haosen-zju-x.github.io/posts/tangent/</id>
-            <updated>2023-09-30T19:34:18&#43;02:00</updated>
+            <updated>2023-10-01T01:35:27&#43;02:00</updated>
             <published>2023-09-24T20:33:22&#43;02:00</published>
             <author>
                     <name>Haosen</name>
@@ -186,7 +852,7 @@ class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; and the cotangent space &lt
 class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; are canonically dual to each
 other.&lt;/p&gt;
 &lt;h1 id=&#34;part-ii&#34;&gt;Part II&lt;/h1&gt;
-&lt;p&gt;TODO:&lt;/p&gt;
+&lt;p&gt;Coming soon…&lt;/p&gt;
 </content>
             
             

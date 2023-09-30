@@ -2,29 +2,53 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>https://haosen-zju-x.github.io/about/</loc>
-    <lastmod>2023-09-30T21:08:13+02:00</lastmod>
-  </url><url>
-    <loc>https://haosen-zju-x.github.io/</loc>
-    <lastmod>2023-09-30T21:08:13+02:00</lastmod>
+    <loc>https://haosen-zju-x.github.io/categories/algebra/</loc>
+    <lastmod>2023-10-01T01:31:54+02:00</lastmod>
   </url><url>
     <loc>https://haosen-zju-x.github.io/categories/</loc>
-    <lastmod>2023-09-30T19:34:18+02:00</lastmod>
+    <lastmod>2023-10-01T01:35:27+02:00</lastmod>
   </url><url>
-    <loc>https://haosen-zju-x.github.io/tags/differentiable-manifolds/</loc>
-    <lastmod>2023-09-30T19:34:18+02:00</lastmod>
+    <loc>https://haosen-zju-x.github.io/</loc>
+    <lastmod>2023-10-01T01:35:27+02:00</lastmod>
   </url><url>
-    <loc>https://haosen-zju-x.github.io/categories/geometry/</loc>
-    <lastmod>2023-09-30T19:34:18+02:00</lastmod>
+    <loc>https://haosen-zju-x.github.io/tags/linear-algebra/</loc>
+    <lastmod>2023-10-01T01:31:54+02:00</lastmod>
   </url><url>
     <loc>https://haosen-zju-x.github.io/posts/</loc>
-    <lastmod>2023-09-30T19:34:18+02:00</lastmod>
+    <lastmod>2023-10-01T01:35:27+02:00</lastmod>
+  </url><url>
+    <loc>https://haosen-zju-x.github.io/tags/problem-solving/</loc>
+    <lastmod>2023-10-01T01:31:54+02:00</lastmod>
+  </url><url>
+    <loc>https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/</loc>
+    <lastmod>2023-10-01T01:31:54+02:00</lastmod>
   </url><url>
     <loc>https://haosen-zju-x.github.io/tags/</loc>
-    <lastmod>2023-09-30T19:34:18+02:00</lastmod>
+    <lastmod>2023-10-01T01:35:27+02:00</lastmod>
+  </url><url>
+    <loc>https://haosen-zju-x.github.io/tags/undergraduate/</loc>
+    <lastmod>2023-10-01T01:31:54+02:00</lastmod>
+  </url><url>
+    <loc>https://haosen-zju-x.github.io/tags/algebraic-topology/</loc>
+    <lastmod>2023-10-01T01:34:14+02:00</lastmod>
+  </url><url>
+    <loc>https://haosen-zju-x.github.io/tags/differentiable-manifolds/</loc>
+    <lastmod>2023-10-01T01:35:27+02:00</lastmod>
+  </url><url>
+    <loc>https://haosen-zju-x.github.io/posts/poincare-duality/</loc>
+    <lastmod>2023-10-01T01:34:14+02:00</lastmod>
+  </url><url>
+    <loc>https://haosen-zju-x.github.io/categories/topology/</loc>
+    <lastmod>2023-10-01T01:34:14+02:00</lastmod>
+  </url><url>
+    <loc>https://haosen-zju-x.github.io/about/</loc>
+    <lastmod>2023-09-30T22:09:33+02:00</lastmod>
+  </url><url>
+    <loc>https://haosen-zju-x.github.io/categories/geometry/</loc>
+    <lastmod>2023-10-01T01:35:27+02:00</lastmod>
   </url><url>
     <loc>https://haosen-zju-x.github.io/posts/tangent/</loc>
-    <lastmod>2023-09-30T19:34:18+02:00</lastmod>
+    <lastmod>2023-10-01T01:35:27+02:00</lastmod>
   </url><url>
     <loc>https://haosen-zju-x.github.io/posts/curvature/</loc>
     <lastmod>2023-09-30T19:03:37+02:00</lastmod>

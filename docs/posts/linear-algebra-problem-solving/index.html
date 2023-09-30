@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+    <head prefix="og: http://ogp.me/ns# article: http://ogp.me/ns/article#">
+    <meta charset="UTF-8" />
+
+    <meta name="generator" content="Hugo 0.117.0"><meta name="theme-color" content="#fff" />
+    <meta name="color-scheme" content="light dark">
+
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <meta name="format-detection" content="telephone=no, date=no, address=no, email=no" />
+    
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+
+    <title>Problems in Linear Algebra | L&#39;Astéroïde de Haosen</title>
+
+    <link rel="stylesheet" href="/css/meme.min.9b58de2e7d10916c9390f8a7136a95a2ab2bb43fee16899e89f15dc22fd46527.css"/>
+
+    
+    
+        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" defer></script><script src="/js/meme.min.fc809fffaa543135a6bfdd43e4180d4873c68c487f45bdeca252054177da0d94.js"></script>
+
+    
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" media="print" onload="this.media='all'" />
+        <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" /></noscript>
+
+    <meta name="author" content="Haosen" /><meta name="description" content="What’s next?
+— No.3 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the way we do math.
+Problem [Existence of a suitable orthogonal projection]" />
+
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-title" content="L&#39;Astéroïde de Haosen" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="application-name" content="L&#39;Astéroïde de Haosen" />
+    <meta name="msapplication-starturl" content="../../" />
+    <meta name="msapplication-TileColor" content="#fff" />
+    <meta name="msapplication-TileImage" content="../../icons/mstile-150x150.png" />
+    <link rel="manifest" href="/manifest.json" />
+
+    
+    
+
+    
+    <link rel="canonical" href="https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/" />
+    
+
+<script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "BlogPosting",
+        "datePublished": "2023-09-30T22:04:40+00:00",
+        "dateModified": "2023-10-01T01:31:54+02:00",
+        "url": "https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/",
+        "headline": "Problems in Linear Algebra",
+        "description": "What’s next?\n— No.3 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the way we do math.\nProblem [Existence of a suitable orthogonal projection]",
+        "inLanguage" : "zh-cn",
+        "articleSection": "posts",
+        "wordCount":  1088 ,
+        "image": "https://haosen-zju-x.github.io/icons/apple-touch-icon.png",
+        "author": {
+            "@type": "Person",
+            "description": "Riemann vous retrouve pour une fête",
+            "email": "chenhaosen@yandex.com",
+            "url": "https://haosen-zju-x.github.io/",
+            "name": "Haosen"
+        },
+        "license": "[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)",
+        "publisher": {
+            "@type": "Organization",
+            "name": "L'Astéroïde de Haosen",
+            "logo": {
+                "@type": "ImageObject",
+                "url": "https://haosen-zju-x.github.io/icons/apple-touch-icon.png"
+            },
+            "url": "https://haosen-zju-x.github.io/"
+        },
+        "mainEntityOfPage": {
+            "@type": "WebSite",
+            "@id": "https://haosen-zju-x.github.io/"
+        }
+    }
+</script>
+
+    
+
+
+
+<meta property="og:title" content="Problems in Linear Algebra" />
+<meta property="og:description" content="What’s next?
+— No.3 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the way we do math.
+Problem [Existence of a suitable orthogonal projection]" />
+<meta property="og:url" content="https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/" />
+<meta property="og:site_name" content="L&#39;Astéroïde de Haosen" />
+<meta property="og:locale" content="en" /><meta property="og:image" content="https://haosen-zju-x.github.io/icons/apple-touch-icon.png" />
+    <meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2023-09-30T22:04:40&#43;00:00" />
+    <meta property="article:modified_time" content="2023-10-01T01:31:54&#43;02:00" />
+    
+    <meta property="article:section" content="posts" />
+
+
+
+    
+    
+
+    
+</head>
+
+    <body>
+        <div class="container">
+            
+    <header class="header">
+        
+            <div class="header-wrapper">
+                <div class="header-inner single">
+                    
+    <div class="site-brand">
+        
+            <a href="/" class="brand">L&#39;Astéroïde de Haosen</a>
+        
+    </div>
+
+                    <nav class="nav">
+    <ul class="menu" id="menu">
+        
+            
+        
+        
+        
+        
+            
+                <li class="menu-item active"><a href="/posts/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon archive"><path d="M32 448c0 17.7 14.3 32 32 32h384c17.7 0 32-14.3 32-32V160H32v288zm160-212c0-6.6 5.4-12 12-12h104c6.6 0 12 5.4 12 12v8c0 6.6-5.4 12-12 12H204c-6.6 0-12-5.4-12-12v-8zM480 32H32C14.3 32 0 46.3 0 64v48c0 8.8 7.2 16 16 16h480c8.8 0 16-7.2 16-16V64c0-17.7-14.3-32-32-32z"/></svg><span class="menu-item-name">Posts</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/categories/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon th"><path d="M149.333 56v80c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V56c0-13.255 10.745-24 24-24h101.333c13.255 0 24 10.745 24 24zm181.334 240v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm32-240v80c0 13.255 10.745 24 24 24H488c13.255 0 24-10.745 24-24V56c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24zm-32 80V56c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.256 0 24.001-10.745 24.001-24zm-205.334 56H24c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24zM0 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H24c-13.255 0-24 10.745-24 24zm386.667-56H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zm0 160H488c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H386.667c-13.255 0-24 10.745-24 24v80c0 13.255 10.745 24 24 24zM181.333 376v80c0 13.255 10.745 24 24 24h101.333c13.255 0 24-10.745 24-24v-80c0-13.255-10.745-24-24-24H205.333c-13.255 0-24 10.745-24 24z"/></svg><span class="menu-item-name">Categories</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/tags/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512" class="icon tags"><path d="M497.941 225.941L286.059 14.059A48 48 0 0 0 252.118 0H48C21.49 0 0 21.49 0 48v204.118a48 48 0 0 0 14.059 33.941l211.882 211.882c18.744 18.745 49.136 18.746 67.882 0l204.118-204.118c18.745-18.745 18.745-49.137 0-67.882zM112 160c-26.51 0-48-21.49-48-48s21.49-48 48-48 48 21.49 48 48-21.49 48-48 48zm513.941 133.823L421.823 497.941c-18.745 18.745-49.137 18.745-67.882 0l-.36-.36L527.64 323.522c16.999-16.999 26.36-39.6 26.36-63.64s-9.362-46.641-26.36-63.64L331.397 0h48.721a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882z"/></svg><span class="menu-item-name">Tags</span></a>
+                </li>
+            
+        
+            
+                <li class="menu-item"><a href="/about/"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon user-circle"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm0 96c48.6 0 88 39.4 88 88s-39.4 88-88 88-88-39.4-88-88 39.4-88 88-88zm0 344c-58.7 0-111.3-26.6-146.5-68.2 18.8-35.4 55.6-59.8 98.5-59.8 2.4 0 4.8.4 7.1 1.1 13 4.2 26.6 6.9 40.9 6.9 14.3 0 28-2.7 40.9-6.9 2.3-.7 4.7-1.1 7.1-1.1 42.9 0 79.7 24.4 98.5 59.8C359.3 421.4 306.7 448 248 448z"/></svg><span class="menu-item-name">About</span></a>
+                </li>
+            
+        
+            
+                
+                    
+                    
+                        <li class="menu-item">
+                            <a id="theme-switcher" href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-light"><path d="M193.2 104.5l48.8-97.5a18 18 0 0128 0l48.8 97.5 103.4 -34.5a18 18 0 0119.8 19.8l-34.5 103.4l97.5 48.8a18 18 0 010 28l-97.5 48.8 34.5 103.4a18 18 0 01-19.8 19.8l-103.4-34.5-48.8 97.5a18 18 0 01-28 0l-48.8-97.5l-103.4 34.5a18 18 0 01-19.8-19.8l34.5-103.4-97.5-48.8a18 18 0 010-28l97.5-48.8-34.5-103.4a18 18 0 0119.8-19.8zM256 128a128 128 0 10.01 0M256 160a96 96 0 10.01 0"/></svg><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon theme-icon-dark"><path d="M27 412a256 256 0 10154-407a11.5 11.5 0 00-5 20a201.5 201.5 0 01-134 374a11.5 11.5 0 00-15 13"/></svg></a>
+                        </li>
+                    
+                
+            
+        
+            
+                
+            
+        
+            
+                <li class="menu-item search-item">
+                        <form id="search" class="search" role="search">
+    <label for="search-input"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon search-icon"><path d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"/></svg></label>
+    <input type="search" id="search-input" class="search-input">
+</form>
+
+<template id="search-result" hidden>
+    <article class="content post">
+        <h2 class="post-title"><a class="summary-title-link"></a></h2>
+        <summary class="summary"></summary>
+        <div class="read-more-container">
+            <a class="read-more-link">Read More »</a>
+        </div>
+    </article>
+</template>
+
+                    </li>
+                
+            
+        
+    </ul>
+</nav>
+
+                    
+                </div>
+            </div>
+            
+    <input type="checkbox" id="nav-toggle" aria-hidden="true" />
+    <label for="nav-toggle" class="nav-toggle"></label>
+    <label for="nav-toggle" class="nav-curtain"></label>
+
+
+        
+    </header>
+
+
+
+
+            
+            
+    <main class="main single" id="main">
+    <div class="main-inner">
+
+        
+
+        <article class="content post h-entry" data-small-caps="true" data-align="default" data-type="posts" data-toc-num="true">
+
+            <h1 class="post-title p-name">Problems in Linear Algebra</h1>
+
+            
+
+            
+                
+            
+
+            
+                
+
+<div class="post-meta">
+    
+        
+        <time datetime="2023-09-30T22:04:40&#43;00:00" class="post-meta-item published dt-published"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M148 288h-40c-6.6 0-12-5.4-12-12v-40c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v40c0 6.6-5.4 12-12 12zm108-12v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 96v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm-96 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm192 0v-40c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v40c0 6.6 5.4 12 12 12h40c6.6 0 12-5.4 12-12zm96-260v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V112c0-26.5 21.5-48 48-48h48V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h128V12c0-6.6 5.4-12 12-12h40c6.6 0 12 5.4 12 12v52h48c26.5 0 48 21.5 48 48zm-48 346V160H48v298c0 3.3 2.7 6 6 6h340c3.3 0 6-2.7 6-6z"/></svg>&nbsp;2023.9.30</time>
+    
+    
+        
+        <time datetime="2023-10-01T01:31:54&#43;02:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2023.10.1</time>
+    
+    
+    
+        
+        
+        
+            
+                <span class="post-meta-item category"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M464 128H272l-54.63-54.63c-6-6-14.14-9.37-22.63-9.37H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V176c0-26.51-21.49-48-48-48zm0 272H48V112h140.12l54.63 54.63c6 6 14.14 9.37 22.63 9.37H464v224z"/></svg>&nbsp;<a href="/categories/algebra/" class="category-link p-category">Algebra</a></span>
+            
+        
+    
+    
+        
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1088</span>
+    
+    
+        
+        <span class="post-meta-item reading-time"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"/></svg>&nbsp;6&nbsp;mins</span>
+    
+    
+    
+</div>
+
+            
+
+            <div class="post-body e-content">
+                <p style="text-indent:0"><span class="drop-cap">W</span>hat’s next?</p>
+<p align="center" style="font-size:40px;">
+<strong>— No.3 —</strong>
+</p>
+<p>Shihe asked me the following problem on October 23, 2022. After a
+while, we exchanged our proofs, which I felt faithfully reflected the
+differences in the way we do math.</p>
+<p><strong>Problem [Existence of a <em>suitable</em> orthogonal
+projection]</strong></p>
+<p>Let <span class="math inline">\(L\subset \mathbb{R}^{n+l}\)</span>
+(<span class="math inline">\(n,l\ge 1\)</span>) be an <span
+class="math inline">\(n\)</span>-dimensional subspace and <span
+class="math inline">\(\{v_1,\cdots,v_{n+l}\}\)</span> a basis of <span
+class="math inline">\(\mathbb{R}^{n+l}\)</span>. Show that there exist
+<span class="math inline">\(1\le j_1&lt;\cdots&lt;j_n\le n+l\)</span>
+such that the restriction <span
+class="math inline">\(P_{j_1,\cdots,j_n}|_L:L\to
+\mathbb{R}^{n+l}\)</span> is injective (and hence induces an isomphism),
+where <span class="math inline">\(P_{j_1,\cdots,j_n}\)</span> denotes
+the orthogonal projection of <span
+class="math inline">\(\mathbb{R}^{n+l}\)</span> onto <span
+class="math inline">\(\text{span}\{v_{j_1},\cdots,v_{j_n}\}\)</span>.</p>
+<p><strong>Proof I [Haosen]</strong></p>
+<p>The orthogonal complement of the kernel of <span
+class="math inline">\(P_{j_1,\cdots,j_n}|_L\)</span> is <span
+class="math display">\[\begin{align*}
+    \ker(P_{j_1,\cdots,j_n}|_L)^{\perp}
+    &amp;=\left(\ker(P_{j_1,\cdots,j_n})\cap L\right)^{\perp}\\
+    &amp;=\left(\text{span}(\{v_{j_1},\cdots,v_{j_n}\})^{\perp}\cap
+L\right)^{\perp}\\
+    &amp;=\text{span}(\{v_{j_1},\cdots,v_{j_n}\})+L^{\perp}.
+\end{align*}\]</span> Therefore <span
+class="math inline">\(P_{j_1,\cdots,j_n}|_L\)</span> is injective iff
+<span
+class="math inline">\(\text{span}(\{v_{j_1},\cdots,v_{j_n}\})+L^{\perp}=\mathbb{R}^{n+l}\)</span>.</p>
+<p>Let <span class="math inline">\(\{w_1,\cdots,w_l\}\)</span> be a
+basis of the <span class="math inline">\(l\)</span>-dimensional subspace
+<span class="math inline">\(L^{\perp}\)</span>. There exists <span
+class="math inline">\(A\in M_{(n+l)\times l}(\mathbb{R})\)</span> of
+rank <span class="math inline">\(l\)</span> such that <span
+class="math display">\[
+(w_1\ \cdots\ w_l)=(v_1\ \cdots\ v_{n+l})A.
+\]</span> Now we note that there exists a sequence of elementary column
+operations that transforms <span class="math inline">\(A\)</span> into a
+matrix with exactly <span class="math inline">\(n\)</span> zero rows, in
+other words, there exists <span class="math inline">\(Q\in
+GL_{l}(\mathbb{R})\)</span> such that <span
+class="math inline">\(AQ\)</span> has exactly <span
+class="math inline">\(n\)</span> zero rows, with the other <span
+class="math inline">\(l\)</span> nonzero rows being linearly
+independent. We claim that the labels of the zero rows, denoted by <span
+class="math inline">\(1\le j_1&lt;\cdots&lt;j_n\le n+l\)</span>, will
+fulfill the proof. For clarity, denote by <span
+class="math inline">\(1\le i_1&lt;\cdots&lt;i_l\le n+l\)</span> the
+labels of the nonzero rows.</p>
+<p>In fact, <span
+class="math inline">\(L^{\perp}=\text{span}(\{w_1,\cdots,w_l\})=\)</span>
+the column space of the matrix <span class="math inline">\((w_1\ \cdots\
+w_l)=\)</span> the column space of the matrix <span
+class="math inline">\((w_1\ \cdots\ w_l)Q=\)</span> the column space of
+the matrix <span class="math inline">\((v_1\ \cdots\
+v_{n+l})AQ=\text{span}(\{v_{i_1},\cdots,v_{i_l}\})\)</span>. Therefore,
+<span
+class="math inline">\(\text{span}(\{v_{j_1},\cdots,v_{j_n}\})+L^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\})=\mathbb{R}^{n+l}\)</span>.
+<span class="math inline">\(\blacksquare\)</span></p>
+<p><strong>Proof II [Shihe]</strong></p>
+<p>Shehe’s proof is more geometrically intuitive. For each <span
+class="math inline">\(1\le k\le n+l\)</span>, take a nonzero vector
+<span class="math inline">\(w_k\in \mathbb{R}^{n+l}\)</span> such that
+<span
+class="math inline">\(\text{span}(\{w_k\})=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_k\})^{\perp}\)</span>.
+We claim that <span class="math inline">\(w_1,\cdots,w_{n+l}\)</span>
+are linearly independent.</p>
+<p>In fact, if <span class="math inline">\(\sum_{k=1}^{n+l}\lambda_k
+w_k=0\)</span> (<span
+class="math inline">\(\lambda_1,\cdots,\lambda_{n+l}\in
+\mathbb{R}\)</span>), then by applying <span
+class="math inline">\(\langle \cdot,v_k\rangle\)</span> to both sides we
+get <span class="math inline">\(\lambda_k\langle
+w_k,v_k\rangle=0\)</span> (<span
+class="math inline">\(k=1,\cdots,n+l\)</span>). Clearly <span
+class="math inline">\(\langle w_k,v_k\rangle\neq 0\)</span>, because
+otherwise <span class="math inline">\(w_k\)</span> is orthogonal to
+every vector in the basis <span
+class="math inline">\(\{v_1,\cdots,v_{n+l}\}\)</span> and hence must be
+zero, contradiction. Thus <span class="math inline">\(\lambda_k=0\
+(k=1,\cdots,n+l)\)</span>, showing that <span
+class="math inline">\(w_1,\cdots,w_{n+l}\)</span> are linearly
+independent.</p>
+<p>Since <span class="math inline">\(\dim L=n&lt;n+l\)</span>, there
+exists some <span class="math inline">\(w_{k_1}\)</span> that is not in
+<span class="math inline">\(L\)</span>. The orthogonal projection of
+<span class="math inline">\(\mathbb{R}^{n+l}\)</span> along <span
+class="math inline">\(\text{span}(\{w_{k_1}\})\)</span>, denoted by
+<span class="math inline">\(P_{w_{k_1}}:\mathbb{R}^{n+l}\to
+\mathbb{R}^{n+l}\)</span>, induces an isomorphism when restricted to
+<span class="math inline">\(L\)</span>, as <span
+class="math inline">\(\ker(P_{w_{k_1}}|_L)=\text{span}(\{w_{k_1}\})\cap
+L=0\)</span>. Moreover, <span class="math display">\[
+\text{Im}(P_{w_{k_1}})=\ker(P_{w_{k_1}})^{\perp}=\text{span}(\{w_{k_1}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1}\}).
+\]</span></p>
+<p>If <span class="math inline">\(l=1\)</span>, we’re done. If <span
+class="math inline">\(l\ge 2\)</span>, then <span
+class="math inline">\(\dim P_{w_{k_1}}(L)=n&lt;n+l-1\)</span> and so
+there exists <span class="math inline">\(k_2\neq k_1\)</span> such that
+<span class="math inline">\(w_{k_2}\notin P_{w_{k_1}}(L)\)</span>. The
+orthogonal projection of <span
+class="math inline">\(\text{Im}(P_{k_1})\)</span> along <span
+class="math inline">\(\text{span}(\{w_{k_2}\})\)</span>, denoted by
+<span class="math inline">\(P_{w_2}:\text{Im}(P_{w_1})\to
+\text{Im}(P_{w_1})\)</span>, induces an isomorphism when restricted to
+<span class="math inline">\(P_{w_{k_1}}(L)\)</span>, as <span
+class="math inline">\(\ker(P_{w_{k_2}}|_{P_{w_{k_1}}(L)})=\text{span}(\{w_{k_2}\})\cap
+P_{w_1}(L)=0\)</span>. Moreover, <span class="math display">\[
+\text{Im}(P_{w_{k_2}})=\ker(P_{w_{k_2}})^{\perp}=\text{span}(\{w_{k_2}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},v_{k_2}\}).
+\]</span> Continue this process inductively until we get <span
+class="math inline">\(P_{w_l}\)</span>. Then <span
+class="math display">\[
+P:\mathbb{R}^{n+l}\to \mathbb{R}^{n+l}\quad
+P(v):=P_{w_l}\circ\cdots\circ P_{w_2}\circ P_{w_1}(v)
+\]</span> is a well-defined orthogonal projection of <span
+class="math inline">\(\mathbb{R}^{n+l}\)</span> on <span
+class="math inline">\(\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},\cdots,v_{k_l}\})\)</span>,
+fulfilling the proof. <span
+class="math inline">\(\blacksquare\)</span></p>
+<p align="center" style="font-size:40px;">
+<strong>— No.2 —</strong>
+</p>
+<p>In early February 2023, I asked myself the following seemingly naive
+question.</p>
+<p><strong>Problem [The Gramian determines the
+<em>shape</em>]</strong></p>
+<p>Let <span class="math inline">\(\{v_1,\cdots,v_s\}\)</span> and <span
+class="math inline">\(\{w_1,\cdots,w_s\}\)</span> be two subsets of
+<span class="math inline">\(\mathbb{R}^n\)</span>. Show that there
+exists <span class="math inline">\(A\in O(n)\)</span> such that <span
+class="math inline">\(Av_i=w_i\ (1\le i\le s)\)</span> iff <span
+class="math inline">\(\langle v_{i}, v_{j}\rangle=\langle w_{i},
+w_{j}\rangle\ (1\le i,j\le s)\)</span>, i.e., the two Gramians are
+equal.</p>
+<p>(Similarly, if <span
+class="math inline">\(\{v_1,\cdots,v_s\}\)</span> and <span
+class="math inline">\(\{w_1,\cdots,w_s\}\)</span> are two subsets of
+<span class="math inline">\(\mathbb{C}^n\)</span>, then there exists
+<span class="math inline">\(A\in U(n)\)</span> such that <span
+class="math inline">\(Av_i=w_i\ (1\le i\le s)\)</span> iff <span
+class="math inline">\(\langle v_{i}, v_{j}\rangle=\langle w_{i},
+w_{j}\rangle\ (1\le i,j\le s)\)</span>, i.e., the two Gramians are
+equal.)</p>
+<p><strong>Proof [Haosen]</strong> We summarize the idea of proving
+<span class="math inline">\((\Leftarrow)\)</span> as follows. Given the
+data <span class="math inline">\(\langle v_i,v_j \rangle\ (1\le i,j\le
+s)\)</span>, we may focus on a maximal linearly independent subset of
+<span class="math inline">\(\{v_1,\cdots,v_s\}\)</span> to study the
+shape formed by these <span class="math inline">\(s\)</span> vectors in
+<span class="math inline">\(\mathbb{R}^n\)</span>. Suppose that <span
+class="math inline">\(\{v_{k_1},\cdots,v_{k_r}\}\)</span> is a maximal
+linearly independent subset of <span
+class="math inline">\(\{v_1,\cdots,v_s\}\)</span>, then <span
+class="math inline">\(\{w_{k_1},\cdots,w_{k_r}\}\)</span> is
+automatically a maximal linearly independent subset of <span
+class="math inline">\(\{w_1,\cdots,w_s\}\)</span>. Perform Gram-Schmidt
+on them simultaneously and extend the resulted orthonormal subsets to
+two orthonormal bases for <span
+class="math inline">\(\mathbb{R}^n\)</span>. The associated change of
+coordinates matrix then fulfills the proof. (The Gram-Schmidt process
+can be embodied by QR decomposition.)</p>
+<p><span class="math inline">\((\Rightarrow)\)</span>: Obvious. <span
+class="math display">\[
+\begin{align*}
+G(w_1,\cdots,w_s)&amp;=(w_{1}\ \cdots\ w_{s})^{T}(w_{1}\ \cdots\
+w_{s})\\
+&amp;=(v_{1}\ \cdots\ v_{s})^{T}A^TA(v_{1}\ \cdots\ v_{s})\\
+&amp;=(v_{1}\ \cdots\ v_{s})^{T}(v_{1}\ \cdots\
+v_{s})=G(v_1,\cdots,v_s).\end{align*}
+\]</span> <span class="math inline">\((\Leftarrow)\)</span>: Note that
+<span class="math display">\[\begin{align*}\text{rank}(v_{1}\ \cdots\
+v_{s})&amp;=\text{rank}\, G(v_1,\cdots,v_{s})\\ &amp;=\text{rank}\,
+G(w_1,\cdots,w_s)=\text{rank}(w_{1}\ \cdots\ w_{s})\end{align*}\]</span>
+Denote <span class="math inline">\(r:=\text{rank}(v_{1}\ \cdots\
+v_{s})\)</span>. Without loss of generality, assume that <span
+class="math inline">\(v_1,\cdots,v_r\)</span> are linearly independent.
+We claim that <span class="math inline">\(w_1,\cdots,w_r\)</span> are
+linearly independent as well. Indeed, <span class="math display">\[
+\begin{align*}
+\text{Null}\,(w_1\ \cdots\ w_r)&amp;=\text{Null}\,(w_1\ \cdots\
+w_r)^T(w_1\ \cdots\ w_r)\\
+&amp;=\text{Null}\,(v_1\ \cdots\ v_r)^T(v_1\ \cdots\
+v_r)=\text{Null}\,(v_1\ \cdots\ v_r)=0.
+\end{align*}
+\]</span> Therefore, there exist <span class="math inline">\(B,C\in
+M_{r\times (s-r)}(\mathbb{R})\)</span> such that <span
+class="math display">\[
+\begin{align*}
+(v_1\ \cdots\ v_s)&amp;=(v_1\ \cdots\ v_r)(I_r\ |\ B),\\
+(w_1\ \cdots\ w_s)&amp;=(w_1\ \cdots\ w_r)(I_r\ |\ C).
+\end{align*}
+\]</span> Denote <span
+class="math inline">\(G:=G(v_1,\cdots,v_r)=G(w_1,\cdots,w_r)\)</span>.
+Since <span class="math inline">\(\text{rank}(G)=\text{rank}(v_1\
+\cdots\ v_r)=r\)</span>, the matrix <span
+class="math inline">\(G\)</span> is invertible. Thus we have <span
+class="math display">\[
+\begin{pmatrix}
+I_r\\\hline B^T
+\end{pmatrix}\,G\,(I_r\ |\ B)=\begin{pmatrix}
+I_r\\\hline C^T
+\end{pmatrix}\,G\,(I_r\ |\ C)\implies GB=GC\implies B=C.
+\]</span> Now, it suffices to find some <span class="math inline">\(A\in
+O(n)\)</span> such that <span class="math display">\[
+A(v_1\ \cdots\ v_r)=(w_1\ \cdots\ w_r)
+\]</span> By QR decomposition, we have <span class="math display">\[
+(v_1\ \cdots\ v_r)=Q_1R_1,\quad (w_1\ \cdots\ w_r)=Q_2R_2
+\]</span> where <span class="math inline">\(R_i\in M_{r\times
+r}(\mathbb{R})\)</span> is an upper triangular matrix with positive
+diagonal entries and <span class="math inline">\(Q_i\in M_{n\times
+r}(\mathbb{R})\)</span> satisfies <span
+class="math inline">\(Q_i^TQ_i=I_r\)</span> (semi-orthogonal). Thus we
+have <span class="math display">\[
+(Q_1R_1)^TQ_1R_1=(Q_2R_2)^TQ_2R_2\implies R_1^TR_1=R_2^TR_2.
+\]</span> By the uniqueness of Cholesky decomposition for
+positive-definite matrices, we have <span
+class="math inline">\(R_1=R_2\)</span>. Indeed, <span
+class="math inline">\(R_1R_2^{-1}=(R_1^{T})^{-1}R_2^T\)</span> is upper
+triangular and lower triangular, and hence a diagonal matrix, denoted by
+<span class="math inline">\(D\)</span>. Thus we have <span
+class="math display">\[
+R_1=DR_2,\ R_2^T=R_1^TD\implies D=I_r\implies R_1=R_2.
+\]</span></p>
+<p>Therefore, it suffices to find some <span class="math inline">\(A\in
+O(n)\)</span> such that <span class="math display">\[
+AQ_1=Q_2.
+\]</span> Since the columns of <span class="math inline">\(Q_i\)</span>
+forms an orthonormal subset of <span
+class="math inline">\(\mathbb{R}^n\)</span> and thus extends to an
+orthonormal basis for <span class="math inline">\(\mathbb{R}^n\)</span>,
+there exists <span class="math inline">\(\widetilde{Q}_i\in
+O(n)\)</span> such that <span
+class="math inline">\(\widetilde{Q}_i=(Q_i\ |\ X_i)\)</span> for some
+<span class="math inline">\(X_i\in M_{n\times
+(n-r)}(\mathbb{R})\)</span>. Define <span
+class="math inline">\(A:=\widetilde{Q}_2\widetilde{Q}_1^{-1}\)</span>.
+Then <span class="math inline">\(A\in O(n)\)</span> and <span
+class="math inline">\(AQ_1=Q_2\)</span>, as desired. <span
+class="math inline">\(\blacksquare\)</span></p>
+<p align="center" style="font-size:40px;">
+<strong>— No.1 —</strong>
+</p>
+<p>The next was one of the problems in my entrance examination of École
+Polytechnique, in November 2021. It estimates the size of a set of unit
+vectors that are “almost orthonormal”.</p>
+<p><strong>Problem [<em>Almost</em> orthonormal]</strong></p>
+<p>Show that if <span class="math inline">\(v_1,\cdots,v_m\)</span> are
+<span class="math inline">\(m\)</span> unit vectors in <span
+class="math inline">\(\mathbb{C}^n\)</span> such that <span
+class="math inline">\(|\langle v_i,v_j \rangle|\le
+\frac{1}{2\sqrt{n}}\)</span> for any <span class="math inline">\(i\neq
+j\)</span>, then <span class="math inline">\(m&lt;2n\)</span>.</p>
+<p><strong>Proof [Haosen, under the guidance of the
+examiner]</strong></p>
+<p>Let <span class="math inline">\(G:=G(v_1,\cdots,v_m)\)</span> be the
+Gramian, i.e., <span class="math inline">\(G(i,j)=\langle v_i,v_j
+\rangle\)</span> for <span class="math inline">\(1\le i,j\le m\)</span>.
+Define <span class="math inline">\(H:=G-I_m\)</span>. Since <span
+class="math inline">\(H\)</span> is Hermitian, we have <span
+class="math display">\[
+\begin{align*}
+\text{tr}(H^2)&amp;=\text{tr}(H^*H)\\
+&amp;=\sum_{i,j=1}^{m}|H(i,j)|^2\\
+&amp;=\sum_{1\le i\neq j\le m}|\langle v_i,v_j\rangle|^2\\
+&amp;\le (m^2-m)\cdot (\tfrac{1}{2\sqrt{n}})^2=\frac{m^2-m}{4n}.
+\end{align*}
+\]</span> On the other hand, since <span
+class="math inline">\(G\)</span> is positive semi-definite, <span
+class="math inline">\(G\)</span> has <span
+class="math inline">\(r:=\text{rank}(G)=\text{rank}(v_1\ \cdots\ v_m)\le
+n\)</span> positive eigenvalues, and the other <span
+class="math inline">\(m-r\)</span> eigenvalues of <span
+class="math inline">\(G\)</span> are all zero. (In fact, we only use the
+latter.) Consequently, the eigenvalues of <span
+class="math inline">\(H\)</span> are <span
+class="math inline">\(\underbrace{\lambda_1,\cdots,\lambda_r}_{\in
+(-1,+\infty)},\underbrace{-1,\cdots,-1}_{m-r}\)</span>, and the
+eigenvalues of <span class="math inline">\(H^2\)</span> are <span
+class="math inline">\(\underbrace{\lambda_1^2,\cdots,\lambda_r^2}_{\in
+[0,+\infty)},\underbrace{1,\cdots,1}_{m-r}\)</span>. Therefore, <span
+class="math display">\[
+\text{tr}(H^2)=\sum_{i=1}^{r}\lambda_i^2+(m-r)\ge m-n.
+\]</span> Combining the two estimates, we conclude that <span
+class="math display">\[
+m-n\le \frac{m^2-m}{4n},
+\]</span> from which <span class="math inline">\(m&lt;2n\)</span>
+follows. <span class="math inline">\(\blacksquare\)</span></p>
+
+            </div>
+
+            
+    
+    
+        <ul class="post-copyright">
+            <li class="copyright-item author"><span class="copyright-item-text">Author</span>: <a href="https://haosen-zju-x.github.io/" class="p-author h-card" target="_blank" rel="noopener">Haosen</a></li>
+            
+                
+                
+                
+                
+                <li class="copyright-item link"><span class="copyright-item-text">Link</span>: <a href="/posts/linear-algebra-problem-solving/" target="_blank" rel="noopener">https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/</a></li>
+            
+            <li class="copyright-item license"><span class="copyright-item-text">License</span>: <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></li>
+            
+        </ul>
+    
+
+
+
+        </article>
+
+        
+
+        
+    <div class="updated-badge-container">
+        <span title="Updated @ 2023-10-01 01:31:54 CEST" style="cursor:help">
+
+<svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2023-10-01</text><text x="915" y="140" textLength="650" transform="scale(.1)">2023-10-01</text></g></svg>
+        </span></div>
+
+
+
+        
+
+
+        
+
+
+        
+    
+    
+
+
+
+        
+    
+        <div class="post-tags">
+            
+                
+                
+                
+                
+                    
+                    <a href="/tags/undergraduate/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>Undergraduate</a>
+                
+            
+                
+                
+                
+                
+                    
+                    <a href="/tags/linear-algebra/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>Linear Algebra</a>
+                
+            
+                
+                
+                
+                
+                    
+                    <a href="/tags/problem-solving/" rel="tag" class="post-tags-link"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon tag-icon"><path d="M0 252.118V48C0 21.49 21.49 0 48 0h204.118a48 48 0 0 1 33.941 14.059l211.882 211.882c18.745 18.745 18.745 49.137 0 67.882L293.823 497.941c-18.745 18.745-49.137 18.745-67.882 0L14.059 286.059A48 48 0 0 1 0 252.118zM112 64c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48z"/></svg>Problem Solving</a>
+                
+            
+        </div>
+    
+
+
+
+        
+
+
+        
+
+
+        
+    
+        
+        
+    
+    
+    
+    
+        <ul class="post-nav">
+            
+            
+                <li class="post-nav-next">
+                    <a href="/posts/poincare-duality/" rel="next">Poincaré Duality &gt;</a>
+                </li>
+            
+        </ul>
+    
+
+
+
+        
+
+
+    </div>
+</main>
+
+
+            
+    <div id="back-to-top" class="back-to-top">
+        <a href="#"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon arrow-up"><path d="M34.9 289.5l-22.2-22.2c-9.4-9.4-9.4-24.6 0-33.9L207 39c9.4-9.4 24.6-9.4 33.9 0l194.3 194.3c9.4 9.4 9.4 24.6 0 33.9L413 289.4c-9.5 9.5-25 9.3-34.3-.4L264 168.6V456c0 13.3-10.7 24-24 24h-32c-13.3 0-24-10.7-24-24V168.6L69.2 289.1c-9.3 9.8-24.8 10-34.3.4z"/></svg></a>
+    </div>
+
+
+            
+    <footer id="footer" class="footer">
+        <div class="footer-inner">
+            <div class="site-info">©&nbsp;1969–2023&nbsp;<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon footer-icon"><path d="M462.3 62.6C407.5 15.9 326 24.3 275.7 76.2L256 96.5l-19.7-20.3C186.1 24.3 104.5 15.9 49.7 62.6c-62.8 53.6-66.1 149.8-9.9 207.9l193.5 199.8c12.5 12.9 32.8 12.9 45.3 0l193.5-199.8c56.3-58.1 53-154.3-9.8-207.9z"/></svg>&nbsp;Haosen</div><div class="powered-by">Powered by <a href="https://github.com/gohugoio/hugo" target="_blank" rel="noopener">Hugo</a> | Theme is <a href="https://github.com/reuixiy/hugo-theme-meme" target="_blank" rel="noopener">MemE</a></div><div class="site-copyright"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en" target="_blank" rel="noopener">CC BY-NC-SA 4.0</a></div>
+
+            
+    
+        <ul class="socials"><li class="socials-item">
+                    <a href="/rss.xml" target="_blank" rel="external noopener" title="RSS"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M19.199 24C19.199 13.467 10.533 4.8 0 4.8V0c13.165 0 24 10.835 24 24h-4.801zM3.291 17.415c1.814 0 3.293 1.479 3.293 3.295 0 1.813-1.485 3.29-3.301 3.29C1.47 24 0 22.526 0 20.71s1.475-3.294 3.291-3.295zM15.909 24h-4.665c0-6.169-5.075-11.245-11.244-11.245V8.09c8.727 0 15.909 7.184 15.909 15.91z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="mailto:reuixiy@gmail.com" target="_blank" rel="external noopener" title="Email"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M464 64H48C21.49 64 0 85.49 0 112v288c0 26.51 21.49 48 48 48h416c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm0 48v40.805c-22.422 18.259-58.168 46.651-134.587 106.49-16.841 13.247-50.201 45.072-73.413 44.701-23.208.375-56.579-31.459-73.413-44.701C106.18 199.465 70.425 171.067 48 152.805V112h416zM48 400V214.398c22.914 18.251 55.409 43.862 104.938 82.646 21.857 17.205 60.134 55.186 103.062 54.955 42.717.231 80.509-37.199 103.053-54.947 49.528-38.783 82.032-64.401 104.947-82.653V400H48z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://github.com/reuixiy" target="_blank" rel="external noopener" title="GitHub"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon social-icon"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://twitter.com/reuixiy" target="_blank" rel="external noopener" title="Twitter"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon social-icon"><path d="M459.37 151.716c.325 4.548.325 9.097.325 13.645 0 138.72-105.583 298.558-298.558 298.558-59.452 0-114.68-17.219-161.137-47.106 8.447.974 16.568 1.299 25.34 1.299 49.055 0 94.213-16.568 130.274-44.832-46.132-.975-84.792-31.188-98.112-72.772 6.498.974 12.995 1.624 19.818 1.624 9.421 0 18.843-1.3 27.614-3.573-48.081-9.747-84.143-51.98-84.143-102.985v-1.299c13.969 7.797 30.214 12.67 47.431 13.319-28.264-18.843-46.781-51.005-46.781-87.391 0-19.492 5.197-37.36 14.294-52.954 51.655 63.675 129.3 105.258 216.365 109.807-1.624-7.797-2.599-15.918-2.599-24.04 0-57.828 46.782-104.934 104.934-104.934 30.213 0 57.502 12.67 76.67 33.137 23.715-4.548 46.456-13.32 66.599-25.34-7.798 24.366-24.366 44.833-46.132 57.827 21.117-2.273 41.584-8.122 60.426-16.243-14.292 20.791-32.161 39.308-52.628 54.253z"/></svg></a>
+                </li><li class="socials-item">
+                    <a href="https://t.me/yixiuer" target="_blank" rel="external noopener" title="Telegram"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512" class="icon social-icon"><path d="M248 8C111 8 0 119 0 256s111 248 248 248 248-111 248-248S385 8 248 8zm121.8 169.9l-40.7 191.8c-3 13.6-11.1 16.9-22.4 10.5l-62-45.7-29.9 28.8c-3.3 3.3-6.1 6.1-12.5 6.1l4.4-63.1 114.9-103.8c5-4.4-1.1-6.9-7.7-2.5l-142 89.4-61.2-19.1c-13.3-4.2-13.6-13.3 2.8-19.7l239.1-92.2c11.1-4 20.8 2.7 17.2 19.5z"/></svg></a>
+                </li></ul>
+    
+
+
+
+            
+        </div>
+    </footer>
+
+
+        </div>
+        
+
+        
+
+
+    <script>
+    if (typeof MathJax === 'undefined') {
+        window.MathJax = {
+            loader: {
+                load: ['[tex]/mhchem']
+            },
+            
+            tex: {
+                inlineMath: {'[+]': [['$', '$']]},
+                tags: 'ams',
+                packages: {'[+]': ['mhchem']}
+            }
+        };
+        (function() {
+            const script = document.createElement('script');
+            script.src = 'https:\/\/cdn.jsdelivr.net\/npm\/mathjax@3.1.2\/es5\/tex-mml-chtml.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        })();
+    } else {
+        MathJax.texReset();
+        MathJax.typeset();
+    }
+</script>
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/medium-zoom@latest/dist/medium-zoom.min.js"></script>
+
+<script>
+    let imgNodes = document.querySelectorAll('div.post-body img');
+    imgNodes = Array.from(imgNodes).filter(node => node.parentNode.tagName !== "A");
+
+    mediumZoom(imgNodes, {
+        background: 'hsla(var(--color-bg-h), var(--color-bg-s), var(--color-bg-l), 0.95)'
+    })
+</script>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/instant.page@5.1.0/instantpage.min.js" type="module" defer></script>
+
+
+
+
+
+
+    </body>
+</html>

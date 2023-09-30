@@ -1,13 +1,13 @@
 ---
 title: Tangent Staffs
+description: null
 date: 2023-09-24T20:33:22+02:00
 draft: false
-description: null
 slugs: tangent
-categories:
-  - Geometry
 tags:
   - Differentiable Manifolds
+categories:
+  - Geometry
 markup: pandoc
 toc: true
 tocNum: true
@@ -68,4 +68,4 @@ Since $\left.\tfrac{\partial }{\partial x^i}\right|_p \mathrm{d}x^j = \left.\tfr
 
 # Part II
 
-TODO:
+Coming soon...
