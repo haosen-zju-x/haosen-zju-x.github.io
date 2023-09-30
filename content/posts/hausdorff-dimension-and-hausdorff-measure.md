@@ -1,14 +1,14 @@
 ---
-title: Hausdorff 维数与 Hausdorff 测度
+title: Hausdorff Dimension and Hausdorff Measure
 date: 2023-09-07T16:39:58+02:00
 draft: true
 description: null
 slug: hausdorff-dimension-and-hausdorff-measure
 categories:
-    - 几何
+  - Analysis
+  - Dynamical Systems
 tags:
-    - 几何测度论
-    - 实分析
+  - Geometric Measure Theory
+  - Real Analysis
 markup: pandoc
 ---
-

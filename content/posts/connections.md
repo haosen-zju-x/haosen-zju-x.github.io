@@ -1,13 +1,12 @@
 ---
-title: 联络
+title: Connections
 date: 2023-09-07T16:18:15+02:00
 draft: true
 description: null
 slug: connections
 categories:
-    - 几何
+  - Geometry
 tags:
-    - Riemann 几何
+  - Riemannian Geometry
 markup: pandoc
 ---
-

@@ -1,13 +1,15 @@
 ---
-title: Grassmann 流形
+title: Grassmannian
 date: 2023-09-24T20:33:22+02:00
-draft: false
+draft: true
 description: null
 slugs: grassmannian
 categories:
-  - 几何
+  - Geometry
+  - Algebraic Geometry
 tags:
-  - 微分流形
+  - Differentiable Manifolds
+  - Projective Varieties
 ---
 
 ![](/DM1(1).jpg)

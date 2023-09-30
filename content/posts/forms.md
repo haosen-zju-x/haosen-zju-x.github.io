@@ -1,13 +1,12 @@
 ---
-title: 微分形式
+title: Forms
 date: 2023-09-06T09:05:43+02:00
-draft: false
+draft: true
 description: null
 slug: forms
 categories:
-    - 几何
+    - Geometry
 tags:
-    - 微分流形
+    - Differentiable Manifolds
 markup: pandoc
 ---
-

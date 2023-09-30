@@ -1,13 +1,14 @@
 ---
-title: 平均曲率流
+title: Mean Curvature Flow
 date: 2023-09-07T18:09:32+02:00
 draft: true
 description: null
 slug: mean-curvature-flow
 categories:
-    - 几何
+  - Analysis
+  - Geometry
 tags:
-    - 微分几何
+  - Differential Geometry
+  - PDE
 markup: pandoc
 ---
-

@@ -1,13 +1,13 @@
 ---
-title: Gauss-Bonnet 定理
+title: Gauss-Bonnet
 date: 2023-09-06T09:15:09+02:00
-draft: false
+draft: true
 description: null
 slug: gauss-bonnet
 categories:
-    - 几何
+    - Geometry
 tags:
-    - 微分几何
+    - Differential Geometry
 markup: pandoc
 ---
 

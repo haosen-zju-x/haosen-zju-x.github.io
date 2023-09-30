@@ -1,13 +1,13 @@
 ---
-title: 层的上同调
+title: Sheaf Cohomology
 date: 2023-09-07T18:21:07+02:00
 draft: true
 description: null
 slug: sheaf-cohomology
 categories:
-    - 代数
+    - Algebraic Geometry
 tags:
-    - 同调代数
+    - Homological Algebra
 markup: pandoc
 ---
 

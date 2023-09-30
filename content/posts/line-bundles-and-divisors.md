@@ -1,13 +1,13 @@
 ---
-title: 线丛与除子
+title: Line Bundles and Divisors
 date: 2023-09-07T17:53:18+02:00
 draft: true
 description: null
 slug: line-bundles-and-divisors
 categories:
-    - 代数几何
+    - Algebraic Geometry
 tags:
-    - Riemann 曲面
+    - Riemann Surfaces
 markup: pandoc
 ---
 

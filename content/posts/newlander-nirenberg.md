@@ -1,13 +1,13 @@
 ---
-title: Newlander-Nirenberg 定理
+title: Newlander-Nirenberg Theorem
 date: 2023-09-07T16:55:48+02:00
 draft: true
 description: null
-slug: forms
+slug: newlander-nirenberg
 categories:
-    - 几何
+  - Geometry
+  - Analysis
 tags:
-    - 复几何
+  - Complex Geometry
 markup: pandoc
 ---
-

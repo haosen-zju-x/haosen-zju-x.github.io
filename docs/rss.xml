@@ -23,27 +23,174 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Mon, 25 Sep 2023 00:46:07 &#43;0200</lastBuildDate>
+        <lastBuildDate>Sat, 30 Sep 2023 18:52:52 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://haosen-zju-x.github.io/rss.xml" />
         
         
             <item>
-                <title>Grassmann 流形</title>
-                <link>https://haosen-zju-x.github.io/posts/grassmannian/</link>
-                <guid isPermaLink="true">https://haosen-zju-x.github.io/posts/grassmannian/</guid>
+                <title>Tangent Staffs</title>
+                <link>https://haosen-zju-x.github.io/posts/tangent/</link>
+                <guid isPermaLink="true">https://haosen-zju-x.github.io/posts/tangent/</guid>
                 <pubDate>Sun, 24 Sep 2023 20:33:22 &#43;0200</pubDate>
                 
                     <author>chenhaosen@yandex.com (Haosen)</author>
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
-                    <description>&lt;p&gt;&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(1).jpg&#34; alt=&#34;&#34;&gt;
-&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(2).jpg&#34; alt=&#34;&#34;&gt;
-&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(3).jpg&#34; alt=&#34;&#34;&gt;
-&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(4).jpg&#34; alt=&#34;&#34;&gt;
-&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(5).jpg&#34; alt=&#34;&#34;&gt;
-&lt;img src=&#34;https://haosen-zju-x.github.io/DM1(6).jpg&#34; alt=&#34;&#34;&gt;&lt;/p&gt;
+                    <description>&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; be a smooth &lt;span
+class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;-manifold and &lt;span
+class=&#34;math inline&#34;&gt;\(p\in M\)&lt;/span&gt;. We will define the tangent space
+and the cotangent space of &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; at
+&lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;tangent-space-t_pm-the-geometric-approach&#34;&gt;Tangent Space &lt;span
+class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; — The Geometric Approach&lt;/h2&gt;
+&lt;p&gt;Choose a local chart &lt;span class=&#34;math inline&#34;&gt;\((U,\varphi)\)&lt;/span&gt;
+centered at &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;Set &lt;span class=&#34;math inline&#34;&gt;\(C_p:=\{\alpha\in C^{\infty}(I;M)
+\,|\, \text{$I$ is an open interval containing $0$},
+\alpha(0)=p\}\)&lt;/span&gt;. Define &lt;span
+class=&#34;math inline&#34;&gt;\(T_pM:=C_p/\sim\)&lt;/span&gt;, where &lt;span
+class=&#34;math inline&#34;&gt;\(\sim\)&lt;/span&gt; is an equivalence relation on &lt;span
+class=&#34;math inline&#34;&gt;\(C_p\)&lt;/span&gt; defined by &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\sim \beta:\iff (\varphi\circ
+\alpha)&amp;#39;(0)=(\varphi\circ \beta)&amp;#39;(0)\)&lt;/span&gt;. If &lt;span
+class=&#34;math inline&#34;&gt;\((V,\psi)\)&lt;/span&gt; is another local chart centered
+at &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;, then we have &lt;span
+class=&#34;math inline&#34;&gt;\((\psi\circ \alpha)&amp;#39;(0)=(\psi\circ
+\varphi^{-1})&amp;#39;(0) (\varphi\circ \alpha)&amp;#39;(0)\)&lt;/span&gt;. Therefore
+the definition of the equivalence relation &lt;span
+class=&#34;math inline&#34;&gt;\(\sim\)&lt;/span&gt; does not depend on the choice of the
+local chart, neither does the definition of &lt;span
+class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt;. The 1-1 correspondence &lt;span
+class=&#34;math inline&#34;&gt;\(T_pM\ni [\alpha]\mapsto (\varphi\circ
+\alpha)&amp;#39;(0)\in \mathbb{R}^m\)&lt;/span&gt; induces an &lt;span
+class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;-dimensional real vector space structure
+on &lt;span class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt;. The elements of &lt;span
+class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; are called &lt;em&gt;tangent vectors&lt;/em&gt;,
+and &lt;span class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; is called the &lt;em&gt;tangent
+space of &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; at &lt;span
+class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;&lt;/em&gt;. Denote by &lt;span
+class=&#34;math inline&#34;&gt;\(\{\left.\tfrac{\partial }{\partial x^1}\right|_p,
+\cdots, \left.\tfrac{\partial }{\partial x^m}\right|_p\}\)&lt;/span&gt; the
+base of &lt;span class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; corresponding to &lt;span
+class=&#34;math inline&#34;&gt;\(\{e_1,\cdots,e_m\}\)&lt;/span&gt; in the chosen local
+chart.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark [Tangent vectors as directional derivatives]&lt;/strong&gt;
+The following observation motivates the definition of cotangent vectors:
+we can view tangent vectors as operators taking directional derivatives
+of smooth functions. For every &lt;span class=&#34;math inline&#34;&gt;\(\gamma\in
+C_p\)&lt;/span&gt;, whenever &lt;span class=&#34;math inline&#34;&gt;\(f\)&lt;/span&gt; is a
+real-valued &lt;span class=&#34;math inline&#34;&gt;\(C^{\infty}\)&lt;/span&gt; function on
+an open neighborhood of &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;, define
+&lt;span class=&#34;math display&#34;&gt;\[\begin{equation*}
+    [\gamma]f:=D_{\gamma}(f)=\left.\dfrac{\mathrm{d}}{\mathrm{d}t}\right|_{t=0}(f\circ
+\gamma)(t).
+\end{equation*}\]&lt;/span&gt; To justify this definition we note that &lt;span
+class=&#34;math display&#34;&gt;\[\begin{equation*}
+    D_{\gamma}(f)=\nabla(f\circ \varphi^{-1})(0)\cdot (\varphi\circ
+\gamma)&amp;#39;(0),
+\end{equation*}\]&lt;/span&gt; which shows that &lt;span
+class=&#34;math inline&#34;&gt;\(D_\gamma\)&lt;/span&gt; (taking derivatives along &lt;span
+class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt;) is completely determined by the
+equivalence class of &lt;span class=&#34;math inline&#34;&gt;\(\gamma\)&lt;/span&gt;, i.e.,
+the tangent vector &lt;span class=&#34;math inline&#34;&gt;\([\gamma]\)&lt;/span&gt;. This
+identity also shows that &lt;span class=&#34;math display&#34;&gt;\[\begin{equation*}
+    \left.\dfrac{\partial }{\partial x^i}\right|_p f=\partial_i (f\circ
+\varphi^{-1})(0)
+\end{equation*}\]&lt;/span&gt; and moreover: &lt;span
+class=&#34;math inline&#34;&gt;\(([\alpha]+[\beta])f=[\alpha]f+[\beta]f,
+(\lambda[\alpha])f=\lambda([\alpha]f)\)&lt;/span&gt;. On the other hand, we
+have: &lt;span class=&#34;math inline&#34;&gt;\([\gamma](f+g)=[\gamma]f+[\gamma]g,
+[\gamma](\lambda f)=\lambda([\gamma]f)\)&lt;/span&gt;, and &lt;span
+class=&#34;math inline&#34;&gt;\([\gamma](fg)=([\gamma]f)g(p)+f(p)([\gamma]g)\)&lt;/span&gt;.
+(We intentionally omit the treatment of tangent spaces as so called
+&lt;em&gt;derivations&lt;/em&gt;.)&lt;/p&gt;
+&lt;h2 id=&#34;cotangent-space-t_pm-the-algebraic-approach&#34;&gt;Cotangent Space
+&lt;span class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; — The Algebraic
+Approach&lt;/h2&gt;
+&lt;p&gt;Set &lt;span class=&#34;math inline&#34;&gt;\(F_p:=\{(f,U) \,|\, \text{$U$ is an
+open neighborhood of $p$}, f\in
+C^{\infty}(U;\mathbb{R})\}/\sim\)&lt;/span&gt;, where the equivalence relation
+is as follows: &lt;span class=&#34;math inline&#34;&gt;\((f,U)\sim (g,V)\)&lt;/span&gt; iff
+there exists an open neighborhood &lt;span class=&#34;math inline&#34;&gt;\(W\subset
+U\cap V\)&lt;/span&gt; such that &lt;span
+class=&#34;math inline&#34;&gt;\(f|_W=g|_W\)&lt;/span&gt;. The elements of &lt;span
+class=&#34;math inline&#34;&gt;\(F_p\)&lt;/span&gt; are called &lt;em&gt;germs (of the sheaf of
+smooth functions on &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt;)&lt;/em&gt;. In the
+space of germs at &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;, define &lt;span
+class=&#34;math inline&#34;&gt;\([f,U]+[g,V]:=[f+g,U\cap V]\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\([f,U]\cdot [g,V]:=[fg,U\cap V]\)&lt;/span&gt;. Then
+&lt;span class=&#34;math inline&#34;&gt;\((F_p,+,\cdot)\)&lt;/span&gt; is a local ring whose
+unique maximal ideal is &lt;span
+class=&#34;math inline&#34;&gt;\(\mathfrak{m}_p:=\{[f]\in F_p \,|\, f(p) =
+0\}\)&lt;/span&gt; and whose residue field is &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{R}\)&lt;/span&gt;. Define the &lt;em&gt;cotangent
+space of &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; at &lt;span
+class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;&lt;/em&gt; to be &lt;span
+class=&#34;math inline&#34;&gt;\(T_p^*M:=\mathfrak{m}_p/\mathfrak{m}_p^2\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p&gt;We show that &lt;span class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; is naturally
+a real vector space of dimension &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;.
+Let &lt;span class=&#34;math inline&#34;&gt;\(x^1,\cdots,x^m\)&lt;/span&gt; be a local
+coordinate system centered at &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;.
+One can show that &lt;span class=&#34;math display&#34;&gt;\[\begin{equation*}
+    \mathfrak{m}_p=\{[f]\in F_p \,|\, \exists [f_i]\in F_p \text{ s.t. }
+f= \textstyle\sum x^if_i\}=\langle [x^1],\cdots,[x^m] \rangle.
+\end{equation*}\]&lt;/span&gt; Consider the map &lt;span
+class=&#34;math display&#34;&gt;\[\begin{equation*}
+    \theta:\mathfrak{m}_p\to \mathbb{R}^n\quad [\textstyle\sum
+x^if_i]\mapsto (f_1(p),\cdots,f_m(p)).
+\end{equation*}\]&lt;/span&gt; To verify that &lt;span
+class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is well-defined, suppose that
+&lt;span class=&#34;math inline&#34;&gt;\([\sum x^if_i]=[\sum x^ig_i]\)&lt;/span&gt;. In a
+suitable open neighborhood of &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;, we
+have &lt;span class=&#34;math inline&#34;&gt;\(f_i=g_i\)&lt;/span&gt; on the subset &lt;span
+class=&#34;math inline&#34;&gt;\((\cap_{j\neq i} \{x_j=0\})\cap \{x_i\neq
+0\}\)&lt;/span&gt;. By continuity, we get &lt;span
+class=&#34;math inline&#34;&gt;\(f_i(p)=g_i(p)\)&lt;/span&gt;, although &lt;span
+class=&#34;math inline&#34;&gt;\([f_i]\)&lt;/span&gt; may not equal to &lt;span
+class=&#34;math inline&#34;&gt;\([g_i]\)&lt;/span&gt;. Therefore &lt;span
+class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; is a well-defined map, and
+moreover is a surjective homomorphism of &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{R}\)&lt;/span&gt;-modules. Now we conclude from
+&lt;span class=&#34;math inline&#34;&gt;\(\ker(\theta)=\mathfrak{m}_p^2\)&lt;/span&gt; that
+&lt;span class=&#34;math inline&#34;&gt;\(T_p^*M=\mathfrak{m}_p/\mathfrak{m}_p^2\cong
+\mathbb{R}^m\)&lt;/span&gt; (as &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{R}\)&lt;/span&gt;-modules) and that &lt;span
+class=&#34;math inline&#34;&gt;\(T_p^*M=\text{span}\{\mathrm{d}x^1,\cdots,\mathrm{d}x^m\}\)&lt;/span&gt;,
+where &lt;span
+class=&#34;math inline&#34;&gt;\(\mathrm{d}x^i:=[[x^i]]=[x^i]+\mathfrak{m}_p^2\)&lt;/span&gt;.
+The elements of &lt;span class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; are called
+&lt;em&gt;cotangent vectors&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Remark [Duality]&lt;/strong&gt; Suppose that the local coordinate
+system is associated with the local chart used before, i.e., &lt;span
+class=&#34;math inline&#34;&gt;\(\varphi=(x^1,\cdots,x^m)\)&lt;/span&gt;, or equivalently
+&lt;span class=&#34;math inline&#34;&gt;\(x^i\circ
+\varphi^{-1}(x_1,\cdots,x_m)=x_i\)&lt;/span&gt;. For any &lt;span
+class=&#34;math inline&#34;&gt;\([f]\in \mathfrak{m}_p\)&lt;/span&gt;, write &lt;span
+class=&#34;math inline&#34;&gt;\(f=\sum x^if_i\)&lt;/span&gt;, then by linearity and
+Leibniz’s rule we have &lt;span class=&#34;math inline&#34;&gt;\(\left.\tfrac{\partial
+}{\partial x^j}\right|_p f =\sum_i [(\left.\tfrac{\partial }{\partial
+x^j}\right|_px^i)f_i(p)+x^i(p)(\left.\tfrac{\partial }{\partial
+x^j}\right|_p f_i)] =\sum_i \partial_j(x^i\circ \varphi^{-1})(0)f_i(p)
+=f_j(p)\)&lt;/span&gt;. More generally, &lt;span
+class=&#34;math display&#34;&gt;\[\begin{equation*}
+    [\gamma]f=(\varphi\circ \gamma)&amp;#39;(0)\cdot\theta([f]),\quad
+\forall [\gamma]\in T_pM.
+\end{equation*}\]&lt;/span&gt; Therefore we have a canonical pairing between
+&lt;span class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt;: &lt;span
+class=&#34;math display&#34;&gt;\[\begin{equation*}
+    [\gamma][[f]]:=[\gamma]f,\quad\forall ([\gamma],[[f]])\in T_pM\times
+T_p^*M.
+\end{equation*}\]&lt;/span&gt; Since &lt;span
+class=&#34;math inline&#34;&gt;\(\left.\tfrac{\partial }{\partial x^i}\right|_p
+\mathrm{d}x^j = \left.\tfrac{\partial }{\partial x^i}\right|_p
+x^j=\partial_i(x^j\circ \varphi^{-1})(0)=\delta_i^j\)&lt;/span&gt;, the
+canonical pairing is perfect, showing that the tangent space &lt;span
+class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; and the cotangent space &lt;span
+class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; are canonically dual to each
+other.&lt;/p&gt;
 </description>
                 
                 
@@ -56,7 +203,7 @@
                                 
                                 
                                 
-                                    <category domain="https://haosen-zju-x.github.io/categories/%E5%87%A0%E4%BD%95/">几何</category>
+                                    <category domain="https://haosen-zju-x.github.io/categories/geometry/">Geometry</category>
                                 
                             
                         
@@ -66,7 +213,7 @@
                                 
                                 
                                 
-                                    <category domain="https://haosen-zju-x.github.io/tags/%E5%BE%AE%E5%88%86%E6%B5%81%E5%BD%A2/">微分流形</category>
+                                    <category domain="https://haosen-zju-x.github.io/tags/differentiable-manifolds/">Differentiable Manifolds</category>
                                 
                             
                         
@@ -75,7 +222,7 @@
             </item>
         
             <item>
-                <title>曲率</title>
+                <title>Curvature</title>
                 <link>https://haosen-zju-x.github.io/posts/curvature/</link>
                 <guid isPermaLink="true">https://haosen-zju-x.github.io/posts/curvature/</guid>
                 <pubDate>Wed, 06 Sep 2023 19:39:42 &#43;0200</pubDate>
@@ -97,7 +244,7 @@
                                 
                                 
                                 
-                                    <category domain="https://haosen-zju-x.github.io/categories/%E5%87%A0%E4%BD%95/">几何</category>
+                                    <category domain="https://haosen-zju-x.github.io/categories/geometry/">Geometry</category>
                                 
                             
                         
@@ -107,90 +254,7 @@
                                 
                                 
                                 
-                                    <category domain="https://haosen-zju-x.github.io/tags/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95/">微分几何</category>
-                                
-                            
-                        
-                    
-                
-            </item>
-        
-            <item>
-                <title>Gauss-Bonnet 定理</title>
-                <link>https://haosen-zju-x.github.io/posts/gauss-bonnet/</link>
-                <guid isPermaLink="true">https://haosen-zju-x.github.io/posts/gauss-bonnet/</guid>
-                <pubDate>Wed, 06 Sep 2023 09:15:09 &#43;0200</pubDate>
-                
-                    <author>chenhaosen@yandex.com (Haosen)</author>
-                
-                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
-                
-                    <description>&lt;p&gt;&lt;span class=&#34;math inline&#34;&gt;\(\iint_{S} K
-\,\mathrm{d}A=2\pi\chi(S)\)&lt;/span&gt;&lt;/p&gt;
-</description>
-                
-                
-                
-                
-                
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://haosen-zju-x.github.io/categories/%E5%87%A0%E4%BD%95/">几何</category>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://haosen-zju-x.github.io/tags/%E5%BE%AE%E5%88%86%E5%87%A0%E4%BD%95/">微分几何</category>
-                                
-                            
-                        
-                    
-                
-            </item>
-        
-            <item>
-                <title>微分形式</title>
-                <link>https://haosen-zju-x.github.io/posts/forms/</link>
-                <guid isPermaLink="true">https://haosen-zju-x.github.io/posts/forms/</guid>
-                <pubDate>Wed, 06 Sep 2023 09:05:43 &#43;0200</pubDate>
-                
-                    <author>chenhaosen@yandex.com (Haosen)</author>
-                
-                <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
-                
-                    <description>
-</description>
-                
-                
-                
-                
-                
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://haosen-zju-x.github.io/categories/%E5%87%A0%E4%BD%95/">几何</category>
-                                
-                            
-                        
-                    
-                        
-                            
-                                
-                                
-                                
-                                    <category domain="https://haosen-zju-x.github.io/tags/%E5%BE%AE%E5%88%86%E6%B5%81%E5%BD%A2/">微分流形</category>
+                                    <category domain="https://haosen-zju-x.github.io/tags/differential-geometry/">Differential Geometry</category>
                                 
                             
                         

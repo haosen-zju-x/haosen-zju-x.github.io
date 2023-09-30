@@ -1,13 +1,12 @@
 ---
-title: Riemann 度量
+title: Riemannian Metrics
 date: 2023-09-07T16:26:34+02:00
 draft: true
 description: null
 slug: riemannian-metrics
 categories:
-    - 几何
+  - Geometry
 tags:
-    - Riemann 几何
+  - Riemannian Geometry
 markup: pandoc
 ---
-
