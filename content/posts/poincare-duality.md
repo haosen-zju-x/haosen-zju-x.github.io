@@ -1,6 +1,6 @@
 ---
 title: Poincaré Duality
-description: Explain the ideas behind the construction of the chain homotopy in the proof of the Poincaré lemma for compactly supported homology (cf. Bott-Tu, *Differential Forms in Algebraic Topology*).
+description: Explain the ideas behind the construction of the chain homotopy in the proof of the Poincaré lemma for compactly supported cohomology (cf. Bott-Tu, *Differential Forms in Algebraic Topology*).
 date: 2023-09-30T20:16:07.758Z
 draft: false
 slugs: poincare-duality

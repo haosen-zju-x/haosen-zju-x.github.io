@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-10-01T01:35:40&#43;02:00</updated>
+    <updated>2023-10-01T01:41:11&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -370,14 +370,14 @@ follows. &lt;span class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&l
             <title type="text">Poincaré Duality</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/poincare-duality/" />
             <id>https://haosen-zju-x.github.io/posts/poincare-duality/</id>
-            <updated>2023-10-01T01:34:14&#43;02:00</updated>
+            <updated>2023-10-01T01:38:05&#43;02:00</updated>
             <published>2023-09-30T20:16:07&#43;00:00</published>
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
                     <email>chenhaosen@yandex.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Explain the ideas behind the construction of the chain homotopy in the proof of the Poincaré lemma for compactly supported homology (cf. Bott-Tu, *Differential Forms in Algebraic Topology*).</summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Explain the ideas behind the construction of the chain homotopy in the proof of the Poincaré lemma for compactly supported cohomology (cf. Bott-Tu, *Differential Forms in Algebraic Topology*).</summary>
             
                 <content type="html">&lt;!-- &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://tikzjax.com/v1/fonts.css&#34;&gt;
 &lt;script src=&#34;https://tikzjax.com/v1/tikzjax.js&#34;&gt;&lt;/script&gt;
@@ -884,19 +884,19 @@ other.&lt;/p&gt;
         </entry>
     
         <entry>
-            <title type="text">Curvature</title>
+            <title type="text">Riemann Curvature Tensor</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/curvature/" />
             <id>https://haosen-zju-x.github.io/posts/curvature/</id>
-            <updated>2023-09-30T19:03:37&#43;02:00</updated>
+            <updated>2023-10-01T01:41:02&#43;02:00</updated>
             <published>2023-09-06T19:39:42&#43;02:00</published>
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
                     <email>chenhaosen@yandex.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html"></summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Coming soon…</summary>
             
-                <content type="html">
+                <content type="html">&lt;p&gt;Coming soon…&lt;/p&gt;
 </content>
             
             
