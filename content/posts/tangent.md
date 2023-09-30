@@ -13,6 +13,8 @@ toc: true
 tocNum: true
 ---
 
+# Part I
+
 Let $M$ be a smooth $m$-manifold and $p\in M$. We will define the tangent space and the cotangent space of $M$ at $p$.
 
 ## Tangent Space $T_pM$ --- The Geometric Approach
@@ -63,3 +65,7 @@ Therefore we have a canonical pairing between $T_pM$ and $T_p^*M$:
 	[\gamma][[f]]:=[\gamma]f,\quad\forall ([\gamma],[[f]])\in T_pM\times T_p^*M.
 \end{equation*}
 Since $\left.\tfrac{\partial }{\partial x^i}\right|_p \mathrm{d}x^j = \left.\tfrac{\partial }{\partial x^i}\right|_p x^j=\partial_i(x^j\circ \varphi^{-1})(0)=\delta_i^j$, the canonical pairing is perfect, showing that the tangent space $T_pM$ and the cotangent space $T_p^*M$ are canonically dual to each other.
+
+# Part II
+
+TODO:

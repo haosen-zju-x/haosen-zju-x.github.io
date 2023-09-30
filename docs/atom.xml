@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-09-30T18:52:52&#43;02:00</updated>
+    <updated>2023-09-30T21:09:29&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -20,18 +20,19 @@
             <title type="text">Tangent Staffs</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/tangent/" />
             <id>https://haosen-zju-x.github.io/posts/tangent/</id>
-            <updated>2023-09-30T18:51:04&#43;02:00</updated>
+            <updated>2023-09-30T19:34:18&#43;02:00</updated>
             <published>2023-09-24T20:33:22&#43;02:00</published>
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
                     <email>chenhaosen@yandex.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Let \(M\) be a smooth \(m\)-manifold and \(p\in M\). We will define the tangent space and the cotangent space of \(M\) at \(p\).
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Part I Let \(M\) be a smooth \(m\)-manifold and \(p\in M\). We will define the tangent space and the cotangent space of \(M\) at \(p\).
 Tangent Space \(T_pM\) — The Geometric Approach Choose a local chart \((U,\varphi)\) centered at \(p\).
 Set \(C_p:=\{\alpha\in C^{\infty}(I;M) \,|\, \text{$I$ is an open interval containing $0$}, \alpha(0)=p\}\).</summary>
             
-                <content type="html">&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; be a smooth &lt;span
+                <content type="html">&lt;h1 id=&#34;part-i&#34;&gt;Part I&lt;/h1&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; be a smooth &lt;span
 class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;-manifold and &lt;span
 class=&#34;math inline&#34;&gt;\(p\in M\)&lt;/span&gt;. We will define the tangent space
 and the cotangent space of &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; at
@@ -184,6 +185,8 @@ canonical pairing is perfect, showing that the tangent space &lt;span
 class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; and the cotangent space &lt;span
 class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; are canonically dual to each
 other.&lt;/p&gt;
+&lt;h1 id=&#34;part-ii&#34;&gt;Part II&lt;/h1&gt;
+&lt;p&gt;TODO:&lt;/p&gt;
 </content>
             
             
@@ -218,7 +221,7 @@ other.&lt;/p&gt;
             <title type="text">Curvature</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/curvature/" />
             <id>https://haosen-zju-x.github.io/posts/curvature/</id>
-            <updated>2023-09-30T18:31:45&#43;02:00</updated>
+            <updated>2023-09-30T19:03:37&#43;02:00</updated>
             <published>2023-09-06T19:39:42&#43;02:00</published>
             <author>
                     <name>Haosen</name>
@@ -251,6 +254,12 @@ other.&lt;/p&gt;
                             
                             
                                 <category scheme="https://haosen-zju-x.github.io/tags/differential-geometry/" term="Differential Geometry" label="Differential Geometry" />
+                            
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/tags/riemannian-geometry/" term="Riemannian Geometry" label="Riemannian Geometry" />
                             
                         
                     

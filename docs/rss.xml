@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sat, 30 Sep 2023 18:52:52 &#43;0200</lastBuildDate>
+        <lastBuildDate>Sat, 30 Sep 2023 21:09:29 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://haosen-zju-x.github.io/rss.xml" />
         
@@ -38,7 +38,8 @@
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
-                    <description>&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; be a smooth &lt;span
+                    <description>&lt;h1 id=&#34;part-i&#34;&gt;Part I&lt;/h1&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; be a smooth &lt;span
 class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;-manifold and &lt;span
 class=&#34;math inline&#34;&gt;\(p\in M\)&lt;/span&gt;. We will define the tangent space
 and the cotangent space of &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; at
@@ -191,6 +192,8 @@ canonical pairing is perfect, showing that the tangent space &lt;span
 class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; and the cotangent space &lt;span
 class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; are canonically dual to each
 other.&lt;/p&gt;
+&lt;h1 id=&#34;part-ii&#34;&gt;Part II&lt;/h1&gt;
+&lt;p&gt;TODO:&lt;/p&gt;
 </description>
                 
                 
@@ -255,6 +258,12 @@ other.&lt;/p&gt;
                                 
                                 
                                     <category domain="https://haosen-zju-x.github.io/tags/differential-geometry/">Differential Geometry</category>
+                                
+                            
+                                
+                                
+                                
+                                    <category domain="https://haosen-zju-x.github.io/tags/riemannian-geometry/">Riemannian Geometry</category>
                                 
                             
                         

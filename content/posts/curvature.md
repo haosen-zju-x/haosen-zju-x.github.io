@@ -9,6 +9,5 @@ categories:
 tags:
   - Differential Geometry
   - Riemannian Geometry
-  - General Relativity
 markup: pandoc
 ---

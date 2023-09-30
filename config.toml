@@ -104,7 +104,7 @@ uglyURLs = false
     # Motto or introduction
     motto = "Riemann vous retrouve pour une fête"
     # Avatar
-    avatarURL = "/assets/Helsinki_202308_Haosen.jpg"
+    avatarURL = "/assets/Helsinki_20230817_Haosen.jpg"
     # Personal website, default: baseURL
     website = "https://haosen-zju-x.github.io/"
 
