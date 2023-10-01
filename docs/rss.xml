@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sun, 01 Oct 2023 01:41:11 &#43;0200</lastBuildDate>
+        <lastBuildDate>Sun, 01 Oct 2023 10:17:50 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://haosen-zju-x.github.io/rss.xml" />
         
@@ -44,22 +44,21 @@
 &lt;/p&gt;
 &lt;p&gt;Shihe asked me the following problem on October 23, 2022. After a
 while, we exchanged our proofs, which I felt faithfully reflected the
-differences in the way we do math.&lt;/p&gt;
+differences in the ways we do math.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Problem [Existence of a &lt;em&gt;suitable&lt;/em&gt; orthogonal
 projection]&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(L\subset \mathbb{R}^{n+l}\)&lt;/span&gt;
-(&lt;span class=&#34;math inline&#34;&gt;\(n,l\ge 1\)&lt;/span&gt;) be an &lt;span
-class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;-dimensional subspace and &lt;span
-class=&#34;math inline&#34;&gt;\(\{v_1,\cdots,v_{n+l}\}\)&lt;/span&gt; a basis of &lt;span
-class=&#34;math inline&#34;&gt;\(\mathbb{R}^{n+l}\)&lt;/span&gt;. Show that there exist
-&lt;span class=&#34;math inline&#34;&gt;\(1\le j_1&amp;lt;\cdots&amp;lt;j_n\le n+l\)&lt;/span&gt;
-such that the restriction &lt;span
-class=&#34;math inline&#34;&gt;\(P_{j_1,\cdots,j_n}|_L:L\to
-\mathbb{R}^{n+l}\)&lt;/span&gt; is injective (and hence induces an isomphism),
-where &lt;span class=&#34;math inline&#34;&gt;\(P_{j_1,\cdots,j_n}\)&lt;/span&gt; denotes
-the orthogonal projection of &lt;span
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt; be an &lt;span
+class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;-dimensional subspace of &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{R}^{n+l}\)&lt;/span&gt; (&lt;span
+class=&#34;math inline&#34;&gt;\(n,l\ge 1\)&lt;/span&gt;) and &lt;span
+class=&#34;math inline&#34;&gt;\(\{v_1,\cdots,v_{n+l}\}\)&lt;/span&gt; an arbitrary basis
+of &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{R}^{n+l}\)&lt;/span&gt;. Show that
+there exist &lt;span class=&#34;math inline&#34;&gt;\(1\le j_1&amp;lt;\cdots&amp;lt;j_n\le
+n+l\)&lt;/span&gt; such that the orthogonal projection &lt;span
+class=&#34;math inline&#34;&gt;\(P_{j_1,\cdots,j_n}\)&lt;/span&gt; of &lt;span
 class=&#34;math inline&#34;&gt;\(\mathbb{R}^{n+l}\)&lt;/span&gt; onto &lt;span
-class=&#34;math inline&#34;&gt;\(\text{span}\{v_{j_1},\cdots,v_{j_n}\}\)&lt;/span&gt;.&lt;/p&gt;
+class=&#34;math inline&#34;&gt;\(\text{span}\{v_{j_1},\cdots,v_{j_n}\}\)&lt;/span&gt; is
+injective on &lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;.&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Proof I [Haosen]&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;The orthogonal complement of the kernel of &lt;span
 class=&#34;math inline&#34;&gt;\(P_{j_1,\cdots,j_n}|_L\)&lt;/span&gt; is &lt;span
@@ -88,11 +87,11 @@ GL_{l}(\mathbb{R})\)&lt;/span&gt; such that &lt;span
 class=&#34;math inline&#34;&gt;\(AQ\)&lt;/span&gt; has exactly &lt;span
 class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt; zero rows, with the other &lt;span
 class=&#34;math inline&#34;&gt;\(l\)&lt;/span&gt; nonzero rows being linearly
-independent. We claim that the labels of the zero rows, denoted by &lt;span
-class=&#34;math inline&#34;&gt;\(1\le j_1&amp;lt;\cdots&amp;lt;j_n\le n+l\)&lt;/span&gt;, will
-fulfill the proof. For clarity, denote by &lt;span
-class=&#34;math inline&#34;&gt;\(1\le i_1&amp;lt;\cdots&amp;lt;i_l\le n+l\)&lt;/span&gt; the
-labels of the nonzero rows.&lt;/p&gt;
+independent. We claim that the labels of the zero rows, denoted &lt;span
+class=&#34;math inline&#34;&gt;\(1\le j_1&amp;lt;\cdots&amp;lt;j_n\le n+l\)&lt;/span&gt;, satisfy
+the property in the statement of the problem. For clarity, denote by
+&lt;span class=&#34;math inline&#34;&gt;\(1\le i_1&amp;lt;\cdots&amp;lt;i_l\le n+l\)&lt;/span&gt;
+the labels of the nonzero rows.&lt;/p&gt;
 &lt;p&gt;In fact, &lt;span
 class=&#34;math inline&#34;&gt;\(L^{\perp}=\text{span}(\{w_1,\cdots,w_l\})=\)&lt;/span&gt;
 the column space of the matrix &lt;span class=&#34;math inline&#34;&gt;\((w_1\ \cdots\
@@ -101,10 +100,11 @@ class=&#34;math inline&#34;&gt;\((w_1\ \cdots\ w_l)Q=\)&lt;/span&gt; the column 
 the matrix &lt;span class=&#34;math inline&#34;&gt;\((v_1\ \cdots\
 v_{n+l})AQ=\text{span}(\{v_{i_1},\cdots,v_{i_l}\})\)&lt;/span&gt;. Therefore,
 &lt;span
-class=&#34;math inline&#34;&gt;\(\text{span}(\{v_{j_1},\cdots,v_{j_n}\})+L^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\})=\mathbb{R}^{n+l}\)&lt;/span&gt;.
-&lt;span class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&lt;/p&gt;
+class=&#34;math inline&#34;&gt;\(\text{span}(\{v_{j_1},\cdots,v_{j_n}\})+L^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\})=\mathbb{R}^{n+l}\)&lt;/span&gt;,
+showing that &lt;span class=&#34;math inline&#34;&gt;\(P_{j_1,\cdots,j_n}|_L\)&lt;/span&gt;
+is injective. &lt;span class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Proof II [Shihe]&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;Shehe’s proof is more geometrically intuitive. For each &lt;span
+&lt;p&gt;Shihe’s proof is more geometrically intuitive. For each &lt;span
 class=&#34;math inline&#34;&gt;\(1\le k\le n+l\)&lt;/span&gt;, take a nonzero vector
 &lt;span class=&#34;math inline&#34;&gt;\(w_k\in \mathbb{R}^{n+l}\)&lt;/span&gt; such that
 &lt;span
@@ -160,8 +160,8 @@ P:\mathbb{R}^{n+l}\to \mathbb{R}^{n+l}\quad
 P(v):=P_{w_l}\circ\cdots\circ P_{w_2}\circ P_{w_1}(v)
 \]&lt;/span&gt; is a well-defined orthogonal projection of &lt;span
 class=&#34;math inline&#34;&gt;\(\mathbb{R}^{n+l}\)&lt;/span&gt; on &lt;span
-class=&#34;math inline&#34;&gt;\(\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},\cdots,v_{k_l}\})\)&lt;/span&gt;,
-fulfilling the proof. &lt;span
+class=&#34;math inline&#34;&gt;\(\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},\cdots,v_{k_l}\})\)&lt;/span&gt;.
+This completes the proof. &lt;span
 class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&#34;center&#34; style=&#34;font-size:40px;&#34;&gt;
 &lt;strong&gt;— No.2 —&lt;/strong&gt;

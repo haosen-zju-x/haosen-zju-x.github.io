@@ -19,11 +19,11 @@ What's next?
 **--- No.3 ---**
 </p>
 
-Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the way we do math.
+Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.
 
 **Problem [Existence of a *suitable* orthogonal projection]**
 
-Let $L\subset \mathbb{R}^{n+l}$ ($n,l\ge 1$) be an $n$-dimensional subspace and $\{v_1,\cdots,v_{n+l}\}$ a basis of $\mathbb{R}^{n+l}$. Show that there exist $1\le j_1<\cdots<j_n\le n+l$ such that the restriction $P_{j_1,\cdots,j_n}|_L:L\to \mathbb{R}^{n+l}$ is injective (and hence induces an isomphism), where $P_{j_1,\cdots,j_n}$ denotes the orthogonal projection of $\mathbb{R}^{n+l}$ onto $\text{span}\{v_{j_1},\cdots,v_{j_n}\}$.
+Let $L$ be an $n$-dimensional subspace of $\mathbb{R}^{n+l}$ ($n,l\ge 1$) and $\{v_1,\cdots,v_{n+l}\}$ an arbitrary basis of $\mathbb{R}^{n+l}$. Show that there exist $1\le j_1<\cdots<j_n\le n+l$ such that the orthogonal projection $P_{j_1,\cdots,j_n}$ of $\mathbb{R}^{n+l}$ onto $\text{span}\{v_{j_1},\cdots,v_{j_n}\}$ is injective on $L$.
 
 **Proof I [Haosen]**
 
@@ -40,13 +40,13 @@ Let $\{w_1,\cdots,w_l\}$ be a basis of the $l$-dimensional subspace $L^{\perp}$.
 $$
 (w_1\ \cdots\ w_l)=(v_1\ \cdots\ v_{n+l})A.
 $$
-Now we note that there exists a sequence of elementary column operations that transforms $A$ into a matrix with exactly $n$ zero rows, in other words, there exists $Q\in GL_{l}(\mathbb{R})$ such that $AQ$ has exactly $n$ zero rows, with the other $l$ nonzero rows being linearly independent. We claim that the labels of the zero rows, denoted by $1\le j_1<\cdots<j_n\le n+l$, will fulfill the proof. For clarity, denote by $1\le i_1<\cdots<i_l\le n+l$ the labels of the nonzero rows.
+Now we note that there exists a sequence of elementary column operations that transforms $A$ into a matrix with exactly $n$ zero rows, in other words, there exists $Q\in GL_{l}(\mathbb{R})$ such that $AQ$ has exactly $n$ zero rows, with the other $l$ nonzero rows being linearly independent. We claim that the labels of the zero rows, denoted $1\le j_1<\cdots<j_n\le n+l$, satisfy the property in the statement of the problem. For clarity, denote by $1\le i_1<\cdots<i_l\le n+l$ the labels of the nonzero rows.
 
-In fact, $L^{\perp}=\text{span}(\{w_1,\cdots,w_l\})=$ the column space of the matrix $(w_1\ \cdots\ w_l)=$ the column space of the matrix $(w_1\ \cdots\ w_l)Q=$ the column space of the matrix $(v_1\ \cdots\ v_{n+l})AQ=\text{span}(\{v_{i_1},\cdots,v_{i_l}\})$. Therefore, $\text{span}(\{v_{j_1},\cdots,v_{j_n}\})+L^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\})=\mathbb{R}^{n+l}$. $\blacksquare$
+In fact, $L^{\perp}=\text{span}(\{w_1,\cdots,w_l\})=$ the column space of the matrix $(w_1\ \cdots\ w_l)=$ the column space of the matrix $(w_1\ \cdots\ w_l)Q=$ the column space of the matrix $(v_1\ \cdots\ v_{n+l})AQ=\text{span}(\{v_{i_1},\cdots,v_{i_l}\})$. Therefore, $\text{span}(\{v_{j_1},\cdots,v_{j_n}\})+L^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\})=\mathbb{R}^{n+l}$, showing that $P_{j_1,\cdots,j_n}|_L$ is injective. $\blacksquare$
 
 **Proof II [Shihe]**
 
-Shehe's proof is more geometrically intuitive. For each $1\le k\le n+l$, take a nonzero vector $w_k\in \mathbb{R}^{n+l}$ such that $\text{span}(\{w_k\})=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_k\})^{\perp}$. We claim that $w_1,\cdots,w_{n+l}$ are linearly independent.
+Shihe's proof is more geometrically intuitive. For each $1\le k\le n+l$, take a nonzero vector $w_k\in \mathbb{R}^{n+l}$ such that $\text{span}(\{w_k\})=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_k\})^{\perp}$. We claim that $w_1,\cdots,w_{n+l}$ are linearly independent.
 
 In fact, if $\sum_{k=1}^{n+l}\lambda_k w_k=0$ ($\lambda_1,\cdots,\lambda_{n+l}\in \mathbb{R}$), then by applying $\langle \cdot,v_k\rangle$ to both sides we get $\lambda_k\langle w_k,v_k\rangle=0$ ($k=1,\cdots,n+l$). Clearly $\langle w_k,v_k\rangle\neq 0$, because otherwise $w_k$ is orthogonal to every vector in the basis $\{v_1,\cdots,v_{n+l}\}$ and hence must be zero, contradiction. Thus $\lambda_k=0\ (k=1,\cdots,n+l)$, showing that $w_1,\cdots,w_{n+l}$ are linearly independent.
 
@@ -63,7 +63,7 @@ Continue this process inductively until we get $P_{w_l}$. Then
 $$
 P:\mathbb{R}^{n+l}\to \mathbb{R}^{n+l}\quad P(v):=P_{w_l}\circ\cdots\circ P_{w_2}\circ P_{w_1}(v)
 $$
-is a well-defined orthogonal projection of $\mathbb{R}^{n+l}$ on $\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},\cdots,v_{k_l}\})$, fulfilling the proof. $\blacksquare$
+is a well-defined orthogonal projection of $\mathbb{R}^{n+l}$ on $\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},\cdots,v_{k_l}\})$. This completes the proof. $\blacksquare$
 
 
 
