@@ -9,23 +9,28 @@ draft: false
 # Readings Projects (Books)
 
 - Ahlfors, *Introduction to Quasiconformal Mappings*
+- **Colding-Minicozzi, *A Course in Minimal Surfaces***
+  - **Chapter 5 (缓慢阅读中)**
 - Demailly, *Complex Analytic and Differential Geometry*
 - **do Carmo, *Riemannian Geometry* (快速推进中)**
 - Folland, *Real Analysis: Modern Techniques and Their Applications*
 - Fritzsche-Grauert, *From Holomorphic Functions to Complex Manifolds*
 - **Griffiths-Harris, *Principle of Algebraic Geometry***
-  - **Chapter 0. Foundational Material (缓慢阅读中)**
+  - **Chapter 0 (缓慢阅读中)**
 - Hartshorne, *Algebraic Geometry*
 - **Hörmander, *An Introduction to Complex Analysis in Several Variables***
-  - **Chapter 2. Elementary Properties of Functions of Several Complex Variables (快速推进中)**
+  - **Chapter 2 (快速推进中)**
 - Lyubich, *Conformal Geometry and Dynamics of Quadratic Polynomials*
 - Matsumura, *Commutative Algebra*
 - McMullen, *Ergodic Theory, Geometry and Dynamics*
 - Milnor, *Dynamics in One Complex Variable*
 - Miranda, *Algebraic Curves and Riemann Surfaces*
+- **Prasolov, *Elements of Combinatorial and Differential Topology***
+  - **Chapter 4 & Chapter 5 (快速推进中)**
+- Prasolov, *Elements of Homology Theory*
 - Vakil, *The Rising Sea: Foundations of Algebraic Geometry*
 - **Voisin, *Théorie de Hodge et Géométrie Algébrique Complexe***
-  - **Partie I. Préliminaires (缓慢阅读中)**
+  - **Partie I (缓慢阅读中)**
 - Walters, *An Introduction to Ergodic Theory*
 - Weibel, *An Introduction to Homological Algebra*
 

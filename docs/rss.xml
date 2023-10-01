@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Sun, 01 Oct 2023 10:17:50 &#43;0200</lastBuildDate>
+        <lastBuildDate>Sun, 01 Oct 2023 14:19:59 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://haosen-zju-x.github.io/rss.xml" />
         
@@ -137,7 +137,7 @@ class=&#34;math inline&#34;&gt;\(\text{span}(\{w_{k_1}\})\)&lt;/span&gt;, denote
 &lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt;, as &lt;span
 class=&#34;math inline&#34;&gt;\(\ker(P_{w_{k_1}}|_L)=\text{span}(\{w_{k_1}\})\cap
 L=0\)&lt;/span&gt;. Moreover, &lt;span class=&#34;math display&#34;&gt;\[
-\text{Im}(P_{w_{k_1}})=\ker(P_{w_{k_1}})^{\perp}=\text{span}(\{w_{k_1}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1}\}).
+\text{im}(P_{w_{k_1}})=\ker(P_{w_{k_1}})^{\perp}=\text{span}(\{w_{k_1}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1}\}).
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;If &lt;span class=&#34;math inline&#34;&gt;\(l=1\)&lt;/span&gt;, we’re done. If &lt;span
 class=&#34;math inline&#34;&gt;\(l\ge 2\)&lt;/span&gt;, then &lt;span
@@ -145,14 +145,14 @@ class=&#34;math inline&#34;&gt;\(\dim P_{w_{k_1}}(L)=n&amp;lt;n+l-1\)&lt;/span&g
 there exists &lt;span class=&#34;math inline&#34;&gt;\(k_2\neq k_1\)&lt;/span&gt; such that
 &lt;span class=&#34;math inline&#34;&gt;\(w_{k_2}\notin P_{w_{k_1}}(L)\)&lt;/span&gt;. The
 orthogonal projection of &lt;span
-class=&#34;math inline&#34;&gt;\(\text{Im}(P_{k_1})\)&lt;/span&gt; along &lt;span
+class=&#34;math inline&#34;&gt;\(\text{im}(P_{k_1})\)&lt;/span&gt; along &lt;span
 class=&#34;math inline&#34;&gt;\(\text{span}(\{w_{k_2}\})\)&lt;/span&gt;, denoted by
-&lt;span class=&#34;math inline&#34;&gt;\(P_{w_2}:\text{Im}(P_{w_1})\to
-\text{Im}(P_{w_1})\)&lt;/span&gt;, induces an isomorphism when restricted to
+&lt;span class=&#34;math inline&#34;&gt;\(P_{w_2}:\text{im}(P_{w_1})\to
+\text{im}(P_{w_1})\)&lt;/span&gt;, induces an isomorphism when restricted to
 &lt;span class=&#34;math inline&#34;&gt;\(P_{w_{k_1}}(L)\)&lt;/span&gt;, as &lt;span
 class=&#34;math inline&#34;&gt;\(\ker(P_{w_{k_2}}|_{P_{w_{k_1}}(L)})=\text{span}(\{w_{k_2}\})\cap
 P_{w_1}(L)=0\)&lt;/span&gt;. Moreover, &lt;span class=&#34;math display&#34;&gt;\[
-\text{Im}(P_{w_{k_2}})=\ker(P_{w_{k_2}})^{\perp}=\text{span}(\{w_{k_2}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},v_{k_2}\}).
+\text{im}(P_{w_{k_2}})=\ker(P_{w_{k_2}})^{\perp}=\text{span}(\{w_{k_2}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},v_{k_2}\}).
 \]&lt;/span&gt; Continue this process inductively until we get &lt;span
 class=&#34;math inline&#34;&gt;\(P_{w_l}\)&lt;/span&gt;. Then &lt;span
 class=&#34;math display&#34;&gt;\[

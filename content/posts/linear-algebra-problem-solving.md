@@ -52,12 +52,12 @@ In fact, if $\sum_{k=1}^{n+l}\lambda_k w_k=0$ ($\lambda_1,\cdots,\lambda_{n+l}\i
 
 Since $\dim L=n<n+l$, there exists some $w_{k_1}$ that is not in $L$. The orthogonal projection of $\mathbb{R}^{n+l}$ along $\text{span}(\{w_{k_1}\})$, denoted by $P_{w_{k_1}}:\mathbb{R}^{n+l}\to \mathbb{R}^{n+l}$, induces an isomorphism when restricted to $L$, as $\ker(P_{w_{k_1}}|_L)=\text{span}(\{w_{k_1}\})\cap L=0$. Moreover,
 $$
-\text{Im}(P_{w_{k_1}})=\ker(P_{w_{k_1}})^{\perp}=\text{span}(\{w_{k_1}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1}\}).
+\text{im}(P_{w_{k_1}})=\ker(P_{w_{k_1}})^{\perp}=\text{span}(\{w_{k_1}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1}\}).
 $$
 
-If $l=1$, we're done. If $l\ge 2$, then $\dim P_{w_{k_1}}(L)=n<n+l-1$ and so there exists $k_2\neq k_1$ such that $w_{k_2}\notin P_{w_{k_1}}(L)$. The orthogonal projection of $\text{Im}(P_{k_1})$ along $\text{span}(\{w_{k_2}\})$, denoted by $P_{w_2}:\text{Im}(P_{w_1})\to \text{Im}(P_{w_1})$, induces an isomorphism when restricted to $P_{w_{k_1}}(L)$, as $\ker(P_{w_{k_2}}|_{P_{w_{k_1}}(L)})=\text{span}(\{w_{k_2}\})\cap P_{w_1}(L)=0$. Moreover,
+If $l=1$, we're done. If $l\ge 2$, then $\dim P_{w_{k_1}}(L)=n<n+l-1$ and so there exists $k_2\neq k_1$ such that $w_{k_2}\notin P_{w_{k_1}}(L)$. The orthogonal projection of $\text{im}(P_{k_1})$ along $\text{span}(\{w_{k_2}\})$, denoted by $P_{w_2}:\text{im}(P_{w_1})\to \text{im}(P_{w_1})$, induces an isomorphism when restricted to $P_{w_{k_1}}(L)$, as $\ker(P_{w_{k_2}}|_{P_{w_{k_1}}(L)})=\text{span}(\{w_{k_2}\})\cap P_{w_1}(L)=0$. Moreover,
 $$
-\text{Im}(P_{w_{k_2}})=\ker(P_{w_{k_2}})^{\perp}=\text{span}(\{w_{k_2}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},v_{k_2}\}).
+\text{im}(P_{w_{k_2}})=\ker(P_{w_{k_2}})^{\perp}=\text{span}(\{w_{k_2}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},v_{k_2}\}).
 $$
 Continue this process inductively until we get $P_{w_l}$. Then
 $$

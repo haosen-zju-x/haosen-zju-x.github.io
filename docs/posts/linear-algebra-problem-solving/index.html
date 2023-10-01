@@ -59,7 +59,7 @@ Problem [Existence of a suitable orthogonal projection]" />
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2023-09-30T22:04:40+00:00",
-        "dateModified": "2023-10-01T10:16:34+02:00",
+        "dateModified": "2023-10-01T10:30:25+02:00",
         "url": "https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/",
         "headline": "Problems in Linear Algebra",
         "description": "What’s next?\n— No.3 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.\nProblem [Existence of a suitable orthogonal projection]",
@@ -104,7 +104,7 @@ Problem [Existence of a suitable orthogonal projection]" />
 <meta property="og:locale" content="en" /><meta property="og:image" content="https://haosen-zju-x.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2023-09-30T22:04:40&#43;00:00" />
-    <meta property="article:modified_time" content="2023-10-01T10:16:34&#43;02:00" />
+    <meta property="article:modified_time" content="2023-10-01T10:30:25&#43;02:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -239,7 +239,7 @@ Problem [Existence of a suitable orthogonal projection]" />
     
     
         
-        <time datetime="2023-10-01T10:16:34&#43;02:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2023.10.1</time>
+        <time datetime="2023-10-01T10:30:25&#43;02:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2023.10.1</time>
     
     
     
@@ -365,7 +365,7 @@ class="math inline">\(\text{span}(\{w_{k_1}\})\)</span>, denoted by
 <span class="math inline">\(L\)</span>, as <span
 class="math inline">\(\ker(P_{w_{k_1}}|_L)=\text{span}(\{w_{k_1}\})\cap
 L=0\)</span>. Moreover, <span class="math display">\[
-\text{Im}(P_{w_{k_1}})=\ker(P_{w_{k_1}})^{\perp}=\text{span}(\{w_{k_1}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1}\}).
+\text{im}(P_{w_{k_1}})=\ker(P_{w_{k_1}})^{\perp}=\text{span}(\{w_{k_1}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1}\}).
 \]</span></p>
 <p>If <span class="math inline">\(l=1\)</span>, we’re done. If <span
 class="math inline">\(l\ge 2\)</span>, then <span
@@ -373,14 +373,14 @@ class="math inline">\(\dim P_{w_{k_1}}(L)=n&lt;n+l-1\)</span> and so
 there exists <span class="math inline">\(k_2\neq k_1\)</span> such that
 <span class="math inline">\(w_{k_2}\notin P_{w_{k_1}}(L)\)</span>. The
 orthogonal projection of <span
-class="math inline">\(\text{Im}(P_{k_1})\)</span> along <span
+class="math inline">\(\text{im}(P_{k_1})\)</span> along <span
 class="math inline">\(\text{span}(\{w_{k_2}\})\)</span>, denoted by
-<span class="math inline">\(P_{w_2}:\text{Im}(P_{w_1})\to
-\text{Im}(P_{w_1})\)</span>, induces an isomorphism when restricted to
+<span class="math inline">\(P_{w_2}:\text{im}(P_{w_1})\to
+\text{im}(P_{w_1})\)</span>, induces an isomorphism when restricted to
 <span class="math inline">\(P_{w_{k_1}}(L)\)</span>, as <span
 class="math inline">\(\ker(P_{w_{k_2}}|_{P_{w_{k_1}}(L)})=\text{span}(\{w_{k_2}\})\cap
 P_{w_1}(L)=0\)</span>. Moreover, <span class="math display">\[
-\text{Im}(P_{w_{k_2}})=\ker(P_{w_{k_2}})^{\perp}=\text{span}(\{w_{k_2}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},v_{k_2}\}).
+\text{im}(P_{w_{k_2}})=\ker(P_{w_{k_2}})^{\perp}=\text{span}(\{w_{k_2}\})^{\perp}=\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},v_{k_2}\}).
 \]</span> Continue this process inductively until we get <span
 class="math inline">\(P_{w_l}\)</span>. Then <span
 class="math display">\[
@@ -587,7 +587,7 @@ follows. <span class="math inline">\(\blacksquare\)</span></p>
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2023-10-01 10:16:34 CEST" style="cursor:help">
+        <span title="Updated @ 2023-10-01 10:30:25 CEST" style="cursor:help">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2023-10-01</text><text x="915" y="140" textLength="650" transform="scale(.1)">2023-10-01</text></g></svg>
         </span></div>
