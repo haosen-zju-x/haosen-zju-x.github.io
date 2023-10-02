@@ -102,9 +102,9 @@ uglyURLs = false
     # Email
     email = "chenhaosen@yandex.com"
     # Motto or introduction
-    motto = "Riemann vous retrouve pour une fête"
+    motto = "Riemann meet you for party"
     # Avatar
-    avatarURL = "/assets/Helsinki_20230817_Haosen.jpg"
+    avatarURL = "/Helsinki_20230817_Haosen.jpg"
     # Personal website, default: baseURL
     website = "https://haosen-zju-x.github.io/"
 
@@ -339,7 +339,7 @@ uglyURLs = false
     homeLogo = ""
     homeLogoLink = ""
     homeTitle = ""
-    homeMotto = ""
+    homeMotto = "Riemann meet you for party"
     homeDescription = ""
     homeKeywords = ""
     homeLinksDelimiter = ""
@@ -797,7 +797,7 @@ uglyURLs = false
     #            supported
 
     # The content width of the post
-    postWidth = 36
+    postWidth = 42
     # Note: you can leave it empty("") to
     #       fallback to the default value: 42
     #       Unit: em
@@ -872,7 +872,7 @@ uglyURLs = false
     ######################################
     # Table of Contents
 
-    enableTOC = false
+    enableTOC = true
     # Note: *global settings*
     #       `toc` in post’s Front Matter
     #       has a higher priority than here
@@ -1010,15 +1010,15 @@ uglyURLs = false
     #       brand.
 
     # Site brand
-    fontFamilySiteBrand = ""
+    fontFamilySiteBrand = "Consolas"
     # Menu bar
-    fontFamilyMenu = ""
+    fontFamilyMenu = "Consolas"
     # Post title, post subtitle, list title, year and month title of the list, related posts title, previous/next post title, header of table, term/name in a definition list
-    fontFamilyTitle = "'Comfortaa', sans-serif"
+    fontFamilyTitle = "'Lora', serif"
     # Headings, toc title
-    fontFamilyHeadings = "'Comfortaa', sans-serif"
+    fontFamilyHeadings = "'Lora', serif"
     # Code, superscript, post meta info, post updated badge, post gitinfo, minimal footer, busuanzi site view counter
-    fontFamilyCode = "'Source Code Pro', monospace"
+    fontFamilyCode = "'Consolas', serif"
     # Blockquotes
     fontFamilyQuote = ""
     # Table of contents
@@ -1028,9 +1028,9 @@ uglyURLs = false
     # Footer
     fontFamilyFooter = ""
     # Body
-    fontFamilyBody = "'IBM Plex Serif', serif"
+    fontFamilyBody = "'Lora', serif"
 
-    # Embed fonts link
+    # Embed fonts link (还没有修改成Consolas和Lora的，但是不重要)
     fontsLink = "https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&family=Source+Code+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Comfortaa:wght@700&display=swap"
     # Note: In order for the reader to
     #       experience the fonts you set,

@@ -17,11 +17,11 @@
 
     <title>Problems in Linear Algebra | L&#39;Astéroïde de Haosen</title>
 
-    <link rel="stylesheet" href="/css/meme.min.9b58de2e7d10916c9390f8a7136a95a2ab2bb43fee16899e89f15dc22fd46527.css"/>
+    <link rel="stylesheet" href="/css/meme.min.6779da894eb9df9d5cbc3e8c9fe50295b895b4ab2b46519f0168fc0740a5ebae.css"/>
 
     
     
-        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" defer></script><script src="/js/meme.min.fc809fffaa543135a6bfdd43e4180d4873c68c487f45bdeca252054177da0d94.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/lunr@2.3.9/lunr.min.js" defer></script><script src="/js/meme.min.860735ba0f3e3e2d52f1ddb86db8e7aa799ff6892cfe9da49d29a3034e02af77.js"></script>
 
     
 
@@ -31,8 +31,9 @@
         <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM&#43;Plex&#43;Serif:ital,wght@0,400;0,500;0,700;1,400;1,700&amp;family=Source&#43;Code&#43;Pro:ital,wght@0,400;0,700;1,400;1,700&amp;family=Comfortaa:wght@700&amp;display=swap" /></noscript>
 
     <meta name="author" content="Haosen" /><meta name="description" content="What’s next?
-— No.3 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.
-Problem [Existence of a suitable orthogonal projection]" />
+— No.6 — See here.
+— No.5 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.
+Problem [Existence of suitable orthogonal projections]" />
 
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="mask-icon" href="/icons/safari-pinned-tab.svg" color="#2a6df4" />
@@ -59,17 +60,17 @@ Problem [Existence of a suitable orthogonal projection]" />
         "@context": "https://schema.org",
         "@type": "BlogPosting",
         "datePublished": "2023-09-30T22:04:40+00:00",
-        "dateModified": "2023-10-01T10:30:25+02:00",
+        "dateModified": "2023-10-01T15:58:44+02:00",
         "url": "https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/",
         "headline": "Problems in Linear Algebra",
-        "description": "What’s next?\n— No.3 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.\nProblem [Existence of a suitable orthogonal projection]",
+        "description": "What’s next?\n— No.6 — See here.\n— No.5 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.\nProblem [Existence of suitable orthogonal projections]",
         "inLanguage" : "zh-cn",
         "articleSection": "posts",
-        "wordCount":  1091 ,
+        "wordCount":  1240 ,
         "image": "https://haosen-zju-x.github.io/icons/apple-touch-icon.png",
         "author": {
             "@type": "Person",
-            "description": "Riemann vous retrouve pour une fête",
+            "description": "Riemann meet you for party",
             "email": "chenhaosen@yandex.com",
             "url": "https://haosen-zju-x.github.io/",
             "name": "Haosen"
@@ -97,14 +98,15 @@ Problem [Existence of a suitable orthogonal projection]" />
 
 <meta property="og:title" content="Problems in Linear Algebra" />
 <meta property="og:description" content="What’s next?
-— No.3 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.
-Problem [Existence of a suitable orthogonal projection]" />
+— No.6 — See here.
+— No.5 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.
+Problem [Existence of suitable orthogonal projections]" />
 <meta property="og:url" content="https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/" />
 <meta property="og:site_name" content="L&#39;Astéroïde de Haosen" />
 <meta property="og:locale" content="en" /><meta property="og:image" content="https://haosen-zju-x.github.io/icons/apple-touch-icon.png" />
     <meta property="og:type" content="article" />
     <meta property="article:published_time" content="2023-09-30T22:04:40&#43;00:00" />
-    <meta property="article:modified_time" content="2023-10-01T10:30:25&#43;02:00" />
+    <meta property="article:modified_time" content="2023-10-01T15:58:44&#43;02:00" />
     
     <meta property="article:section" content="posts" />
 
@@ -239,7 +241,7 @@ Problem [Existence of a suitable orthogonal projection]" />
     
     
         
-        <time datetime="2023-10-01T10:30:25&#43;02:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2023.10.1</time>
+        <time datetime="2023-10-01T15:58:44&#43;02:00" class="post-meta-item modified dt-updated"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="icon post-meta-icon"><path d="M400 64h-48V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H160V12c0-6.627-5.373-12-12-12h-40c-6.627 0-12 5.373-12 12v52H48C21.49 64 0 85.49 0 112v352c0 26.51 21.49 48 48 48h352c26.51 0 48-21.49 48-48V112c0-26.51-21.49-48-48-48zm-6 400H54a6 6 0 0 1-6-6V160h352v298a6 6 0 0 1-6 6zm-52.849-200.65L198.842 404.519c-4.705 4.667-12.303 4.637-16.971-.068l-75.091-75.699c-4.667-4.705-4.637-12.303.068-16.971l22.719-22.536c4.705-4.667 12.303-4.637 16.97.069l44.104 44.461 111.072-110.181c4.705-4.667 12.303-4.637 16.971.068l22.536 22.718c4.667 4.705 4.636 12.303-.069 16.97z"/></svg>&nbsp;2023.10.1</time>
     
     
     
@@ -253,7 +255,7 @@ Problem [Existence of a suitable orthogonal projection]" />
     
     
         
-        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1091</span>
+        <span class="post-meta-item wordcount"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="icon post-meta-icon"><path d="M497.9 142.1l-46.1 46.1c-4.7 4.7-12.3 4.7-17 0l-111-111c-4.7-4.7-4.7-12.3 0-17l46.1-46.1c18.7-18.7 49.1-18.7 67.9 0l60.1 60.1c18.8 18.7 18.8 49.1 0 67.9zM284.2 99.8L21.6 362.4.4 483.9c-2.9 16.4 11.4 30.6 27.8 27.8l121.5-21.3 262.6-262.6c4.7-4.7 4.7-12.3 0-17l-111-111c-4.8-4.7-12.4-4.7-17.1 0zM124.1 339.9c-5.5-5.5-5.5-14.3 0-19.8l154-154c5.5-5.5 14.3-5.5 19.8 0s5.5 14.3 0 19.8l-154 154c-5.5 5.5-14.3 5.5-19.8 0zM88 424h48v36.3l-64.5 11.3-31.1-31.1L51.7 376H88v48z"/></svg>&nbsp;1240</span>
     
     
         
@@ -268,13 +270,18 @@ Problem [Existence of a suitable orthogonal projection]" />
             <div class="post-body e-content">
                 <p style="text-indent:0"><span class="drop-cap">W</span>hat’s next?</p>
 <p align="center" style="font-size:40px;">
-<strong>— No.3 —</strong>
+<strong>— No.6 —</strong>
+</p>
+<p>See <a
+href="https://math.stackexchange.com/questions/4776729/trace-convergence-of-finite-dimensional-truncations">here</a>.</p>
+<p align="center" style="font-size:40px;">
+<strong>— No.5 —</strong>
 </p>
 <p>Shihe asked me the following problem on October 23, 2022. After a
 while, we exchanged our proofs, which I felt faithfully reflected the
 differences in the ways we do math.</p>
-<p><strong>Problem [Existence of a <em>suitable</em> orthogonal
-projection]</strong></p>
+<p><strong>Problem [Existence of <em>suitable</em> orthogonal
+projections]</strong></p>
 <p>Let <span class="math inline">\(L\)</span> be an <span
 class="math inline">\(n\)</span>-dimensional subspace of <span
 class="math inline">\(\mathbb{R}^{n+l}\)</span> (<span
@@ -392,7 +399,7 @@ class="math inline">\(\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_{k_1},\cdot
 This completes the proof. <span
 class="math inline">\(\blacksquare\)</span></p>
 <p align="center" style="font-size:40px;">
-<strong>— No.2 —</strong>
+<strong>— No.4 —</strong>
 </p>
 <p>In early February 2023, I asked myself the following seemingly naive
 question.</p>
@@ -415,9 +422,10 @@ class="math inline">\(Av_i=w_i\ (1\le i\le s)\)</span> iff <span
 class="math inline">\(\langle v_{i}, v_{j}\rangle=\langle w_{i},
 w_{j}\rangle\ (1\le i,j\le s)\)</span>, i.e., the two Gramians are
 equal.)</p>
-<p><strong>Proof [Haosen]</strong> We summarize the idea of proving
-<span class="math inline">\((\Leftarrow)\)</span> as follows. Given the
-data <span class="math inline">\(\langle v_i,v_j \rangle\ (1\le i,j\le
+<p><strong>Proof [Haosen]</strong></p>
+<p>We summarize the idea of proving <span
+class="math inline">\((\Leftarrow)\)</span> as follows. Given the data
+<span class="math inline">\(\langle v_i,v_j \rangle\ (1\le i,j\le
 s)\)</span>, we may focus on a maximal linearly independent subset of
 <span class="math inline">\(\{v_1,\cdots,v_s\}\)</span> to study the
 shape formed by these <span class="math inline">\(s\)</span> vectors in
@@ -512,7 +520,7 @@ Then <span class="math inline">\(A\in O(n)\)</span> and <span
 class="math inline">\(AQ_1=Q_2\)</span>, as desired. <span
 class="math inline">\(\blacksquare\)</span></p>
 <p align="center" style="font-size:40px;">
-<strong>— No.1 —</strong>
+<strong>— No.3 —</strong>
 </p>
 <p>The next was one of the problems in my entrance examination of École
 Polytechnique, in November 2021. It estimates the size of a set of unit
@@ -559,6 +567,33 @@ class="math display">\[
 m-n\le \frac{m^2-m}{4n},
 \]</span> from which <span class="math inline">\(m&lt;2n\)</span>
 follows. <span class="math inline">\(\blacksquare\)</span></p>
+<p align="center" style="font-size:40px;">
+<strong>— No.2 —</strong>
+</p>
+<p>From September 2020 to February 2021 and from October 2021 to
+December 2021, I volunteered as a tutor of linear algebra for ten or so
+freshman in Zhejiang University. Here is an interesting question raised
+by one of them.</p>
+<p><strong>Problem [A singular square matrix with <em>all</em> its first
+minors nonvanishing]</strong></p>
+<p>For every <span class="math inline">\(n\ge 3\)</span>, construct a
+singular square matrix <span class="math inline">\(A\)</span> of order
+<span class="math inline">\(n+1\)</span> such that all its <em>first
+minors</em> (i.e. <span class="math inline">\(n\times n\)</span> minors
+of <span class="math inline">\(A\)</span>) are nonzero.</p>
+<p align="center" style="font-size:40px;">
+<strong>— No.1 —</strong>
+</p>
+<p>In early May 2020, Liqin sent me a problem set of linear algebra
+(holiday homework from Peking University), and here is one of my
+favorites.</p>
+<p><strong>Problem [Family of independent and mutually commutative upper
+triangular matrices]</strong></p>
+<p>Let <span class="math inline">\(h(n)\)</span> denote the maximum size
+of a family of independent and mutually commutative upper triangular
+matrices in <span class="math inline">\(M_n(\mathbb{R})\)</span>. Prove
+that <span class="math inline">\(h(n)\le h(n-1)+n/2\)</span> for all
+<span class="math inline">\(n\ge 2\)</span>.</p>
 
             </div>
 
@@ -587,7 +622,7 @@ follows. <span class="math inline">\(\blacksquare\)</span></p>
 
         
     <div class="updated-badge-container">
-        <span title="Updated @ 2023-10-01 10:30:25 CEST" style="cursor:help">
+        <span title="Updated @ 2023-10-01 15:58:44 CEST" style="cursor:help">
 
 <svg xmlns="http://www.w3.org/2000/svg" width="130" height="20" class="updated-badge"><linearGradient id="b" x2="0" y2="100%"><stop offset="0" stop-color="#bbb" stop-opacity=".1"/><stop offset="1" stop-opacity=".1"/></linearGradient><clipPath id="a"><rect width="130" height="20" rx="3" fill="#fff"/></clipPath><g clip-path="url(#a)"><path class="updated-badge-left" d="M0 0h55v20H0z"/><path class="updated-badge-right" d="M55 0h75v20H55z"/><path fill="url(#b)" d="M0 0h130v20H0z"/></g><g fill="#fff" text-anchor="middle" font-size="110"><text x="285" y="150" fill="#010101" fill-opacity=".3" textLength="450" transform="scale(.1)">updated</text><text x="285" y="140" textLength="450" transform="scale(.1)">updated</text><text x="915" y="150" fill="#010101" fill-opacity=".3" textLength="650" transform="scale(.1)">2023-10-01</text><text x="915" y="140" textLength="650" transform="scale(.1)">2023-10-01</text></g></svg>
         </span></div>
@@ -655,9 +690,13 @@ follows. <span class="math inline">\(\blacksquare\)</span></p>
     
         <ul class="post-nav">
             
+                <li class="post-nav-prev">
+                    <a href="/posts/tests-et-regions-de-confiance/" rel="prev">&lt; Tests et Régions de Confiance</a>
+                </li>
+            
             
                 <li class="post-nav-next">
-                    <a href="/posts/poincare-duality/" rel="next">Poincaré Duality &gt;</a>
+                    <a href="/posts/the-poincare-lemmas/" rel="next">The Poincaré Lemmas &gt;</a>
                 </li>
             
         </ul>

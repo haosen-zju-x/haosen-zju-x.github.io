@@ -16,12 +16,21 @@ markup: pandoc
 What's next?
 
 <p align="center" style="font-size:40px;">
-**--- No.3 ---**
+**--- No.6 ---**
+</p>
+
+See [here](https://math.stackexchange.com/questions/4776729/trace-convergence-of-finite-dimensional-truncations).
+
+
+
+
+<p align="center" style="font-size:40px;">
+**--- No.5 ---**
 </p>
 
 Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.
 
-**Problem [Existence of a *suitable* orthogonal projection]**
+**Problem [Existence of *suitable* orthogonal projections]**
 
 Let $L$ be an $n$-dimensional subspace of $\mathbb{R}^{n+l}$ ($n,l\ge 1$) and $\{v_1,\cdots,v_{n+l}\}$ an arbitrary basis of $\mathbb{R}^{n+l}$. Show that there exist $1\le j_1<\cdots<j_n\le n+l$ such that the orthogonal projection $P_{j_1,\cdots,j_n}$ of $\mathbb{R}^{n+l}$ onto $\text{span}\{v_{j_1},\cdots,v_{j_n}\}$ is injective on $L$.
 
@@ -70,7 +79,7 @@ is a well-defined orthogonal projection of $\mathbb{R}^{n+l}$ on $\text{span}(\{
 
 
 <p align="center" style="font-size:40px;">
-**--- No.2 ---**
+**--- No.4 ---**
 </p>
 
 In early February 2023, I asked myself the following seemingly naive question.
@@ -81,7 +90,9 @@ Let $\{v_1,\cdots,v_s\}$ and $\{w_1,\cdots,w_s\}$ be two subsets of $\mathbb{R}^
 
 (Similarly, if $\{v_1,\cdots,v_s\}$ and $\{w_1,\cdots,w_s\}$ are two subsets of $\mathbb{C}^n$, then there exists $A\in U(n)$ such that $Av_i=w_i\ (1\le i\le s)$ iff $\langle v_{i}, v_{j}\rangle=\langle w_{i}, w_{j}\rangle\ (1\le i,j\le s)$, i.e., the two Gramians are equal.)
 
-**Proof [Haosen]** We summarize the idea of proving $(\Leftarrow)$ as follows. Given the data $\langle v_i,v_j \rangle\ (1\le i,j\le s)$, we may focus on a maximal linearly independent subset of $\{v_1,\cdots,v_s\}$ to study the shape formed by these $s$ vectors in $\mathbb{R}^n$. Suppose that $\{v_{k_1},\cdots,v_{k_r}\}$ is a maximal linearly independent subset of $\{v_1,\cdots,v_s\}$, then $\{w_{k_1},\cdots,w_{k_r}\}$ is automatically a maximal linearly independent subset of $\{w_1,\cdots,w_s\}$. Perform Gram-Schmidt on them simultaneously and extend the resulted orthonormal subsets to two orthonormal bases for $\mathbb{R}^n$. The associated change of coordinates matrix then fulfills the proof. (The Gram-Schmidt process can be embodied by QR decomposition.)
+**Proof [Haosen]**
+
+We summarize the idea of proving $(\Leftarrow)$ as follows. Given the data $\langle v_i,v_j \rangle\ (1\le i,j\le s)$, we may focus on a maximal linearly independent subset of $\{v_1,\cdots,v_s\}$ to study the shape formed by these $s$ vectors in $\mathbb{R}^n$. Suppose that $\{v_{k_1},\cdots,v_{k_r}\}$ is a maximal linearly independent subset of $\{v_1,\cdots,v_s\}$, then $\{w_{k_1},\cdots,w_{k_r}\}$ is automatically a maximal linearly independent subset of $\{w_1,\cdots,w_s\}$. Perform Gram-Schmidt on them simultaneously and extend the resulted orthonormal subsets to two orthonormal bases for $\mathbb{R}^n$. The associated change of coordinates matrix then fulfills the proof. (The Gram-Schmidt process can be embodied by QR decomposition.)
 
 $(\Rightarrow)$: Obvious.
 $$
@@ -141,8 +152,9 @@ Since the columns of $Q_i$ forms an orthonormal subset of $\mathbb{R}^n$ and thu
 
 
 
+
 <p align="center" style="font-size:40px;">
-**--- No.1 ---**
+**--- No.3 ---**
 </p>
 
 The next was one of the problems in my entrance examination of École Polytechnique, in November 2021. It estimates the size of a set of unit vectors that are "almost orthonormal".
@@ -171,3 +183,35 @@ $$
 m-n\le \frac{m^2-m}{4n},
 $$
 from which $m<2n$ follows. $\blacksquare$
+
+
+
+
+
+<p align="center" style="font-size:40px;">
+**--- No.2 ---**
+</p>
+
+From September 2020 to February 2021 and from October 2021 to December 2021, I volunteered as a tutor of linear algebra for ten or so freshman in Zhejiang University. Here is an interesting question raised by one of them.
+
+**Problem [A singular square matrix with *all* its first minors nonvanishing]**
+
+For every $n\ge 3$, construct a singular square matrix $A$ of order $n+1$ such that all its *first minors* (i.e. $n\times n$ minors of $A$) are nonzero.
+
+
+
+
+
+<p align="center" style="font-size:40px;">
+**--- No.1 ---**
+</p>
+
+In early May 2020, Liqin sent me a problem set of linear algebra (holiday homework from Peking University), and here is one of my favorites.
+
+**Problem [Family of independent and mutually commutative upper triangular matrices]** 
+
+Let $h(n)$ denote the maximum size of a family of independent and mutually commutative upper triangular matrices in $M_n(\mathbb{R})$. Prove that $h(n)\le h(n-1)+n/2$ for all $n\ge 2$.
+
+
+
+

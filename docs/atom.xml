@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-10-01T14:19:59&#43;02:00</updated>
+    <updated>2023-10-03T00:38:12&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -17,10 +17,249 @@
     <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights>
     <generator uri="https://gohugo.io/" version="0.117.0">Hugo</generator>
         <entry>
+            <title type="text">Tests et Régions de Confiance</title>
+            <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/" />
+            <id>https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/</id>
+            <updated>2023-10-03T00:32:12&#43;02:00</updated>
+            <published>2023-10-01T19:24:26&#43;00:00</published>
+            <author>
+                    <name>Haosen</name>
+                    <uri>https://haosen-zju-x.github.io/</uri>
+                    <email>chenhaosen@yandex.com</email>
+                    </author>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">…
+Exercices Exercice 1 : Test de comparaison de deux variances &amp;amp; Test de comparaison de deux moyennes Considérons le modèle statistique \[ \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes (n+p)}=(\mathcal{N}(\mu_0,\sigma_0^2))^{\otimes n}\otimes (\mathcal{N}(\mu_1,\sigma_1^2))^{\otimes p} \,\Big|\, \theta = (\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \mathbb{R}^2\times (\mathbb{R}_+^*)^2\right\}\right). \]
+Déterminer l’estimateur du maximum de vraisemblance du paramètre \(\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\).</summary>
+            
+                <content type="html">&lt;p&gt;…&lt;/p&gt;
+&lt;!-- Pour la première fois de ma vie, je pense que les statistiques peuvent être intéressantes et élégantes.
+
+Un grand merci à Prof. Gersende Fort pour ses petites classes très bien faites :)
+
+# Théorie
+
+## Cramér-Rao
+
+Coming soon...
+
+## Neyman-Pearson
+
+Coming soon... --&gt;
+&lt;h1 id=&#34;exercices&#34;&gt;Exercices&lt;/h1&gt;
+&lt;h2
+id=&#34;exercice-1-test-de-comparaison-de-deux-variances-test-de-comparaison-de-deux-moyennes&#34;&gt;Exercice
+1 : Test de comparaison de deux variances &amp;amp; Test de comparaison de
+deux moyennes&lt;/h2&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Considérons le modèle statistique &lt;span
+class=&#34;math display&#34;&gt;\[
+\left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes
+(n+p)}=(\mathcal{N}(\mu_0,\sigma_0^2))^{\otimes n}\otimes
+(\mathcal{N}(\mu_1,\sigma_1^2))^{\otimes p} \,\Big|\, \theta =
+(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \mathbb{R}^2\times
+(\mathbb{R}_+^*)^2\right\}\right).
+\]&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Déterminer l’estimateur du maximum de vraisemblance du
+paramètre &lt;span
+class=&#34;math inline&#34;&gt;\(\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\)&lt;/span&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;On remarque que &lt;span
+class=&#34;math inline&#34;&gt;\(L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot
+L(\theta_1;Y_1,\cdots,Y_p)\)&lt;/span&gt;, où &lt;span
+class=&#34;math inline&#34;&gt;\(\theta_0=(\mu_0,\sigma_0^2)\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(\theta_1=(\mu_1,\sigma_1^2)\)&lt;/span&gt;. Comme
+l’estimateur du maximum de vraisemblance du paramètre &lt;span
+class=&#34;math inline&#34;&gt;\(\theta_0\)&lt;/span&gt; est &lt;span
+class=&#34;math inline&#34;&gt;\(\left(\overline{X}_n,V_n\right)\)&lt;/span&gt;, où &lt;span
+class=&#34;math display&#34;&gt;\[
+\overline{X}_n:=\frac{1}{n}\sum_{i=1}^{n}X_i,\quad
+V_n:=\frac{1}{n}\sum_{i=1}^{n}(X_i-\overline{X}_n)^2,
+\]&lt;/span&gt; et que l’estimateur du maximum de vraisemblance du paramètre
+&lt;span class=&#34;math inline&#34;&gt;\(\theta_1\)&lt;/span&gt; est &lt;span
+class=&#34;math inline&#34;&gt;\((\overline{Y}_p,W_p)\)&lt;/span&gt;, où &lt;span
+class=&#34;math display&#34;&gt;\[
+\overline{Y}_p:=\frac{1}{p}\sum_{j=1}^{n}Y_j,\quad
+W_p:=\frac{1}{p}\sum_{j=1}^{p}(Y_j-\overline{Y}_p)^2,
+\]&lt;/span&gt; on en conclut que l’estimateur du maximum de vraisemblance du
+paramètre &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; est &lt;span
+class=&#34;math display&#34;&gt;\[
+\hat{\theta}_{n,p}^{\text{MV}}=(\overline{X}_n,\overline{Y}_p,V_n,W_p).
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Déterminer un test de niveau &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
+class=&#34;math display&#34;&gt;\[
+H_0 : \sigma_0^2=\sigma_1^2,\quad\text{contre}\quad H_1 :
+\sigma_0^2&amp;gt;\sigma_1^2.
+\]&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Rappelons que sous &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, &lt;span
+class=&#34;math inline&#34;&gt;\(nV_n/\sigma_0^2=\frac{1}{\sigma_0^2}\sum_{i=1}^{n}(X_i-\overline{X}_n)^2\sim
+\chi^2(n-1)\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(pW_p/\sigma_1^2=\frac{1}{\sigma_1^2}\sum_{j=1}^{p}(Y_j-\overline{Y}_p)^2\sim
+\chi^2(p-1)\)&lt;/span&gt;. Alors, pour tout &lt;span
+class=&#34;math inline&#34;&gt;\(\theta\in \Theta\triangleq\mathbb{R}^2\times
+(\mathbb{R}_+^*)^2\)&lt;/span&gt;, on a sous &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt; &lt;span
+class=&#34;math display&#34;&gt;\[
+\frac{nV_n/\sigma_0^2}{pW_p/\sigma_1^2}\sim F(n-1,p-1),
+\]&lt;/span&gt; ce qui ne dépend pas du paramètre &lt;span
+class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. Par conséquent, sous &lt;span
+class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt; (qui suppose que &lt;span
+class=&#34;math inline&#34;&gt;\(\sigma_0^2=\sigma_1^2\)&lt;/span&gt;) on a &lt;span
+class=&#34;math display&#34;&gt;\[
+\mathbb{P}_{\theta}\left(\frac{nV_n}{pW_p}\le
+q_{1-\alpha}^{F(n-1,p-1)}\right)=1-\alpha.
+\]&lt;/span&gt; Ainsi, &lt;span
+class=&#34;math inline&#34;&gt;\(\phi(Z):=\mathbb{1}\left\{\dfrac{nV_n}{pW_p}\ge
+q_{1-\alpha}^{F(n-1,p-1)}\right\}\)&lt;/span&gt; est un test de taille (et
+donc de niveau) &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;strong&gt;Nous considérons dans la suite le modèle statistique &lt;span
+class=&#34;math display&#34;&gt;\[
+\left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes
+(n+p)}=(\mathcal{N}(\mu_0,\sigma^2))^{\otimes n}\otimes
+(\mathcal{N}(\mu_1,\sigma^2))^{\otimes p} \,\Big|\, \theta =
+(\mu_0,\mu_1,\sigma^2)\in \mathbb{R}^2\times
+\mathbb{R}_+^*\right\}\right).
+\]&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Construire un intervalle de confiance de &lt;span
+class=&#34;math inline&#34;&gt;\(\mu_0-\mu_1\)&lt;/span&gt; de niveau de confiance &lt;span
+class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt;.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Sous &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, les
+deux variables aléatoires réelles &lt;span
+class=&#34;math inline&#34;&gt;\(\overline{X}_n\sim
+\mathcal{N}(\mu_0,\sigma^2/n)\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(\overline{Y}_p\sim
+\mathcal{N}(\mu_1,\sigma^2/p)\)&lt;/span&gt; sont indépendentes, et donc &lt;span
+class=&#34;math display&#34;&gt;\[
+\frac{(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)}{\sqrt{\sigma^2/n+\sigma^2/p}}\sim
+\mathcal{N}(0,1).
+\]&lt;/span&gt; D’autre part, on sait que sous &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, &lt;span
+class=&#34;math display&#34;&gt;\[
+\frac{1}{\sigma^2}(nV_n+pW_p)\sim \chi^2(n+p-2).
+\]&lt;/span&gt; On rappelle aussi que &lt;span
+class=&#34;math inline&#34;&gt;\(\overline{X}_n,V_n\)&lt;/span&gt; sont indépendantes
+sous &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, et que
+&lt;span class=&#34;math inline&#34;&gt;\(\overline{Y}_p,W_p\)&lt;/span&gt; le sont aussi.
+En plus, comme &lt;span class=&#34;math inline&#34;&gt;\(X_1,\cdots,X_n\)&lt;/span&gt; et
+&lt;span class=&#34;math inline&#34;&gt;\(Y_1,\cdots,Y_p\)&lt;/span&gt; sont indépendantes
+entre elles sous &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, on voit que &lt;span
+class=&#34;math inline&#34;&gt;\(\overline{X}_n,W_p\)&lt;/span&gt; sont indépendantes
+sous &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, et que
+&lt;span class=&#34;math inline&#34;&gt;\(\overline{Y}_p,V_n\)&lt;/span&gt; le sont aussi.
+Donc, les deux variables aléatoires réelles nouvellement construites,
+&lt;span
+class=&#34;math inline&#34;&gt;\(\frac{(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)}{\sqrt{\sigma^2/n+\sigma^2/p}}\)&lt;/span&gt;
+et &lt;span class=&#34;math inline&#34;&gt;\(\frac{1}{\sigma^2}(nV_n+pW_p)\)&lt;/span&gt;,
+sont indépendantes sous &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;. Cela permet de
+conclure que sous &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, &lt;span
+class=&#34;math display&#34;&gt;\[
+\frac{[(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\sim
+F(1,n+p-2).
+\]&lt;/span&gt; Alors, pour tout &lt;span class=&#34;math inline&#34;&gt;\(\theta\in
+\Theta\)&lt;/span&gt;, &lt;span class=&#34;math display&#34;&gt;\[
+\mathbb{P}_{\theta}\left(\frac{[(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\le
+q_{1-\alpha}^{F(1,n+p-2)}\right)=1-\alpha.
+\]&lt;/span&gt; On en tire donc une intervalle de confiance de niveau de
+confiance &lt;span class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt; pour &lt;span
+class=&#34;math inline&#34;&gt;\(\mu_0-\mu_1\)&lt;/span&gt; : &lt;span
+class=&#34;math display&#34;&gt;\[
+\textstyle
+\left[(\overline{X}_n-\overline{Y}_p)\pm
+\sqrt{nV_n+pW_p}\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)q_{1-\alpha}^{F(1,n+p-2)}}\right]
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;En déduire un test de niveau &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
+class=&#34;math display&#34;&gt;\[
+H_0 : \mu_0=\mu_1,\quad\text{contre}\quad H_1 : \mu_0\neq \mu_1.
+\]&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;D’après la question précédente, le test défini par &lt;span
+class=&#34;math display&#34;&gt;\[
+\phi(Z):=\mathbb{1}\left\{\frac{(\overline{X}_n-\overline{Y}_p)^2}{nV_n+pW_p}\ge\left(\frac{1}{n}+\frac{1}{p}\right)q_{1-\alpha}^{F(1,n+p-2)}\right\}
+\]&lt;/span&gt; est un test de taille (et donc de niveau) &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du
+test.&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Dans notre cas, la statistique de test est &lt;span
+class=&#34;math display&#34;&gt;\[
+T(Z):=\frac{(\overline{X}_n-\overline{Y}_p)^2}{nV_n+pW_p},
+\]&lt;/span&gt; et la valeur critique du test est &lt;span
+class=&#34;math display&#34;&gt;\[
+c_{\alpha}:=\left(\frac{1}{n}+\frac{1}{p}\right)q_{1-\alpha}^{F(1,n+p-2)}.
+\]&lt;/span&gt; Ainsi, la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du
+test est &lt;span class=&#34;math display&#34;&gt;\[
+\begin{align*}
+\hat{\alpha}(Z)
+&amp;amp;=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
+&amp;amp;=1-\Psi\left(\frac{np}{n+p}\frac{(\overline{X}_n-\overline{Y}_p)^2}{nV_n+pW_p}\right),
+\end{align*}
+\]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Psi\)&lt;/span&gt; désigne la
+fonction de répartition de la loi de Fisher de &lt;span
+class=&#34;math inline&#34;&gt;\((1,n+p-2)\)&lt;/span&gt; degrés de liberté.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Construire un test de niveau &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
+class=&#34;math display&#34;&gt;\[
+H_0 : \mu_0\le \mu_1,\quad\text{contre}\quad H_1 : \mu_0&amp;gt;\mu_1.
+\]&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- ## Exercice 2 : Le test du rapport de vraisemblance généralisé
+
+Coming soon...
+
+## Exercice 3 : Un cas où il n&#39;existe pas de test uniformément plus puissant &amp; Test uniformément plus puissant *parmi les tests sans biais*
+
+Coming soon... --&gt;
+</content>
+            
+            
+            
+            
+            
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/categories/statistique/" term="Statistique" label="Statistique" />
+                            
+                        
+                    
+                
+                    
+                        
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/tags/inf%C3%A9rence-statistique/" term="Inférence Statistique" label="Inférence Statistique" />
+                            
+                        
+                    
+                
+            
+        </entry>
+    
+        <entry>
             <title type="text">Problems in Linear Algebra</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/" />
             <id>https://haosen-zju-x.github.io/posts/linear-algebra-problem-solving/</id>
-            <updated>2023-10-01T10:30:25&#43;02:00</updated>
+            <updated>2023-10-01T15:58:44&#43;02:00</updated>
             <published>2023-09-30T22:04:40&#43;00:00</published>
             <author>
                     <name>Haosen</name>
@@ -28,18 +267,24 @@
                     <email>chenhaosen@yandex.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">What’s next?
-— No.3 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.
-Problem [Existence of a suitable orthogonal projection]</summary>
+— No.6 — See here.
+— No.5 — Shihe asked me the following problem on October 23, 2022. After a while, we exchanged our proofs, which I felt faithfully reflected the differences in the ways we do math.
+Problem [Existence of suitable orthogonal projections]</summary>
             
                 <content type="html">&lt;p&gt;What’s next?&lt;/p&gt;
 &lt;p align=&#34;center&#34; style=&#34;font-size:40px;&#34;&gt;
-&lt;strong&gt;— No.3 —&lt;/strong&gt;
+&lt;strong&gt;— No.6 —&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;See &lt;a
+href=&#34;https://math.stackexchange.com/questions/4776729/trace-convergence-of-finite-dimensional-truncations&#34;&gt;here&lt;/a&gt;.&lt;/p&gt;
+&lt;p align=&#34;center&#34; style=&#34;font-size:40px;&#34;&gt;
+&lt;strong&gt;— No.5 —&lt;/strong&gt;
 &lt;/p&gt;
 &lt;p&gt;Shihe asked me the following problem on October 23, 2022. After a
 while, we exchanged our proofs, which I felt faithfully reflected the
 differences in the ways we do math.&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Problem [Existence of a &lt;em&gt;suitable&lt;/em&gt; orthogonal
-projection]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem [Existence of &lt;em&gt;suitable&lt;/em&gt; orthogonal
+projections]&lt;/strong&gt;&lt;/p&gt;
 &lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(L\)&lt;/span&gt; be an &lt;span
 class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;-dimensional subspace of &lt;span
 class=&#34;math inline&#34;&gt;\(\mathbb{R}^{n+l}\)&lt;/span&gt; (&lt;span
@@ -157,7 +402,7 @@ class=&#34;math inline&#34;&gt;\(\text{span}(\{v_1,\cdots,v_{n+l}\}\setminus\{v_
 This completes the proof. &lt;span
 class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&#34;center&#34; style=&#34;font-size:40px;&#34;&gt;
-&lt;strong&gt;— No.2 —&lt;/strong&gt;
+&lt;strong&gt;— No.4 —&lt;/strong&gt;
 &lt;/p&gt;
 &lt;p&gt;In early February 2023, I asked myself the following seemingly naive
 question.&lt;/p&gt;
@@ -180,9 +425,10 @@ class=&#34;math inline&#34;&gt;\(Av_i=w_i\ (1\le i\le s)\)&lt;/span&gt; iff &lt;
 class=&#34;math inline&#34;&gt;\(\langle v_{i}, v_{j}\rangle=\langle w_{i},
 w_{j}\rangle\ (1\le i,j\le s)\)&lt;/span&gt;, i.e., the two Gramians are
 equal.)&lt;/p&gt;
-&lt;p&gt;&lt;strong&gt;Proof [Haosen]&lt;/strong&gt; We summarize the idea of proving
-&lt;span class=&#34;math inline&#34;&gt;\((\Leftarrow)\)&lt;/span&gt; as follows. Given the
-data &lt;span class=&#34;math inline&#34;&gt;\(\langle v_i,v_j \rangle\ (1\le i,j\le
+&lt;p&gt;&lt;strong&gt;Proof [Haosen]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;We summarize the idea of proving &lt;span
+class=&#34;math inline&#34;&gt;\((\Leftarrow)\)&lt;/span&gt; as follows. Given the data
+&lt;span class=&#34;math inline&#34;&gt;\(\langle v_i,v_j \rangle\ (1\le i,j\le
 s)\)&lt;/span&gt;, we may focus on a maximal linearly independent subset of
 &lt;span class=&#34;math inline&#34;&gt;\(\{v_1,\cdots,v_s\}\)&lt;/span&gt; to study the
 shape formed by these &lt;span class=&#34;math inline&#34;&gt;\(s\)&lt;/span&gt; vectors in
@@ -277,7 +523,7 @@ Then &lt;span class=&#34;math inline&#34;&gt;\(A\in O(n)\)&lt;/span&gt; and &lt;
 class=&#34;math inline&#34;&gt;\(AQ_1=Q_2\)&lt;/span&gt;, as desired. &lt;span
 class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&lt;/p&gt;
 &lt;p align=&#34;center&#34; style=&#34;font-size:40px;&#34;&gt;
-&lt;strong&gt;— No.1 —&lt;/strong&gt;
+&lt;strong&gt;— No.3 —&lt;/strong&gt;
 &lt;/p&gt;
 &lt;p&gt;The next was one of the problems in my entrance examination of École
 Polytechnique, in November 2021. It estimates the size of a set of unit
@@ -324,6 +570,33 @@ class=&#34;math display&#34;&gt;\[
 m-n\le \frac{m^2-m}{4n},
 \]&lt;/span&gt; from which &lt;span class=&#34;math inline&#34;&gt;\(m&amp;lt;2n\)&lt;/span&gt;
 follows. &lt;span class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&lt;/p&gt;
+&lt;p align=&#34;center&#34; style=&#34;font-size:40px;&#34;&gt;
+&lt;strong&gt;— No.2 —&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;From September 2020 to February 2021 and from October 2021 to
+December 2021, I volunteered as a tutor of linear algebra for ten or so
+freshman in Zhejiang University. Here is an interesting question raised
+by one of them.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem [A singular square matrix with &lt;em&gt;all&lt;/em&gt; its first
+minors nonvanishing]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;For every &lt;span class=&#34;math inline&#34;&gt;\(n\ge 3\)&lt;/span&gt;, construct a
+singular square matrix &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt; of order
+&lt;span class=&#34;math inline&#34;&gt;\(n+1\)&lt;/span&gt; such that all its &lt;em&gt;first
+minors&lt;/em&gt; (i.e. &lt;span class=&#34;math inline&#34;&gt;\(n\times n\)&lt;/span&gt; minors
+of &lt;span class=&#34;math inline&#34;&gt;\(A\)&lt;/span&gt;) are nonzero.&lt;/p&gt;
+&lt;p align=&#34;center&#34; style=&#34;font-size:40px;&#34;&gt;
+&lt;strong&gt;— No.1 —&lt;/strong&gt;
+&lt;/p&gt;
+&lt;p&gt;In early May 2020, Liqin sent me a problem set of linear algebra
+(holiday homework from Peking University), and here is one of my
+favorites.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Problem [Family of independent and mutually commutative upper
+triangular matrices]&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(h(n)\)&lt;/span&gt; denote the maximum size
+of a family of independent and mutually commutative upper triangular
+matrices in &lt;span class=&#34;math inline&#34;&gt;\(M_n(\mathbb{R})\)&lt;/span&gt;. Prove
+that &lt;span class=&#34;math inline&#34;&gt;\(h(n)\le h(n-1)+n/2\)&lt;/span&gt; for all
+&lt;span class=&#34;math inline&#34;&gt;\(n\ge 2\)&lt;/span&gt;.&lt;/p&gt;
 </content>
             
             
@@ -367,17 +640,17 @@ follows. &lt;span class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&l
         </entry>
     
         <entry>
-            <title type="text">Poincaré Duality</title>
-            <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/poincare-duality/" />
-            <id>https://haosen-zju-x.github.io/posts/poincare-duality/</id>
-            <updated>2023-10-01T01:38:05&#43;02:00</updated>
+            <title type="text">The Poincaré Lemmas</title>
+            <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/the-poincare-lemmas/" />
+            <id>https://haosen-zju-x.github.io/posts/the-poincare-lemmas/</id>
+            <updated>2023-10-03T00:15:55&#43;02:00</updated>
             <published>2023-09-30T20:16:07&#43;00:00</published>
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
                     <email>chenhaosen@yandex.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Explain the ideas behind the construction of the chain homotopy in the proof of the Poincaré lemma for compactly supported cohomology (cf. Bott-Tu, *Differential Forms in Algebraic Topology*).</summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">The Poincaré Lemma for de Rham Cohomology Coming soon… The Poincaré Lemma for Compactly Supported Cohomology Here the goal is to explain the ideas…</summary>
             
                 <content type="html">&lt;!-- &lt;link rel=&#34;stylesheet&#34; type=&#34;text/css&#34; href=&#34;https://tikzjax.com/v1/fonts.css&#34;&gt;
 &lt;script src=&#34;https://tikzjax.com/v1/tikzjax.js&#34;&gt;&lt;/script&gt;
@@ -386,34 +659,41 @@ follows. &lt;span class=&#34;math inline&#34;&gt;\(\blacksquare\)&lt;/span&gt;&l
     \draw (0,0) circle (1in);
   \end{tikzpicture}
 &lt;/script&gt; --&gt;
+&lt;h1 id=&#34;the-poincaré-lemma-for-de-rham-cohomology&#34;&gt;The Poincaré Lemma
+for de Rham Cohomology&lt;/h1&gt;
+&lt;p&gt;Coming soon…&lt;/p&gt;
 &lt;h1 id=&#34;the-poincaré-lemma-for-compactly-supported-cohomology&#34;&gt;The
 Poincaré Lemma for Compactly Supported Cohomology&lt;/h1&gt;
+&lt;p&gt;Here the goal is to explain the ideas behind the technical
+construction of the chain homotopy in the proof of the Poincaré lemma
+for compactly supported cohomology (cf. Bott-Tu, &lt;em&gt;Differential Forms
+in Algebraic Topology&lt;/em&gt;).&lt;/p&gt;
 &lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; be a smooth manifold. Then
 the product manifold &lt;span class=&#34;math inline&#34;&gt;\(M\times
 \mathbb{R}^1\)&lt;/span&gt; is a smooth manifold as well, and the projection
 &lt;span class=&#34;math inline&#34;&gt;\(\pi:M\times \mathbb{R}^1\to M\)&lt;/span&gt; is a
 smooth map. The pullback &lt;span
 class=&#34;math inline&#34;&gt;\(\pi^*:\Omega^*(M)\to \Omega^*(M\times
-\mathbb{R}^1)\)&lt;/span&gt; [&lt;a href=&#34;https://haosen-zju-x.github.io/posts/poincare-duality/#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;
+\mathbb{R}^1)\)&lt;/span&gt; [&lt;a href=&#34;https://haosen-zju-x.github.io/posts/the-poincare-lemmas/#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;
 role=&#34;doc-noteref&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;] does not map &lt;span
 class=&#34;math inline&#34;&gt;\(\Omega_c^*(M)\)&lt;/span&gt; into &lt;span
 class=&#34;math inline&#34;&gt;\(\Omega_c^*(M\times \mathbb{R}^1)\)&lt;/span&gt;, so
-instead we consider the pushforward known as integration along the fiber
-&lt;span class=&#34;math display&#34;&gt;\[
+instead we consider the pushforward known as &lt;em&gt;integration along the
+fiber&lt;/em&gt; &lt;span class=&#34;math display&#34;&gt;\[
 \begin{equation*}
     \pi_*:\Omega_c^*(M\times \mathbb{R}^1)\to \Omega_c^{*-1}(M)\quad
 \begin{cases}
-        f(x,t)\pi^*\phi\mapsto 0\\
+        f(x,t)\pi^*\phi\mapsto 0;\\
         f(x,t)\mathrm{d}{t}\wedge\pi^*\phi\mapsto
 \left(\displaystyle\int_{-\infty}^{\infty} f(x,t)
-\,\mathrm{d}t\right)\phi
+\,\mathrm{d}t\right)\phi,
     \end{cases}
 \end{equation*}
 \]&lt;/span&gt; where &lt;span class=&#34;math inline&#34;&gt;\(\phi\in \Omega^*(M)\)&lt;/span&gt;
 and &lt;span class=&#34;math inline&#34;&gt;\(f\in C_c^{\infty}(M\times
 \mathbb{R};\mathbb{R})\)&lt;/span&gt;. (These two types of elements in &lt;span
 class=&#34;math inline&#34;&gt;\(\Omega_c^*(M\times \mathbb{R}^1)\)&lt;/span&gt; will
-soon be revisited.) It’s quick to check that &lt;span
+soon be revisited.) It’s easy to check that &lt;span
 class=&#34;math inline&#34;&gt;\(\pi_*\)&lt;/span&gt; is a chain map. We will show that
 the induced map &lt;span class=&#34;math inline&#34;&gt;\(\pi_*:H_c^*(M\times
 \mathbb{R}^1)\to H_c^{*-1}(M)\)&lt;/span&gt; is an isomorphism.&lt;/p&gt;
@@ -423,12 +703,12 @@ class=&#34;math inline&#34;&gt;\(\displaystyle\int_{\mathbb{R}^1} e=1\)&lt;/span
 Define &lt;span class=&#34;math display&#34;&gt;\[
 \begin{equation*}
     e_*:\Omega_c^*(M)\to \Omega_c^{*+1}(M\times \mathbb{R}^1)\quad
-\psi\mapsto e(t)\mathrm{d}{t}\wedge\pi^*\psi
+\psi\mapsto e(t)\mathrm{d}{t}\wedge\pi^*\psi,
 \end{equation*}
 \]&lt;/span&gt; where the map &lt;span class=&#34;math inline&#34;&gt;\(t\mapsto
 e(t)\)&lt;/span&gt; has been identified with the composition &lt;span
-class=&#34;math inline&#34;&gt;\((x,t)\mapsto t\mapsto e(t)\)&lt;/span&gt;. It’s quick to
-check that &lt;span class=&#34;math inline&#34;&gt;\(e_*\)&lt;/span&gt; is a chain map, and
+class=&#34;math inline&#34;&gt;\((x,t)\mapsto t\mapsto e(t)\)&lt;/span&gt;. One quickly
+checks that &lt;span class=&#34;math inline&#34;&gt;\(e_*\)&lt;/span&gt; is a chain map, and
 &lt;span class=&#34;math inline&#34;&gt;\(\pi_*\circ e_*=\text{id}\)&lt;/span&gt; on &lt;span
 class=&#34;math inline&#34;&gt;\(\Omega_c^*(M)\)&lt;/span&gt;. We will show that there is
 a chain homotopy &lt;span class=&#34;math inline&#34;&gt;\(K\)&lt;/span&gt; connecting &lt;span
@@ -444,7 +724,7 @@ class=&#34;math inline&#34;&gt;\(K:\Omega_c^*(M\times \mathbb{R}^1)\to
 \Omega_c^{*-1}(M\times \mathbb{R}^1)\)&lt;/span&gt; from the basic relation
 &lt;span class=&#34;math display&#34;&gt;\[
 \begin{equation*}
-    \text{id}-e_*\circ \pi_*=\mathrm{d}K+K \mathrm{d}
+    \text{id}-e_*\circ \pi_*=\mathrm{d}K+K \mathrm{d}.
 \end{equation*}
 \]&lt;/span&gt; To proceed, interpret this relation on the aforementioned two
 types of elements in &lt;span class=&#34;math inline&#34;&gt;\(\Omega_c^*(M\times
@@ -458,7 +738,7 @@ w.r.t. some specific local coordinates.&lt;/p&gt;
 \left[\left(\displaystyle\sum_i \dfrac{\partial f}{\partial
 x^i}(x,t)\mathrm{d}{x^i}+\dfrac{\partial f}{\partial
 t}(x,t)\mathrm{d}{t}\right)\wedge
-\pi^*\phi+f(x,t)\pi^*\mathrm{d}{\phi}\right]
+\pi^*\phi+f(x,t)\pi^*\mathrm{d}{\phi}\right].
   \end{equation*}
 \]&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;For &lt;span
@@ -469,7 +749,7 @@ require &lt;span class=&#34;math display&#34;&gt;\[
 f(x,t) \,\mathrm{d}t\right)\phi\right]\\
       &amp;amp;=\mathrm{d}K(f(x,t)\mathrm{d}{t}\wedge\pi^*\phi)+K
 \left[-\displaystyle\sum_i \dfrac{\partial f}{\partial
-x^i}(x,t)\mathrm{d}{t}\wedge\mathrm{d}{x^i}\wedge\pi^*\phi-f(x,t)\mathrm{d}{t}\wedge\pi^*\mathrm{d}{\phi}\right]
+x^i}(x,t)\mathrm{d}{t}\wedge\mathrm{d}{x^i}\wedge\pi^*\phi-f(x,t)\mathrm{d}{t}\wedge\pi^*\mathrm{d}{\phi}\right].
   \end{align*}
 \]&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -483,7 +763,7 @@ class=&#34;math display&#34;&gt;\[
 \begin{equation*}
     K_1(f(x,t)\pi^*\phi)=0,\quad
 K_1(f(x,t)\mathrm{d}{t}\wedge\pi^*\phi)=\left(\displaystyle\int_{-\infty}^{t}
-f(x,t) \,\mathrm{d}t\right)\pi^*\phi
+f(x,t) \,\mathrm{d}t\right)\pi^*\phi,
 \end{equation*}
 \]&lt;/span&gt; whenever &lt;span class=&#34;math inline&#34;&gt;\(\phi\in
 \Omega^*(M)\)&lt;/span&gt; and &lt;span class=&#34;math inline&#34;&gt;\(f\in C_c^*(M\times
@@ -500,7 +780,7 @@ x^i}(x,t)\mathrm{d}{t}\wedge\mathrm{d}{x^i}\wedge\pi^*\phi-f(x,t)\mathrm{d}{t}\w
 x^i}(x,t) \,\mathrm{d}t\right)\mathrm{d}{x^i}\wedge
 \pi^*\phi-\left(\displaystyle\int_{-\infty}^{t} f(x,t)
 \,\mathrm{d}t\right)\pi^*\mathrm{d}{\phi}\\
-    =&amp;amp;f(x,t)\mathrm{d}{t}\wedge \pi^*\phi
+    =&amp;amp;f(x,t)\mathrm{d}{t}\wedge \pi^*\phi.
 \end{align*}
 \]&lt;/span&gt; However, the computation also indicates that we are not far
 away from success, with only one term involving &lt;span
@@ -516,7 +796,7 @@ same fashion:&lt;/p&gt;
 \left[\left(\displaystyle\sum_i \dfrac{\partial f}{\partial
 x^i}(x,t)\mathrm{d}{x^i}+\dfrac{\partial f}{\partial
 t}(x,t)\mathrm{d}{t}\right)\wedge
-\pi^*\phi+f(x,t)\pi^*\mathrm{d}{\phi}\right]
+\pi^*\phi+f(x,t)\pi^*\mathrm{d}{\phi}\right].
   \end{equation*}
 \]&lt;/span&gt;&lt;/li&gt;
 &lt;li&gt;For &lt;span
@@ -527,7 +807,7 @@ require &lt;span class=&#34;math display&#34;&gt;\[
 f(x,t) \,\mathrm{d}t\right)\phi\right]\\
       &amp;amp;=\mathrm{d}K_2(f(x,t)\mathrm{d}{t}\wedge\pi^*\phi)+K_2
 \left[-\displaystyle\sum_i \dfrac{\partial f}{\partial
-x^i}(x,t)\mathrm{d}{t}\wedge\mathrm{d}{x^i}\wedge\pi^*\phi-f(x,t)\mathrm{d}{t}\wedge\pi^*\mathrm{d}{\phi}\right]
+x^i}(x,t)\mathrm{d}{t}\wedge\mathrm{d}{x^i}\wedge\pi^*\phi-f(x,t)\mathrm{d}{t}\wedge\pi^*\mathrm{d}{\phi}\right].
   \end{align*}
 \]&lt;/span&gt;&lt;/li&gt;
 &lt;/ul&gt;
@@ -536,7 +816,7 @@ class=&#34;math inline&#34;&gt;\(K_2(f(x,t)\pi^*\phi)=0\)&lt;/span&gt;, and so t
 requirement simplifies to &lt;span class=&#34;math display&#34;&gt;\[
 \begin{equation*}
     K_2 \left(\dfrac{\partial f}{\partial t}(x,t)\mathrm{d}{t}\wedge
-\pi^*\phi\right)=0
+\pi^*\phi\right)=0.
 \end{equation*}
 \]&lt;/span&gt; Now we focus on the second requirement. Note that &lt;span
 class=&#34;math display&#34;&gt;\[
@@ -565,21 +845,21 @@ f(x,t) \,\mathrm{d}t\right)\phi\right]\right\}\\
 \left(\displaystyle\int_{-\infty}^{\infty} \dfrac{\partial f}{\partial
 x^i}(x,t) \,\mathrm{d}t\right)\mathrm{d}{x^i}\wedge
 \phi+\left(\displaystyle\int_{-\infty}^{\infty} f(x,t)
-\,\mathrm{d}t\right)\mathrm{d}{\phi}\right]
+\,\mathrm{d}t\right)\mathrm{d}{\phi}\right].
 \end{align*}
 \]&lt;/span&gt; An immediate guess follows: &lt;span class=&#34;math display&#34;&gt;\[
 \begin{equation*}
     K_2(f(x,t)\mathrm{d}{t}\wedge
 \pi^*\phi)=-\left(\displaystyle\int_{-\infty}^{t} e(t)
 \,\mathrm{d}t\right)\pi^*\left[\left(\displaystyle\int_{-\infty}^{\infty}
-f(x,t) \,\mathrm{d}t\right)\phi\right]
+f(x,t) \,\mathrm{d}t\right)\phi\right],
 \end{equation*}
 \]&lt;/span&gt; which indeed solves the second requirement, and together with
 &lt;span class=&#34;math inline&#34;&gt;\(K_2(f(x,t)\pi^*\phi)=0\)&lt;/span&gt;, solves the
 first, since &lt;span class=&#34;math display&#34;&gt;\[
 \begin{equation*}
     \displaystyle\int_{-\infty}^{\infty} \dfrac{\partial f}{\partial
-t}(x,t) \,\mathrm{d}t=0
+t}(x,t) \,\mathrm{d}t=0.
 \end{equation*}
 \]&lt;/span&gt;&lt;/p&gt;
 &lt;p&gt;Conclusion: The map &lt;span
@@ -611,8 +891,8 @@ class=&#34;math inline&#34;&gt;\(n\)&lt;/span&gt;, there holds &lt;span
 class=&#34;math display&#34;&gt;\[
 \begin{equation*}
     H_c^*(\mathbb{R}^n)=\begin{cases}
-        \mathbb{R}, &amp;amp;\text{in dimension $n$}\\
-        0, &amp;amp;\text{elsewhere}
+        \mathbb{R}, &amp;amp;\text{in dimension $n$;}\\
+        0, &amp;amp;\text{elsewhere,}
     \end{cases}
 \end{equation*}
 \]&lt;/span&gt; where the isomorphism &lt;span
@@ -627,6 +907,11 @@ class=&#34;math inline&#34;&gt;\(\alpha=\alpha(x)\mathrm{d}{x^1}\wedge\cdots\wed
 \mathrm{d}{x^n}\)&lt;/span&gt; with &lt;span
 class=&#34;math inline&#34;&gt;\(\displaystyle\int_{\mathbb{R}^n}
 \alpha=1\)&lt;/span&gt;, whose support can be made as small as possible.&lt;/p&gt;
+&lt;h1
+id=&#34;the-overlinepartial-poincaré-lemma-aka-dolbeault-grothendieck-lemma&#34;&gt;The
+&lt;span class=&#34;math inline&#34;&gt;\(\overline{\partial}\)&lt;/span&gt;-Poincaré Lemma
+(aka Dolbeault-Grothendieck Lemma)&lt;/h1&gt;
+&lt;p&gt;Coming soon…&lt;/p&gt;
 &lt;section class=&#34;footnotes footnotes-end-of-document&#34;
 role=&#34;doc-endnotes&#34;&gt;
 &lt;hr /&gt;
@@ -677,27 +962,35 @@ href=&#34;#fnref1&#34; class=&#34;footnote-back&#34; role=&#34;doc-backlink&#34;
                                 <category scheme="https://haosen-zju-x.github.io/tags/differentiable-manifolds/" term="Differentiable Manifolds" label="Differentiable Manifolds" />
                             
                         
+                            
+                            
+                            
+                                <category scheme="https://haosen-zju-x.github.io/tags/complex-geometry/" term="Complex Geometry" label="Complex Geometry" />
+                            
+                        
                     
                 
             
         </entry>
     
         <entry>
-            <title type="text">Tangent Staffs</title>
+            <title type="text">Tangent Story</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/tangent/" />
             <id>https://haosen-zju-x.github.io/posts/tangent/</id>
-            <updated>2023-10-01T01:35:27&#43;02:00</updated>
+            <updated>2023-10-02T23:40:46&#43;02:00</updated>
             <published>2023-09-24T20:33:22&#43;02:00</published>
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
                     <email>chenhaosen@yandex.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Part I Let \(M\) be a smooth \(m\)-manifold and \(p\in M\). We will define the tangent space and the cotangent space of \(M\) at \(p\).
-Tangent Space \(T_pM\) — The Geometric Approach Choose a local chart \((U,\varphi)\) centered at \(p\).
-Set \(C_p:=\{\alpha\in C^{\infty}(I;M) \,|\, \text{$I$ is an open interval containing $0$}, \alpha(0)=p\}\).</summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Where the whole story begins.
+Part I : Tangent Spaces &amp;amp; Cotangent Spaces Let \(M\) be a smooth \(m\)-manifold and \(p\in M\). We will define the tangent space and the cotangent space of \(M\) at \(p\).
+Tangent Space \(T_pM\) — The Geometric Approach Choose a local chart \((U,\varphi)\) centered at \(p\).</summary>
             
-                <content type="html">&lt;h1 id=&#34;part-i&#34;&gt;Part I&lt;/h1&gt;
+                <content type="html">&lt;p&gt;Where the whole story begins.&lt;/p&gt;
+&lt;h1 id=&#34;part-i-tangent-spaces-cotangent-spaces&#34;&gt;Part I : Tangent Spaces
+&amp;amp; Cotangent Spaces&lt;/h1&gt;
 &lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; be a smooth &lt;span
 class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;-manifold and &lt;span
 class=&#34;math inline&#34;&gt;\(p\in M\)&lt;/span&gt;. We will define the tangent space
@@ -727,9 +1020,11 @@ class=&#34;math inline&#34;&gt;\(T_pM\ni [\alpha]\mapsto (\varphi\circ
 \alpha)&amp;#39;(0)\in \mathbb{R}^m\)&lt;/span&gt; induces an &lt;span
 class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;-dimensional real vector space structure
 on &lt;span class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt;. The elements of &lt;span
-class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; are called &lt;em&gt;tangent vectors&lt;/em&gt;,
-and &lt;span class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; is called the &lt;em&gt;tangent
-space of &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; at &lt;span
+class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; (i.e. the equivalence classes of
+&lt;em&gt;curves&lt;/em&gt; passing through &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;)
+are called &lt;em&gt;tangent vectors&lt;/em&gt;, and &lt;span
+class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; is called the &lt;em&gt;tangent space of
+&lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; at &lt;span
 class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;&lt;/em&gt;. Denote by &lt;span
 class=&#34;math inline&#34;&gt;\(\{\left.\tfrac{\partial }{\partial x^1}\right|_p,
 \cdots, \left.\tfrac{\partial }{\partial x^m}\right|_p\}\)&lt;/span&gt; the
@@ -760,12 +1055,22 @@ identity also shows that &lt;span class=&#34;math display&#34;&gt;\[\begin{equat
 \varphi^{-1})(0)
 \end{equation*}\]&lt;/span&gt; and moreover: &lt;span
 class=&#34;math inline&#34;&gt;\(([\alpha]+[\beta])f=[\alpha]f+[\beta]f,
-(\lambda[\alpha])f=\lambda([\alpha]f)\)&lt;/span&gt;. On the other hand, we
-have: &lt;span class=&#34;math inline&#34;&gt;\([\gamma](f+g)=[\gamma]f+[\gamma]g,
+(\lambda[\alpha])f=\lambda([\alpha]f)\)&lt;/span&gt;. Soon we will see the
+precise duality behind these ideas.&lt;/p&gt;
+&lt;p&gt;We also mention that &lt;span
+class=&#34;math inline&#34;&gt;\([\gamma](f+g)=[\gamma]f+[\gamma]g,
 [\gamma](\lambda f)=\lambda([\gamma]f)\)&lt;/span&gt;, and &lt;span
 class=&#34;math inline&#34;&gt;\([\gamma](fg)=([\gamma]f)g(p)+f(p)([\gamma]g)\)&lt;/span&gt;.
-(We intentionally omit the treatment of tangent spaces as so called
-&lt;em&gt;derivations&lt;/em&gt;.)&lt;/p&gt;
+This leads to the treatment of tangent spaces as so called
+&lt;em&gt;derivations&lt;/em&gt;, which we will skip.&lt;/p&gt;
+&lt;p&gt;Of course we can just define the cotangent space &lt;span
+class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; to be the dual of the tangent
+space &lt;span class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt;. But it will be
+beneficial to explore the hidden duality seen above. In the following,
+we first define cotangent spaces using a standard algebraic approach and
+then specify the natural duality between &lt;span
+class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt;.&lt;/p&gt;
 &lt;h2 id=&#34;cotangent-space-t_pm-the-algebraic-approach&#34;&gt;Cotangent Space
 &lt;span class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; — The Algebraic
 Approach&lt;/h2&gt;
@@ -789,11 +1094,12 @@ class=&#34;math inline&#34;&gt;\(\mathbb{R}\)&lt;/span&gt;. Define the &lt;em&gt
 space of &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; at &lt;span
 class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;&lt;/em&gt; to be &lt;span
 class=&#34;math inline&#34;&gt;\(T_p^*M:=\mathfrak{m}_p/\mathfrak{m}_p^2\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p&gt;We show that &lt;span class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; is naturally
-a real vector space of dimension &lt;span class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;.
-Let &lt;span class=&#34;math inline&#34;&gt;\(x^1,\cdots,x^m\)&lt;/span&gt; be a local
-coordinate system centered at &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;.
-One can show that &lt;span class=&#34;math display&#34;&gt;\[\begin{equation*}
+&lt;p&gt;Let’s show that &lt;span class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; is
+naturally a real vector space of dimension &lt;span
+class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;. Let &lt;span
+class=&#34;math inline&#34;&gt;\(x^1,\cdots,x^m\)&lt;/span&gt; be a local coordinate
+system centered at &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;. One can
+&lt;em&gt;easily&lt;/em&gt; show that &lt;span class=&#34;math display&#34;&gt;\[\begin{equation*}
     \mathfrak{m}_p=\{[f]\in F_p \,|\, \exists [f_i]\in F_p \text{ s.t. }
 f= \textstyle\sum x^if_i\}=\langle [x^1],\cdots,[x^m] \rangle.
 \end{equation*}\]&lt;/span&gt; Consider the map &lt;span
@@ -851,7 +1157,23 @@ canonical pairing is perfect, showing that the tangent space &lt;span
 class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; and the cotangent space &lt;span
 class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; are canonically dual to each
 other.&lt;/p&gt;
-&lt;h1 id=&#34;part-ii&#34;&gt;Part II&lt;/h1&gt;
+&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
+&lt;p&gt;Coming soon…&lt;/p&gt;
+&lt;h1 id=&#34;part-ii-tangent-bundles-cotangent-bundles&#34;&gt;Part II : Tangent
+Bundles &amp;amp; Cotangent Bundles&lt;/h1&gt;
+&lt;p&gt;Coming soon…&lt;/p&gt;
+&lt;h1 id=&#34;part-iii-tangent-maps-cotangent-maps&#34;&gt;Part III : Tangent Maps
+&amp;amp; Cotangent Maps&lt;/h1&gt;
+&lt;p&gt;Coming soon…&lt;/p&gt;
+&lt;h1 id=&#34;part-iv-vector-fields-lie-brackets&#34;&gt;Part IV : Vector Fields
+&amp;amp; Lie Brackets&lt;/h1&gt;
+&lt;p&gt;Coming soon…&lt;/p&gt;
+&lt;h1 id=&#34;part-v-riemannian-metrics&#34;&gt;Part V : Riemannian Metrics&lt;/h1&gt;
+&lt;p&gt;Coming soon…&lt;/p&gt;
+&lt;h1 id=&#34;part-vi-levi-civita-connections&#34;&gt;Part VI : Levi-Civita
+Connections&lt;/h1&gt;
+&lt;p&gt;Coming soon…&lt;/p&gt;
+&lt;h1 id=&#34;part-vii-exponential-maps&#34;&gt;Part VII : Exponential Maps&lt;/h1&gt;
 &lt;p&gt;Coming soon…&lt;/p&gt;
 </content>
             
