@@ -31,7 +31,7 @@ Coming soon... -->
 
 ## Exercice 1 : Test de comparaison de deux variances & Test de comparaison de deux moyennes
 
->**Considérons le modèle statistique
+> **Considérons le modèle statistique
 $$
 \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes (n+p)}=(\mathcal{N}(\mu_0,\sigma_0^2))^{\otimes n}\otimes (\mathcal{N}(\mu_1,\sigma_1^2))^{\otimes p} \,\Big|\, \theta = (\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \mathbb{R}^2\times (\mathbb{R}_+^*)^2\right\}\right).
 $$**
@@ -116,8 +116,9 @@ T(Z):=\frac{(\overline{X}_n-\overline{Y}_p)^2}{nV_n+pW_p},
 $$
 et la valeur critique du test est
 $$
-c_{\alpha}:=\left(\frac{1}{n}+\frac{1}{p}\right)q_{1-\alpha}^{F(1,n+p-2)}.
+c_{\alpha}:=\left(\frac{1}{n}+\frac{1}{p}\right)q_{1-\alpha}^{F(1,n+p-2)},
 $$
+qui est décroissant par rapport à $\alpha\in [0,1]$.
 Ainsi, la $p$-valeur du test est
 $$
 \begin{align*}
@@ -133,7 +134,21 @@ $$
 H_0 : \mu_0\le \mu_1,\quad\text{contre}\quad H_1 : \mu_0>\mu_1.
 $$**
 
-
+On considère l'estimateur de la différence $\mu_0-\mu_1$ donné par $T(Z):=\frac{\overline{X}_n-\overline{Y}_p}{\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)(nV_n+pW_p)}}$.
+On observe que sous $H_0$,
+$$
+\begin{align*}
+\mathbb{P}_{\theta}(T(Z)\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}})
+&\le \mathbb{P}_{\theta}\left(T(Z)-\frac{\mu_0-\mu_1}{\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)(nV_n+pW_p)}}\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)\\
+&\le \mathbb{P}_{\theta}\left(\frac{[(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge q_{1-\alpha}^{F(1,n+p-2)}\right)\\
+&= \alpha.
+\end{align*}
+$$
+Ainsi, le test
+$$
+\phi(Z):=\mathbb{1}\left\{\frac{\overline{X}_n-\overline{Y}_p}{\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)(nV_n+pW_p)}}\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right\}
+$$
+est un test de niveau $\alpha$ de l'hypothèse $H_0:\mu_0\le \mu_1$ contre $H_1:\mu_0>\mu_1$.
 
 <!-- ## Exercice 2 : Le test du rapport de vraisemblance généralisé
 

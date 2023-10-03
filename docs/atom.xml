@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-10-03T00:38:12&#43;02:00</updated>
+    <updated>2023-10-03T10:05:49&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">Tests et Régions de Confiance</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/" />
             <id>https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/</id>
-            <updated>2023-10-03T00:32:12&#43;02:00</updated>
+            <updated>2023-10-03T10:05:34&#43;02:00</updated>
             <published>2023-10-01T19:24:26&#43;00:00</published>
             <author>
                     <name>Haosen</name>
@@ -200,9 +200,11 @@ class=&#34;math display&#34;&gt;\[
 T(Z):=\frac{(\overline{X}_n-\overline{Y}_p)^2}{nV_n+pW_p},
 \]&lt;/span&gt; et la valeur critique du test est &lt;span
 class=&#34;math display&#34;&gt;\[
-c_{\alpha}:=\left(\frac{1}{n}+\frac{1}{p}\right)q_{1-\alpha}^{F(1,n+p-2)}.
-\]&lt;/span&gt; Ainsi, la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du
-test est &lt;span class=&#34;math display&#34;&gt;\[
+c_{\alpha}:=\left(\frac{1}{n}+\frac{1}{p}\right)q_{1-\alpha}^{F(1,n+p-2)},
+\]&lt;/span&gt; qui est décroissant par rapport à &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\in [0,1]\)&lt;/span&gt;. Ainsi, la &lt;span
+class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test est &lt;span
+class=&#34;math display&#34;&gt;\[
 \begin{align*}
 \hat{\alpha}(Z)
 &amp;amp;=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
@@ -218,6 +220,28 @@ class=&#34;math display&#34;&gt;\[
 H_0 : \mu_0\le \mu_1,\quad\text{contre}\quad H_1 : \mu_0&amp;gt;\mu_1.
 \]&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
 &lt;/ul&gt;
+&lt;p&gt;On considère l’estimateur de la différence &lt;span
+class=&#34;math inline&#34;&gt;\(\mu_0-\mu_1\)&lt;/span&gt; donné par &lt;span
+class=&#34;math inline&#34;&gt;\(T(Z):=\frac{\overline{X}_n-\overline{Y}_p}{\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)(nV_n+pW_p)}}\)&lt;/span&gt;.
+On observe que sous &lt;span class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;, &lt;span
+class=&#34;math display&#34;&gt;\[
+\begin{align*}
+\mathbb{P}_{\theta}(T(Z)\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}})
+&amp;amp;\le
+\mathbb{P}_{\theta}\left(T(Z)-\frac{\mu_0-\mu_1}{\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)(nV_n+pW_p)}}\ge
+\sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)\\
+&amp;amp;\le
+\mathbb{P}_{\theta}\left(\frac{[(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge
+q_{1-\alpha}^{F(1,n+p-2)}\right)\\
+&amp;amp;= \alpha.
+\end{align*}
+\]&lt;/span&gt; Ainsi, le test &lt;span class=&#34;math display&#34;&gt;\[
+\phi(Z):=\mathbb{1}\left\{\frac{\overline{X}_n-\overline{Y}_p}{\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)(nV_n+pW_p)}}\ge
+\sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right\}
+\]&lt;/span&gt; est un test de niveau &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
+class=&#34;math inline&#34;&gt;\(H_0:\mu_0\le \mu_1\)&lt;/span&gt; contre &lt;span
+class=&#34;math inline&#34;&gt;\(H_1:\mu_0&amp;gt;\mu_1\)&lt;/span&gt;.&lt;/p&gt;
 &lt;!-- ## Exercice 2 : Le test du rapport de vraisemblance généralisé
 
 Coming soon...
