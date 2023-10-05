@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Thu, 05 Oct 2023 13:23:25 &#43;0200</lastBuildDate>
+        <lastBuildDate>Thu, 05 Oct 2023 13:37:25 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://haosen-zju-x.github.io/rss.xml" />
         
@@ -49,19 +49,6 @@
     padding-right:5px;
   }
 &lt;/style&gt;
-&lt;!-- Pour la première fois de ma vie, je pense que les statistiques peuvent être intéressantes et élégantes.
-
-Un grand merci à Prof. Gersende Fort pour ses petites classes très bien faites :)
-
-# Théorie
-
-## Cramér-Rao
-
-Coming soon...
-
-## Neyman-Pearson
-
-Coming soon... --&gt;
 &lt;h1 id=&#34;exercices&#34;&gt;Exercices&lt;/h1&gt;
 &lt;h2
 id=&#34;test-de-comparaison-de-deux-variances-test-de-comparaison-de-deux-moyennes&#34;&gt;Test
@@ -79,9 +66,10 @@ moyennes&lt;/h2&gt;
 &lt;span
 class=&#34;math inline&#34;&gt;\(\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\)&lt;/span&gt;.
 &lt;/p&gt;
-&lt;p&gt;On remarque que &lt;span
-class=&#34;math inline&#34;&gt;\(L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot
-L(\theta_1;Y_1,\cdots,Y_p)\)&lt;/span&gt;, où &lt;span
+&lt;p&gt;On remarque que &lt;span class=&#34;math display&#34;&gt;\[
+L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot
+L(\theta_1;Y_1,\cdots,Y_p),
+\]&lt;/span&gt; où &lt;span
 class=&#34;math inline&#34;&gt;\(\theta_0=(\mu_0,\sigma_0^2)\)&lt;/span&gt; et &lt;span
 class=&#34;math inline&#34;&gt;\(\theta_1=(\mu_1,\sigma_1^2)\)&lt;/span&gt;. Comme
 l’estimateur du maximum de vraisemblance du paramètre &lt;span

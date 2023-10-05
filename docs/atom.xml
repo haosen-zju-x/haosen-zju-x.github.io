@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-10-05T13:23:25&#43;02:00</updated>
+    <updated>2023-10-05T13:37:25&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -20,7 +20,7 @@
             <title type="text">Tests et Régions de Confiance</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/" />
             <id>https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/</id>
-            <updated>2023-10-05T13:21:57&#43;02:00</updated>
+            <updated>2023-10-05T13:37:17&#43;02:00</updated>
             <published>2023-10-01T19:24:26&#43;00:00</published>
             <author>
                     <name>Haosen</name>
@@ -28,7 +28,7 @@
                     <email>chenhaosen@yandex.com</email>
                     </author>
             <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Exercices Test de comparaison de deux variances &amp;amp; Test de comparaison de deux moyennes Considérons le modèle statistique \[ \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes (n+p)}=(\mathcal{N}(\mu_0,\sigma_0^2))^{\otimes n}\otimes (\mathcal{N}(\mu_1,\sigma_1^2))^{\otimes p} \,\Big|\, \theta = (\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \mathbb{R}^2\times (\mathbb{R}_+^*)^2\right\}\right). \]
-1. Déterminer l’estimateur du maximum de vraisemblance du paramètre \(\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\). On remarque que \(L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot L(\theta_1;Y_1,\cdots,Y_p)\), où \(\theta_0=(\mu_0,\sigma_0^2)\) et \(\theta_1=(\mu_1,\sigma_1^2)\).</summary>
+1. Déterminer l’estimateur du maximum de vraisemblance du paramètre \(\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\). On remarque que \[ L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot L(\theta_1;Y_1,\cdots,Y_p), \] où \(\theta_0=(\mu_0,\sigma_0^2)\) et \(\theta_1=(\mu_1,\sigma_1^2)\).</summary>
             
                 <content type="html">&lt;style&gt;
   p.mybox 
@@ -41,19 +41,6 @@
     padding-right:5px;
   }
 &lt;/style&gt;
-&lt;!-- Pour la première fois de ma vie, je pense que les statistiques peuvent être intéressantes et élégantes.
-
-Un grand merci à Prof. Gersende Fort pour ses petites classes très bien faites :)
-
-# Théorie
-
-## Cramér-Rao
-
-Coming soon...
-
-## Neyman-Pearson
-
-Coming soon... --&gt;
 &lt;h1 id=&#34;exercices&#34;&gt;Exercices&lt;/h1&gt;
 &lt;h2
 id=&#34;test-de-comparaison-de-deux-variances-test-de-comparaison-de-deux-moyennes&#34;&gt;Test
@@ -71,9 +58,10 @@ moyennes&lt;/h2&gt;
 &lt;span
 class=&#34;math inline&#34;&gt;\(\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\)&lt;/span&gt;.
 &lt;/p&gt;
-&lt;p&gt;On remarque que &lt;span
-class=&#34;math inline&#34;&gt;\(L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot
-L(\theta_1;Y_1,\cdots,Y_p)\)&lt;/span&gt;, où &lt;span
+&lt;p&gt;On remarque que &lt;span class=&#34;math display&#34;&gt;\[
+L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot
+L(\theta_1;Y_1,\cdots,Y_p),
+\]&lt;/span&gt; où &lt;span
 class=&#34;math inline&#34;&gt;\(\theta_0=(\mu_0,\sigma_0^2)\)&lt;/span&gt; et &lt;span
 class=&#34;math inline&#34;&gt;\(\theta_1=(\mu_1,\sigma_1^2)\)&lt;/span&gt;. Comme
 l’estimateur du maximum de vraisemblance du paramètre &lt;span

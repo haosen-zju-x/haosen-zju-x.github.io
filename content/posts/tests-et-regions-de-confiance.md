@@ -23,20 +23,6 @@ markup: pandoc
   }
 </style>
 
-<!-- Pour la première fois de ma vie, je pense que les statistiques peuvent être intéressantes et élégantes.
-
-Un grand merci à Prof. Gersende Fort pour ses petites classes très bien faites :)
-
-# Théorie
-
-## Cramér-Rao
-
-Coming soon...
-
-## Neyman-Pearson
-
-Coming soon... -->
-
 # Exercices
 
 ## Test de comparaison de deux variances & Test de comparaison de deux moyennes
@@ -50,7 +36,11 @@ $$
   1\. Déterminer l'estimateur du maximum de vraisemblance du paramètre $\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)$.
 </p>
 
-On remarque que $L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot L(\theta_1;Y_1,\cdots,Y_p)$, où $\theta_0=(\mu_0,\sigma_0^2)$ et $\theta_1=(\mu_1,\sigma_1^2)$. Comme l'estimateur du maximum de vraisemblance du paramètre $\theta_0$ est $\left(\bar{X}_n,V_n\right)$, où
+On remarque que
+$$
+L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot L(\theta_1;Y_1,\cdots,Y_p),
+$$
+où $\theta_0=(\mu_0,\sigma_0^2)$ et $\theta_1=(\mu_1,\sigma_1^2)$. Comme l'estimateur du maximum de vraisemblance du paramètre $\theta_0$ est $\left(\bar{X}_n,V_n\right)$, où
 $$
 \bar{X}_n:=\frac{1}{n}\sum_{i=1}^{n}X_i,\quad V_n:=\frac{1}{n}\sum_{i=1}^{n}(X_i-\bar{X}_n)^2,
 $$
