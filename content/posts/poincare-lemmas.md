@@ -3,7 +3,7 @@ title: The Poincaré Lemmas
 description: null
 date: 2023-09-30T20:16:07.758Z
 draft: false
-slugs: the-poincare-lemmas
+slugs: poincare-lemmas
 tags:
   - Algebraic Topology
   - Differentiable Manifolds
@@ -159,7 +159,7 @@ $$
 $$
 where the isomorphism $H_c^*(\mathbb{R}^n)\xrightarrow{\cong}\mathbb{R}$ is given by iterated $\pi_*$, i.e., by integration over $\mathbb{R}^n$, thanks to Fubini's theorem. Besides, by iterating $e_*$, we see that a generator of $H_c^n(\mathbb{R}^n)$ is represented by a bump $n$-form $\alpha=\alpha(x)\mathrm{d}{x^1}\wedge\cdots\wedge \mathrm{d}{x^n}$ with $\displaystyle\int_{\mathbb{R}^n} \alpha=1$, whose support can be made as small as possible.
 
-[^脚注]:[To be explicit, if $\phi\in \Omega^r(M)$ is represented as $\sum_{i_1<\cdots<i_r}\phi_{i_1\cdots i_r}(x)\mathrm{d}{x^{i_1}}\wedge\cdots\wedge \mathrm{d}{x^{i_r}}$ w.r.t. some chosen local coordinates on $M$, then $\pi^*\phi\in \Omega^r(M\times \mathbb{R})$ is simply represented as $\sum_{i_1<\cdots<i_r}\phi_{i_1\cdots i_r}\circ \pi(x,t)\mathrm{d}{x^{i_1}}\wedge\cdots\wedge \mathrm{d}{x^{i_r}}$ w.r.t. the associated local coordinates on $M\times \mathbb{R}^1$.]
+[^脚注]: To be explicit, if $\phi\in \Omega^r(M)$ is represented as $\sum_{i_1<\cdots<i_r}\phi_{i_1\cdots i_r}(x)\mathrm{d}{x^{i_1}}\wedge\cdots\wedge \mathrm{d}{x^{i_r}}$ w.r.t. some chosen local coordinates on $M$, then $\pi^*\phi\in \Omega^r(M\times \mathbb{R})$ is simply represented as $\sum_{i_1<\cdots<i_r}\phi_{i_1\cdots i_r}\circ \pi(x,t)\mathrm{d}{x^{i_1}}\wedge\cdots\wedge \mathrm{d}{x^{i_r}}$ w.r.t. the associated local coordinates on $M\times \mathbb{R}^1$.
 
 # The $\overline{\partial}$-Poincaré Lemma (aka Dolbeault-Grothendieck Lemma)
 

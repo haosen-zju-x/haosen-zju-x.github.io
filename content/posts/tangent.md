@@ -38,7 +38,7 @@ which shows that $D_\gamma$ (taking derivatives along $\gamma$) is completely de
 \end{equation*}
 and moreover: $([\alpha]+[\beta])f=[\alpha]f+[\beta]f, (\lambda[\alpha])f=\lambda([\alpha]f)$. Soon we will see the precise duality behind these ideas.
 
-We also mention that $[\gamma](f+g)=[\gamma]f+[\gamma]g, [\gamma](\lambda f)=\lambda([\gamma]f)$, and $[\gamma](fg)=([\gamma]f)g(p)+f(p)([\gamma]g)$. This leads to the treatment of tangent spaces as so called *derivations*, which we will skip.
+We also mention that $[\gamma](f+g)=[\gamma]f+[\gamma]g, [\gamma](\lambda f)=\lambda([\gamma]f)$, and $[\gamma](fg)=([\gamma]f)g(p)+f(p)([\gamma]g)$. This leads to the treatment of tangent spaces as so called *derivations*, which we will skip for now.
 
 Of course we can just define the cotangent space $T_p^*M$ to be the dual of the tangent space $T_pM$. But it will be beneficial to explore the hidden duality seen above. In the following, we first define cotangent spaces using a standard algebraic approach and then specify the natural duality between $T_pM$ and $T_p^*M$.
 
@@ -48,8 +48,9 @@ Set $F_p:=\{(f,U) \,|\, \text{$U$ is an open neighborhood of $p$}, f\in C^{\inft
 
 Let's show that $T_p^*M$ is naturally a real vector space of dimension $m$. Let $x^1,\cdots,x^m$ be a local coordinate system centered at $p$. One can *easily* show that
 \begin{equation*}
-	\mathfrak{m}_p=\{[f]\in F_p \,|\, \exists [f_i]\in F_p \text{ s.t. } f= \textstyle\sum x^if_i\}=\langle [x^1],\cdots,[x^m] \rangle.
+	\mathfrak{m}_p=\{[f]\in F_p \,|\, \exists [f_i]\in F_p \text{ s.t. } f= \textstyle\sum x^if_i\}=\langle [x^1],\cdots,[x^m] \rangle,
 \end{equation*}
+which is known as Hadamard's lemma.
 Consider the map
 \begin{equation*}
 	\theta:\mathfrak{m}_p\to \mathbb{R}^n\quad [\textstyle\sum x^if_i]\mapsto (f_1(p),\cdots,f_m(p)).
@@ -70,21 +71,27 @@ Therefore we have a canonical pairing between $T_pM$ and $T_p^*M$:
 \end{equation*}
 Since $\left.\tfrac{\partial }{\partial x^i}\right|_p \mathrm{d}x^j = \left.\tfrac{\partial }{\partial x^i}\right|_p x^j=\partial_i(x^j\circ \varphi^{-1})(0)=\delta_i^j$, the canonical pairing is perfect, showing that the tangent space $T_pM$ and the cotangent space $T_p^*M$ are canonically dual to each other.
 
-## Examples
+# Part II : Tangent Maps & Cotangent Maps
 
 Coming soon...
 
-# Part II : Tangent Bundles & Cotangent Bundles
+<!-- Let $M$ be a smooth $m$-manifold and $G$ a group acting smoothly on $M$, then we have a canonical isomorphism: $T_{[p]}(M/G)\cong T_pM/T_p(G\cdot p)$. -->
 
-Coming soon...
-
-# Part III : Tangent Maps & Cotangent Maps
+# Part III : Tangent Bundles & Cotangent Bundles
 
 Coming soon...
 
 # Part IV : Vector Fields & Lie Brackets
 
 Coming soon...
+
+# Exercises
+
+- Let $M^m$ and $N^n$ be two smooth manifolds. Then $M\times N$ is naturally a smooth $(m+n)$-manifold. We have two canonical isomorphisms: $T_{(p,q)}(M\times N)\cong T_pM\times T_qN$ and $T_{(p,q)}^*(M\times N)\cong T_p^*M\times T_q^*N$.
+
+- Let $M$ be a smooth $m$-manifold. Then the tangent space of the diagonal of $M\times M$ at a point $(p,p)$ is the diagonal of $T_pM\times T_pM$.
+
+- The special linear group $\text{SL}(n,\mathbb{R})$ is a Lie group of dimension $n^2-1$. The Lie algebra $\mathfrak{sl}(n,\mathbb{R}):=T_{I_n}(\text{SL}(n,\mathbb{R}))$ consists of all $n\times n$ matrices over $R$ with vanishing trace. The Lie bracket is given by the commutator. The exponential map from $\mathfrak{sl}(n,\mathbb{R})$ to $\text{SL}(n,\mathbb{R})$ is well-defined since we have $\det(e^A)=e^{\text{tr}(A)}$ for any $A\in M_{n\times n}(\mathbb{R})$.
 
 # Part V : Riemannian Metrics
 
@@ -97,3 +104,5 @@ Coming soon...
 # Part VII : Exponential Maps
 
 Coming soon...
+
+# Exercises

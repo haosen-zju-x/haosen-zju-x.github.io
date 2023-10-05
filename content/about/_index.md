@@ -4,7 +4,7 @@ date: 2023-09-30T19:29:22+02:00
 draft: false
 ---
 
-![](/Der_Mönch_am_Meer.jpeg "Der Mönch am Meer")
+![](/Der_Mönch_am_Meer.jpeg "Der Mönch am Meer, 1808-1810, Caspar David Friedrich")
 
 # Readings Projects (Books)
 

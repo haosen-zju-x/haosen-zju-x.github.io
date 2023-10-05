@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Tue, 03 Oct 2023 10:05:49 &#43;0200</lastBuildDate>
+        <lastBuildDate>Thu, 05 Oct 2023 13:23:25 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://haosen-zju-x.github.io/rss.xml" />
         
@@ -38,7 +38,17 @@
                 
                 <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
                 
-                    <description>&lt;p&gt;…&lt;/p&gt;
+                    <description>&lt;style&gt;
+  p.mybox 
+  {
+    border-style:dashed;
+    border-width:1.5px;
+    border-color:blue;
+    background-color:#e6e6fa;
+    padding-left:10px;
+    padding-right:5px;
+  }
+&lt;/style&gt;
 &lt;!-- Pour la première fois de ma vie, je pense que les statistiques peuvent être intéressantes et élégantes.
 
 Un grand merci à Prof. Gersende Fort pour ses petites classes très bien faites :)
@@ -54,24 +64,21 @@ Coming soon...
 Coming soon... --&gt;
 &lt;h1 id=&#34;exercices&#34;&gt;Exercices&lt;/h1&gt;
 &lt;h2
-id=&#34;exercice-1-test-de-comparaison-de-deux-variances-test-de-comparaison-de-deux-moyennes&#34;&gt;Exercice
-1 : Test de comparaison de deux variances &amp;amp; Test de comparaison de
-deux moyennes&lt;/h2&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Considérons le modèle statistique &lt;span
-class=&#34;math display&#34;&gt;\[
+id=&#34;test-de-comparaison-de-deux-variances-test-de-comparaison-de-deux-moyennes&#34;&gt;Test
+de comparaison de deux variances &amp;amp; Test de comparaison de deux
+moyennes&lt;/h2&gt;
+&lt;p&gt;Considérons le modèle statistique &lt;span class=&#34;math display&#34;&gt;\[
 \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes
 (n+p)}=(\mathcal{N}(\mu_0,\sigma_0^2))^{\otimes n}\otimes
 (\mathcal{N}(\mu_1,\sigma_1^2))^{\otimes p} \,\Big|\, \theta =
 (\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \mathbb{R}^2\times
 (\mathbb{R}_+^*)^2\right\}\right).
-\]&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Déterminer l’estimateur du maximum de vraisemblance du
-paramètre &lt;span
-class=&#34;math inline&#34;&gt;\(\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\)&lt;/span&gt;.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&#34;mybox&#34;&gt;
+1. Déterminer l’estimateur du maximum de vraisemblance du paramètre
+&lt;span
+class=&#34;math inline&#34;&gt;\(\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\)&lt;/span&gt;.
+&lt;/p&gt;
 &lt;p&gt;On remarque que &lt;span
 class=&#34;math inline&#34;&gt;\(L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot
 L(\theta_1;Y_1,\cdots,Y_p)\)&lt;/span&gt;, où &lt;span
@@ -79,34 +86,34 @@ class=&#34;math inline&#34;&gt;\(\theta_0=(\mu_0,\sigma_0^2)\)&lt;/span&gt; et &
 class=&#34;math inline&#34;&gt;\(\theta_1=(\mu_1,\sigma_1^2)\)&lt;/span&gt;. Comme
 l’estimateur du maximum de vraisemblance du paramètre &lt;span
 class=&#34;math inline&#34;&gt;\(\theta_0\)&lt;/span&gt; est &lt;span
-class=&#34;math inline&#34;&gt;\(\left(\overline{X}_n,V_n\right)\)&lt;/span&gt;, où &lt;span
+class=&#34;math inline&#34;&gt;\(\left(\bar{X}_n,V_n\right)\)&lt;/span&gt;, où &lt;span
 class=&#34;math display&#34;&gt;\[
-\overline{X}_n:=\frac{1}{n}\sum_{i=1}^{n}X_i,\quad
-V_n:=\frac{1}{n}\sum_{i=1}^{n}(X_i-\overline{X}_n)^2,
+\bar{X}_n:=\frac{1}{n}\sum_{i=1}^{n}X_i,\quad
+V_n:=\frac{1}{n}\sum_{i=1}^{n}(X_i-\bar{X}_n)^2,
 \]&lt;/span&gt; et que l’estimateur du maximum de vraisemblance du paramètre
 &lt;span class=&#34;math inline&#34;&gt;\(\theta_1\)&lt;/span&gt; est &lt;span
-class=&#34;math inline&#34;&gt;\((\overline{Y}_p,W_p)\)&lt;/span&gt;, où &lt;span
+class=&#34;math inline&#34;&gt;\((\bar{Y}_p,W_p)\)&lt;/span&gt;, où &lt;span
 class=&#34;math display&#34;&gt;\[
-\overline{Y}_p:=\frac{1}{p}\sum_{j=1}^{n}Y_j,\quad
-W_p:=\frac{1}{p}\sum_{j=1}^{p}(Y_j-\overline{Y}_p)^2,
+\bar{Y}_p:=\frac{1}{p}\sum_{j=1}^{n}Y_j,\quad
+W_p:=\frac{1}{p}\sum_{j=1}^{p}(Y_j-\bar{Y}_p)^2,
 \]&lt;/span&gt; on en conclut que l’estimateur du maximum de vraisemblance du
 paramètre &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; est &lt;span
 class=&#34;math display&#34;&gt;\[
-\hat{\theta}_{n,p}^{\text{MV}}=(\overline{X}_n,\overline{Y}_p,V_n,W_p).
+\hat{\theta}_{n,p}^{\text{MV}}=(\bar{X}_n,\bar{Y}_p,V_n,W_p).
 \]&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Déterminer un test de niveau &lt;span
+&lt;p class=&#34;mybox&#34;&gt;
+2. Déterminer un test de niveau &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
 class=&#34;math display&#34;&gt;\[
-H_0 : \sigma_0^2=\sigma_1^2,\quad\text{contre}\quad H_1 :
+  H_0 : \sigma_0^2=\sigma_1^2,\quad\text{contre}\quad H_1 :
 \sigma_0^2&amp;gt;\sigma_1^2.
-\]&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+  \]&lt;/span&gt;
+&lt;/p&gt;
 &lt;p&gt;Rappelons que sous &lt;span
 class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, &lt;span
-class=&#34;math inline&#34;&gt;\(nV_n/\sigma_0^2=\frac{1}{\sigma_0^2}\sum_{i=1}^{n}(X_i-\overline{X}_n)^2\sim
+class=&#34;math inline&#34;&gt;\(nV_n/\sigma_0^2=\frac{1}{\sigma_0^2}\sum_{i=1}^{n}(X_i-\bar{X}_n)^2\sim
 \chi^2(n-1)\)&lt;/span&gt; et &lt;span
-class=&#34;math inline&#34;&gt;\(pW_p/\sigma_1^2=\frac{1}{\sigma_1^2}\sum_{j=1}^{p}(Y_j-\overline{Y}_p)^2\sim
+class=&#34;math inline&#34;&gt;\(pW_p/\sigma_1^2=\frac{1}{\sigma_1^2}\sum_{j=1}^{p}(Y_j-\bar{Y}_p)^2\sim
 \chi^2(p-1)\)&lt;/span&gt;. Alors, pour tout &lt;span
 class=&#34;math inline&#34;&gt;\(\theta\in \Theta\triangleq\mathbb{R}^2\times
 (\mathbb{R}_+^*)^2\)&lt;/span&gt;, on a sous &lt;span
@@ -124,131 +131,166 @@ q_{1-\alpha}^{F(n-1,p-1)}\right)=1-\alpha.
 class=&#34;math inline&#34;&gt;\(\phi(Z):=\mathbb{1}\left\{\dfrac{nV_n}{pW_p}\ge
 q_{1-\alpha}^{F(n-1,p-1)}\right\}\)&lt;/span&gt; est un test de taille (et
 donc de niveau) &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;.&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;&lt;strong&gt;Nous considérons dans la suite le modèle statistique &lt;span
+&lt;p class=&#34;mybox&#34;&gt;
+3. Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test.
+&lt;/p&gt;
+&lt;p&gt;Dans notre cas, la statistique de test est &lt;span
+class=&#34;math inline&#34;&gt;\(T(Z):=\frac{nV_n}{pW_p}\)&lt;/span&gt; et la valeur
+critique du test est &lt;span
+class=&#34;math inline&#34;&gt;\(c_{\alpha}:=q_{1-\alpha}^{F(n-1,p-1)}\)&lt;/span&gt;,
+qui est décroissante par rapport à &lt;span class=&#34;math inline&#34;&gt;\(\alpha\in
+[0,1]\)&lt;/span&gt;. Ainsi, la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur
+du test est &lt;span class=&#34;math display&#34;&gt;\[
+\begin{align*}
+  \hat{\alpha}(Z)
+  &amp;amp;=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
+  &amp;amp;=1-\Phi\left(\frac{nV_n}{pW_p}\right),
+\end{align*}
+\]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Phi\)&lt;/span&gt; désigne la
+fonction de répartition de la loi de Fisher de &lt;span
+class=&#34;math inline&#34;&gt;\((n-1,p-1)\)&lt;/span&gt; degrés de liberté.&lt;/p&gt;
+&lt;p&gt;Nous considérons dans la suite le modèle statistique &lt;span
 class=&#34;math display&#34;&gt;\[
 \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes
 (n+p)}=(\mathcal{N}(\mu_0,\sigma^2))^{\otimes n}\otimes
 (\mathcal{N}(\mu_1,\sigma^2))^{\otimes p} \,\Big|\, \theta =
 (\mu_0,\mu_1,\sigma^2)\in \mathbb{R}^2\times
 \mathbb{R}_+^*\right\}\right).
-\]&lt;/span&gt;&lt;/strong&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Construire un intervalle de confiance de &lt;span
+\]&lt;/span&gt;&lt;/p&gt;
+&lt;p class=&#34;mybox&#34;&gt;
+4. Construire un intervalle de confiance de &lt;span
 class=&#34;math inline&#34;&gt;\(\mu_0-\mu_1\)&lt;/span&gt; de niveau de confiance &lt;span
-class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt;.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt;.
+&lt;/p&gt;
 &lt;p&gt;Sous &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, les
 deux variables aléatoires réelles &lt;span
-class=&#34;math inline&#34;&gt;\(\overline{X}_n\sim
+class=&#34;math inline&#34;&gt;\(\bar{X}_n\sim
 \mathcal{N}(\mu_0,\sigma^2/n)\)&lt;/span&gt; et &lt;span
-class=&#34;math inline&#34;&gt;\(\overline{Y}_p\sim
+class=&#34;math inline&#34;&gt;\(\bar{Y}_p\sim
 \mathcal{N}(\mu_1,\sigma^2/p)\)&lt;/span&gt; sont indépendentes, et donc &lt;span
 class=&#34;math display&#34;&gt;\[
-\frac{(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)}{\sqrt{\sigma^2/n+\sigma^2/p}}\sim
+\frac{(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)}{\sqrt{\sigma^2/n+\sigma^2/p}}\sim
 \mathcal{N}(0,1).
 \]&lt;/span&gt; D’autre part, on sait que sous &lt;span
 class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, &lt;span
 class=&#34;math display&#34;&gt;\[
 \frac{1}{\sigma^2}(nV_n+pW_p)\sim \chi^2(n+p-2).
 \]&lt;/span&gt; On rappelle aussi que &lt;span
-class=&#34;math inline&#34;&gt;\(\overline{X}_n,V_n\)&lt;/span&gt; sont indépendantes
-sous &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, et que
-&lt;span class=&#34;math inline&#34;&gt;\(\overline{Y}_p,W_p\)&lt;/span&gt; le sont aussi.
-En plus, comme &lt;span class=&#34;math inline&#34;&gt;\(X_1,\cdots,X_n\)&lt;/span&gt; et
-&lt;span class=&#34;math inline&#34;&gt;\(Y_1,\cdots,Y_p\)&lt;/span&gt; sont indépendantes
-entre elles sous &lt;span
-class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, on voit que &lt;span
-class=&#34;math inline&#34;&gt;\(\overline{X}_n,W_p\)&lt;/span&gt; sont indépendantes
-sous &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, et que
-&lt;span class=&#34;math inline&#34;&gt;\(\overline{Y}_p,V_n\)&lt;/span&gt; le sont aussi.
-Donc, les deux variables aléatoires réelles nouvellement construites,
-&lt;span
-class=&#34;math inline&#34;&gt;\(\frac{(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)}{\sqrt{\sigma^2/n+\sigma^2/p}}\)&lt;/span&gt;
+class=&#34;math inline&#34;&gt;\(\bar{X}_n,V_n\)&lt;/span&gt; sont indépendantes sous
+&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, et que &lt;span
+class=&#34;math inline&#34;&gt;\(\bar{Y}_p,W_p\)&lt;/span&gt; le sont aussi. En plus,
+comme &lt;span class=&#34;math inline&#34;&gt;\(X_1,\cdots,X_n\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(Y_1,\cdots,Y_p\)&lt;/span&gt; sont indépendantes entre
+elles sous &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, on
+voit que &lt;span class=&#34;math inline&#34;&gt;\(\bar{X}_n,W_p\)&lt;/span&gt; sont
+indépendantes sous &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, et que &lt;span
+class=&#34;math inline&#34;&gt;\(\bar{Y}_p,V_n\)&lt;/span&gt; le sont aussi. Donc, les
+deux variables aléatoires réelles nouvellement construites, &lt;span
+class=&#34;math inline&#34;&gt;\(\frac{(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)}{\sqrt{\sigma^2/n+\sigma^2/p}}\)&lt;/span&gt;
 et &lt;span class=&#34;math inline&#34;&gt;\(\frac{1}{\sigma^2}(nV_n+pW_p)\)&lt;/span&gt;,
 sont indépendantes sous &lt;span
 class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;. Cela permet de
 conclure que sous &lt;span
 class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, &lt;span
 class=&#34;math display&#34;&gt;\[
-\frac{[(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\sim
+\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\sim
 F(1,n+p-2).
 \]&lt;/span&gt; Alors, pour tout &lt;span class=&#34;math inline&#34;&gt;\(\theta\in
 \Theta\)&lt;/span&gt;, &lt;span class=&#34;math display&#34;&gt;\[
-\mathbb{P}_{\theta}\left(\frac{[(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\le
+\mathbb{P}_{\theta}\left(\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\le
 q_{1-\alpha}^{F(1,n+p-2)}\right)=1-\alpha.
 \]&lt;/span&gt; On en tire donc une intervalle de confiance de niveau de
 confiance &lt;span class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt; pour &lt;span
 class=&#34;math inline&#34;&gt;\(\mu_0-\mu_1\)&lt;/span&gt; : &lt;span
 class=&#34;math display&#34;&gt;\[
 \textstyle
-\left[(\overline{X}_n-\overline{Y}_p)\pm
-\sqrt{nV_n+pW_p}\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)q_{1-\alpha}^{F(1,n+p-2)}}\right]
+\left[(\bar{X}_n-\bar{Y}_p)\pm
+\sqrt{nV_n+pW_p}\sqrt{(\frac{1}{n}+\frac{1}{p})q_{1-\alpha}^{F(1,n+p-2)}}\right]
 \]&lt;/span&gt;&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;En déduire un test de niveau &lt;span
+&lt;p class=&#34;mybox&#34;&gt;
+5. En déduire un test de niveau &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
 class=&#34;math display&#34;&gt;\[
-H_0 : \mu_0=\mu_1,\quad\text{contre}\quad H_1 : \mu_0\neq \mu_1.
-\]&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+  H_0 : \mu_0=\mu_1,\quad\text{contre}\quad H_1 : \mu_0\neq \mu_1.
+  \]&lt;/span&gt;
+&lt;/p&gt;
 &lt;p&gt;D’après la question précédente, le test défini par &lt;span
 class=&#34;math display&#34;&gt;\[
-\phi(Z):=\mathbb{1}\left\{\frac{(\overline{X}_n-\overline{Y}_p)^2}{nV_n+pW_p}\ge\left(\frac{1}{n}+\frac{1}{p}\right)q_{1-\alpha}^{F(1,n+p-2)}\right\}
+\phi(Z):=\mathbb{1}\left\{\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge
+q_{1-\alpha}^{F(1,n+p-2)}\right\}
 \]&lt;/span&gt; est un test de taille (et donc de niveau) &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du
-test.&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p class=&#34;mybox&#34;&gt;
+6. Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test.
+&lt;/p&gt;
 &lt;p&gt;Dans notre cas, la statistique de test est &lt;span
-class=&#34;math display&#34;&gt;\[
-T(Z):=\frac{(\overline{X}_n-\overline{Y}_p)^2}{nV_n+pW_p},
-\]&lt;/span&gt; et la valeur critique du test est &lt;span
-class=&#34;math display&#34;&gt;\[
-c_{\alpha}:=\left(\frac{1}{n}+\frac{1}{p}\right)q_{1-\alpha}^{F(1,n+p-2)},
-\]&lt;/span&gt; qui est décroissant par rapport à &lt;span
-class=&#34;math inline&#34;&gt;\(\alpha\in [0,1]\)&lt;/span&gt;. Ainsi, la &lt;span
-class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test est &lt;span
-class=&#34;math display&#34;&gt;\[
+class=&#34;math inline&#34;&gt;\(T(Z):=\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\)&lt;/span&gt;,
+et la valeur critique du test est &lt;span
+class=&#34;math inline&#34;&gt;\(c_{\alpha}:=q_{1-\alpha}^{F(1,n+p-2)}\)&lt;/span&gt;,
+qui est décroissante par rapport à &lt;span class=&#34;math inline&#34;&gt;\(\alpha\in
+[0,1]\)&lt;/span&gt;. Ainsi, la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur
+du test est &lt;span class=&#34;math display&#34;&gt;\[
 \begin{align*}
-\hat{\alpha}(Z)
-&amp;amp;=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
-&amp;amp;=1-\Psi\left(\frac{np}{n+p}\frac{(\overline{X}_n-\overline{Y}_p)^2}{nV_n+pW_p}\right),
+  \hat{\alpha}(Z)
+  &amp;amp;=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
+  &amp;amp;=1-\Psi\left(\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\right),
 \end{align*}
 \]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Psi\)&lt;/span&gt; désigne la
 fonction de répartition de la loi de Fisher de &lt;span
 class=&#34;math inline&#34;&gt;\((1,n+p-2)\)&lt;/span&gt; degrés de liberté.&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;strong&gt;Construire un test de niveau &lt;span
+&lt;p class=&#34;mybox&#34;&gt;
+7. Construire un test de niveau &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
 class=&#34;math display&#34;&gt;\[
-H_0 : \mu_0\le \mu_1,\quad\text{contre}\quad H_1 : \mu_0&amp;gt;\mu_1.
-\]&lt;/span&gt;&lt;/strong&gt;&lt;/li&gt;
-&lt;/ul&gt;
+  H_0 : \mu_0\le \mu_1,\quad\text{contre}\quad H_1 : \mu_0&amp;gt;\mu_1.
+  \]&lt;/span&gt;
+&lt;/p&gt;
 &lt;p&gt;On considère l’estimateur de la différence &lt;span
 class=&#34;math inline&#34;&gt;\(\mu_0-\mu_1\)&lt;/span&gt; donné par &lt;span
-class=&#34;math inline&#34;&gt;\(T(Z):=\frac{\overline{X}_n-\overline{Y}_p}{\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)(nV_n+pW_p)}}\)&lt;/span&gt;.
+class=&#34;math inline&#34;&gt;\(T(Z):=\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\)&lt;/span&gt;.
 On observe que sous &lt;span class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;, &lt;span
 class=&#34;math display&#34;&gt;\[
 \begin{align*}
-\mathbb{P}_{\theta}(T(Z)\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}})
+\mathbb{P}_{\theta}\left(T(Z)\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)
 &amp;amp;\le
-\mathbb{P}_{\theta}\left(T(Z)-\frac{\mu_0-\mu_1}{\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)(nV_n+pW_p)}}\ge
+\mathbb{P}_{\theta}\left(T(Z)-\frac{\mu_0-\mu_1}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\ge
 \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)\\
 &amp;amp;\le
-\mathbb{P}_{\theta}\left(\frac{[(\overline{X}_n-\overline{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge
+\mathbb{P}_{\theta}\left(\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge
 q_{1-\alpha}^{F(1,n+p-2)}\right)\\
 &amp;amp;= \alpha.
 \end{align*}
 \]&lt;/span&gt; Ainsi, le test &lt;span class=&#34;math display&#34;&gt;\[
-\phi(Z):=\mathbb{1}\left\{\frac{\overline{X}_n-\overline{Y}_p}{\sqrt{\left(\frac{1}{n}+\frac{1}{p}\right)(nV_n+pW_p)}}\ge
+\phi(Z):=\mathbb{1}\left\{\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\ge
 \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right\}
 \]&lt;/span&gt; est un test de niveau &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
 class=&#34;math inline&#34;&gt;\(H_0:\mu_0\le \mu_1\)&lt;/span&gt; contre &lt;span
 class=&#34;math inline&#34;&gt;\(H_1:\mu_0&amp;gt;\mu_1\)&lt;/span&gt;.&lt;/p&gt;
+&lt;p class=&#34;mybox&#34;&gt;
+8. Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test.
+&lt;/p&gt;
+&lt;p&gt;Dans notre cas, la statistique de test est &lt;span
+class=&#34;math inline&#34;&gt;\(T(Z):=\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\)&lt;/span&gt;
+et la valeur critique du test est &lt;span
+class=&#34;math inline&#34;&gt;\(c_{\alpha}:=\sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\)&lt;/span&gt;,
+qui est décroissante par rapport à &lt;span class=&#34;math inline&#34;&gt;\(\alpha\in
+[0,1]\)&lt;/span&gt;. Ainsi, la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur
+du test est &lt;span class=&#34;math display&#34;&gt;\[
+\begin{align*}
+  \hat{\alpha}(Z)
+  &amp;amp;=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
+  &amp;amp;=
+  \begin{cases}
+    1-\Psi\left(\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\right),
+&amp;amp; \text{si $\bar{X}_n&amp;gt;\bar{Y}_p$;}\\
+    +\infty, &amp;amp; \text{sinon,}
+  \end{cases}
+\end{align*}
+\]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Psi\)&lt;/span&gt; désigne la
+fonction de répartition de la loi de Fisher de &lt;span
+class=&#34;math inline&#34;&gt;\((1,n+p-2)\)&lt;/span&gt; degrés de liberté.&lt;/p&gt;
 &lt;!-- ## Exercice 2 : Le test du rapport de vraisemblance généralisé
 
 Coming soon...
@@ -666,8 +708,8 @@ that &lt;span class=&#34;math inline&#34;&gt;\(h(n)\le h(n-1)+n/2\)&lt;/span&gt;
         
             <item>
                 <title>The Poincaré Lemmas</title>
-                <link>https://haosen-zju-x.github.io/posts/the-poincare-lemmas/</link>
-                <guid isPermaLink="true">https://haosen-zju-x.github.io/posts/the-poincare-lemmas/</guid>
+                <link>https://haosen-zju-x.github.io/posts/poincare-lemmas/</link>
+                <guid isPermaLink="true">https://haosen-zju-x.github.io/posts/poincare-lemmas/</guid>
                 <pubDate>Sat, 30 Sep 2023 20:16:07 &#43;0000</pubDate>
                 
                     <author>chenhaosen@yandex.com (Haosen)</author>
@@ -696,7 +738,7 @@ the product manifold &lt;span class=&#34;math inline&#34;&gt;\(M\times
 &lt;span class=&#34;math inline&#34;&gt;\(\pi:M\times \mathbb{R}^1\to M\)&lt;/span&gt; is a
 smooth map. The pullback &lt;span
 class=&#34;math inline&#34;&gt;\(\pi^*:\Omega^*(M)\to \Omega^*(M\times
-\mathbb{R}^1)\)&lt;/span&gt; [&lt;a href=&#34;https://haosen-zju-x.github.io/posts/the-poincare-lemmas/#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;
+\mathbb{R}^1)\)&lt;/span&gt; [&lt;a href=&#34;https://haosen-zju-x.github.io/posts/poincare-lemmas/#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;
 role=&#34;doc-noteref&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;] does not map &lt;span
 class=&#34;math inline&#34;&gt;\(\Omega_c^*(M)\)&lt;/span&gt; into &lt;span
 class=&#34;math inline&#34;&gt;\(\Omega_c^*(M\times \mathbb{R}^1)\)&lt;/span&gt;, so
@@ -938,7 +980,7 @@ id=&#34;the-overlinepartial-poincaré-lemma-aka-dolbeault-grothendieck-lemma&#34
 role=&#34;doc-endnotes&#34;&gt;
 &lt;hr /&gt;
 &lt;ol&gt;
-&lt;li id=&#34;fn1&#34; role=&#34;doc-endnote&#34;&gt;&lt;p&gt;[To be explicit, if &lt;span
+&lt;li id=&#34;fn1&#34; role=&#34;doc-endnote&#34;&gt;&lt;p&gt;To be explicit, if &lt;span
 class=&#34;math inline&#34;&gt;\(\phi\in \Omega^r(M)\)&lt;/span&gt; is represented as
 &lt;span class=&#34;math inline&#34;&gt;\(\sum_{i_1&amp;lt;\cdots&amp;lt;i_r}\phi_{i_1\cdots
 i_r}(x)\mathrm{d}{x^{i_1}}\wedge\cdots\wedge
@@ -949,7 +991,7 @@ is simply represented as &lt;span
 class=&#34;math inline&#34;&gt;\(\sum_{i_1&amp;lt;\cdots&amp;lt;i_r}\phi_{i_1\cdots
 i_r}\circ \pi(x,t)\mathrm{d}{x^{i_1}}\wedge\cdots\wedge
 \mathrm{d}{x^{i_r}}\)&lt;/span&gt; w.r.t. the associated local coordinates on
-&lt;span class=&#34;math inline&#34;&gt;\(M\times \mathbb{R}^1\)&lt;/span&gt;.]&lt;a
+&lt;span class=&#34;math inline&#34;&gt;\(M\times \mathbb{R}^1\)&lt;/span&gt;.&lt;a
 href=&#34;#fnref1&#34; class=&#34;footnote-back&#34; role=&#34;doc-backlink&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;/section&gt;
@@ -1079,7 +1121,7 @@ class=&#34;math inline&#34;&gt;\([\gamma](f+g)=[\gamma]f+[\gamma]g,
 [\gamma](\lambda f)=\lambda([\gamma]f)\)&lt;/span&gt;, and &lt;span
 class=&#34;math inline&#34;&gt;\([\gamma](fg)=([\gamma]f)g(p)+f(p)([\gamma]g)\)&lt;/span&gt;.
 This leads to the treatment of tangent spaces as so called
-&lt;em&gt;derivations&lt;/em&gt;, which we will skip.&lt;/p&gt;
+&lt;em&gt;derivations&lt;/em&gt;, which we will skip for now.&lt;/p&gt;
 &lt;p&gt;Of course we can just define the cotangent space &lt;span
 class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; to be the dual of the tangent
 space &lt;span class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt;. But it will be
@@ -1118,9 +1160,9 @@ class=&#34;math inline&#34;&gt;\(x^1,\cdots,x^m\)&lt;/span&gt; be a local coordi
 system centered at &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;. One can
 &lt;em&gt;easily&lt;/em&gt; show that &lt;span class=&#34;math display&#34;&gt;\[\begin{equation*}
     \mathfrak{m}_p=\{[f]\in F_p \,|\, \exists [f_i]\in F_p \text{ s.t. }
-f= \textstyle\sum x^if_i\}=\langle [x^1],\cdots,[x^m] \rangle.
-\end{equation*}\]&lt;/span&gt; Consider the map &lt;span
-class=&#34;math display&#34;&gt;\[\begin{equation*}
+f= \textstyle\sum x^if_i\}=\langle [x^1],\cdots,[x^m] \rangle,
+\end{equation*}\]&lt;/span&gt; which is known as Hadamard’s lemma. Consider
+the map &lt;span class=&#34;math display&#34;&gt;\[\begin{equation*}
     \theta:\mathfrak{m}_p\to \mathbb{R}^n\quad [\textstyle\sum
 x^if_i]\mapsto (f_1(p),\cdots,f_m(p)).
 \end{equation*}\]&lt;/span&gt; To verify that &lt;span
@@ -1174,17 +1216,45 @@ canonical pairing is perfect, showing that the tangent space &lt;span
 class=&#34;math inline&#34;&gt;\(T_pM\)&lt;/span&gt; and the cotangent space &lt;span
 class=&#34;math inline&#34;&gt;\(T_p^*M\)&lt;/span&gt; are canonically dual to each
 other.&lt;/p&gt;
-&lt;h2 id=&#34;examples&#34;&gt;Examples&lt;/h2&gt;
-&lt;p&gt;Coming soon…&lt;/p&gt;
-&lt;h1 id=&#34;part-ii-tangent-bundles-cotangent-bundles&#34;&gt;Part II : Tangent
-Bundles &amp;amp; Cotangent Bundles&lt;/h1&gt;
-&lt;p&gt;Coming soon…&lt;/p&gt;
-&lt;h1 id=&#34;part-iii-tangent-maps-cotangent-maps&#34;&gt;Part III : Tangent Maps
+&lt;h1 id=&#34;part-ii-tangent-maps-cotangent-maps&#34;&gt;Part II : Tangent Maps
 &amp;amp; Cotangent Maps&lt;/h1&gt;
+&lt;p&gt;Coming soon…&lt;/p&gt;
+&lt;!-- Let $M$ be a smooth $m$-manifold and $G$ a group acting smoothly on $M$, then we have a canonical isomorphism: $T_{[p]}(M/G)\cong T_pM/T_p(G\cdot p)$. --&gt;
+&lt;h1 id=&#34;part-iii-tangent-bundles-cotangent-bundles&#34;&gt;Part III : Tangent
+Bundles &amp;amp; Cotangent Bundles&lt;/h1&gt;
 &lt;p&gt;Coming soon…&lt;/p&gt;
 &lt;h1 id=&#34;part-iv-vector-fields-lie-brackets&#34;&gt;Part IV : Vector Fields
 &amp;amp; Lie Brackets&lt;/h1&gt;
 &lt;p&gt;Coming soon…&lt;/p&gt;
+&lt;h1 id=&#34;exercises&#34;&gt;Exercises&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(M^m\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(N^n\)&lt;/span&gt; be two smooth manifolds. Then &lt;span
+class=&#34;math inline&#34;&gt;\(M\times N\)&lt;/span&gt; is naturally a smooth &lt;span
+class=&#34;math inline&#34;&gt;\((m+n)\)&lt;/span&gt;-manifold. We have two canonical
+isomorphisms: &lt;span class=&#34;math inline&#34;&gt;\(T_{(p,q)}(M\times N)\cong
+T_pM\times T_qN\)&lt;/span&gt; and &lt;span
+class=&#34;math inline&#34;&gt;\(T_{(p,q)}^*(M\times N)\cong T_p^*M\times
+T_q^*N\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Let &lt;span class=&#34;math inline&#34;&gt;\(M\)&lt;/span&gt; be a smooth &lt;span
+class=&#34;math inline&#34;&gt;\(m\)&lt;/span&gt;-manifold. Then the tangent space of the
+diagonal of &lt;span class=&#34;math inline&#34;&gt;\(M\times M\)&lt;/span&gt; at a point
+&lt;span class=&#34;math inline&#34;&gt;\((p,p)\)&lt;/span&gt; is the diagonal of &lt;span
+class=&#34;math inline&#34;&gt;\(T_pM\times T_pM\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;The special linear group &lt;span
+class=&#34;math inline&#34;&gt;\(\text{SL}(n,\mathbb{R})\)&lt;/span&gt; is a Lie group of
+dimension &lt;span class=&#34;math inline&#34;&gt;\(n^2-1\)&lt;/span&gt;. The Lie algebra
+&lt;span
+class=&#34;math inline&#34;&gt;\(\mathfrak{sl}(n,\mathbb{R}):=T_{I_n}(\text{SL}(n,\mathbb{R}))\)&lt;/span&gt;
+consists of all &lt;span class=&#34;math inline&#34;&gt;\(n\times n\)&lt;/span&gt; matrices
+over &lt;span class=&#34;math inline&#34;&gt;\(R\)&lt;/span&gt; with vanishing trace. The
+Lie bracket is given by the commutator. The exponential map from &lt;span
+class=&#34;math inline&#34;&gt;\(\mathfrak{sl}(n,\mathbb{R})\)&lt;/span&gt; to &lt;span
+class=&#34;math inline&#34;&gt;\(\text{SL}(n,\mathbb{R})\)&lt;/span&gt; is well-defined
+since we have &lt;span
+class=&#34;math inline&#34;&gt;\(\det(e^A)=e^{\text{tr}(A)}\)&lt;/span&gt; for any &lt;span
+class=&#34;math inline&#34;&gt;\(A\in M_{n\times n}(\mathbb{R})\)&lt;/span&gt;.&lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
 &lt;h1 id=&#34;part-v-riemannian-metrics&#34;&gt;Part V : Riemannian Metrics&lt;/h1&gt;
 &lt;p&gt;Coming soon…&lt;/p&gt;
 &lt;h1 id=&#34;part-vi-levi-civita-connections&#34;&gt;Part VI : Levi-Civita
@@ -1192,6 +1262,7 @@ Connections&lt;/h1&gt;
 &lt;p&gt;Coming soon…&lt;/p&gt;
 &lt;h1 id=&#34;part-vii-exponential-maps&#34;&gt;Part VII : Exponential Maps&lt;/h1&gt;
 &lt;p&gt;Coming soon…&lt;/p&gt;
+&lt;h1 id=&#34;exercises-1&#34;&gt;Exercises&lt;/h1&gt;
 </description>
                 
                 
