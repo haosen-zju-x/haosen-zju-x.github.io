@@ -14,12 +14,15 @@ markup: pandoc
 <style>
   p.context
   {
-    border-style:dashed;
-    border-width:1.5px;
-    border-color:#3CB371;
-    background-color:#F5FFFA;
-    padding-left:8px;
-    padding-right:5px;
+    border-left-width:3px;
+    border-left-style:solid;
+    border-right-style:none;
+    border-top-style:none;
+    border-bottom-style:none;
+    border-radius:3px;
+    border-color:#00FF00;
+    padding-left:7px;
+    padding-right:3px;
   }
 </style>
 
@@ -31,17 +34,40 @@ markup: pandoc
     border-right-style:none;
     border-top-style:none;
     border-bottom-style:none;
+    border-radius:3px;
+    border-color:#228B22;
+    padding-left:7px;
+    padding-right:3px;
+  }
+</style>
+
+<style>
+  details
+  {
+    border: 1px solid #aaa;
     border-radius: 3px;
-    border-color:#8A2BE2;
-    background-color:#F8F8FF;
-    padding-left:5px;
-    padding-right:5px;
+    padding: 0.5em 0.5em 0;
+  }
+  summary
+  {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+  }
+  details[open]
+  {
+    padding: 0.5em;
+  }
+  details[open] summary
+  {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
   }
 </style>
 
 # Exercices
 
-## Test de comparaison de deux variances & Test de comparaison de deux moyennes
+## Test de comparaison de deux variances & Test de comparaison de deux moyennes (03/10/2023)
 
 <p class="context">
   Considérons le modèle statistique
@@ -55,10 +81,8 @@ markup: pandoc
   1\. Déterminer l'estimateur du maximum de vraisemblance du paramètre $\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)$.
 </p>
 
-<details open="">
-  <summary>
-    Solution
-  </summary>
+<details open>
+  <summary>Solution</summary>
   <p>
     Remarquons le fait que
     $$
@@ -83,16 +107,14 @@ markup: pandoc
   $$
 </p>
 
-<details open="">
-  <summary>
-    Solution
-  </summary>
+<details open>
+  <summary>Solution</summary>
   <p>
-    Pour tout $\theta\in \Theta$, sous $\mathbb{P}_{\theta}$ on a $nV_n/\sigma_0^2\sim \chi^2(n-1)$ et $pW_p/\sigma_1^2\sim \chi^2(p-1)$, d'où
+    Pour tout $\theta\in \Theta$, sous $\mathbb{P}_{\theta}$, $nV_n/\sigma_0^2\sim \chi^2(n-1)$ et $pW_p/\sigma_1^2\sim \chi^2(p-1)$, d'où
     $$
     \frac{nV_n/\sigma_0^2}{pW_p/\sigma_1^2}\sim F(n-1,p-1),
     $$
-    ce qui ne dépend pas du paramètre $\theta$. Par conséquent, sous $H_0$
+    ce qui ne dépend pas du paramètre $\theta$. Par conséquent, sous $H_0$,
     $$
     \mathbb{P}_{\theta}\left(\frac{nV_n}{pW_p}\le q_{1-\alpha}^{F(n-1,p-1)}\right)=1-\alpha.
     $$
@@ -101,14 +123,19 @@ markup: pandoc
 </details>
 
 <p class="exo">
-  3\. Calculer la $p$-valeur du test.
+  3\. Calculer la $p$-valeur du test. 
 </p>
 
-Dans notre cas, la statistique de test est $T(Z):=\frac{nV_n}{pW_p}$ et la valeur critique du test est $c_{\alpha}:=q_{1-\alpha}^{F(n-1,p-1)}$, qui est décroissante par rapport à $\alpha\in [0,1]$. Ainsi, la $p$-valeur du test est
-$$
-\hat{\alpha}(Z)=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}=1-\Phi\left(\frac{nV_n}{pW_p}\right),
-$$
-où $\Phi$ désigne la fonction de répartition de la loi de Fisher de $(n-1,p-1)$ degrés de liberté.
+<details open>
+  <summary>Solution</summary>
+  <p>
+    Dans notre cas, la statistique de test est $T(Z):=\frac{nV_n}{pW_p}$ et la valeur critique du test est $c_{\alpha}:=q_{1-\alpha}^{F(n-1,p-1)}$, qui est décroissante par rapport à $\alpha\in [0,1]$. Ainsi, la $p$-valeur du test est
+    $$
+    \hat{\alpha}(Z)=\inf\{\alpha\in [0,1] \,:\, T(Z)\ge c_{\alpha}\}=1-\Psi\left(\frac{nV_n}{pW_p}\right),
+    $$
+    où $\Psi$ désigne la fonction de répartition de la loi de Fisher de $(n-1,p-1)$ degrés de liberté.
+  </p>
+</details>
 
 <p class="context">
   Nous considérons dans la suite le modèle statistique
@@ -121,28 +148,32 @@ où $\Phi$ désigne la fonction de répartition de la loi de Fisher de $(n-1,p-1
   4\. Construire un intervalle de confiance de $\mu_0-\mu_1$ de niveau de confiance $1-\alpha$.
 </p>
 
-Sous $\mathbb{P}_{\theta}$, les deux variables aléatoires réelles $\bar{X}_n\sim \mathcal{N}(\mu_0,\sigma^2/n)$ et $\bar{Y}_p\sim \mathcal{N}(\mu_1,\sigma^2/p)$ sont indépendentes, et donc
-$$
-\frac{(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)}{\sqrt{\sigma^2/n+\sigma^2/p}}\sim \mathcal{N}(0,1).
-$$
-D'autre part, on sait que sous $\mathbb{P}_{\theta}$,
-$$
-\frac{1}{\sigma^2}(nV_n+pW_p)\sim \chi^2(n+p-2).
-$$
-On rappelle aussi que $\bar{X}_n,V_n$ sont indépendantes sous $\mathbb{P}_{\theta}$, et que $\bar{Y}_p,W_p$ le sont aussi. En plus, comme 
-$X_1,\cdots,X_n$ et $Y_1,\cdots,Y_p$ sont indépendantes entre elles sous $\mathbb{P}_{\theta}$, on voit que $\bar{X}_n,W_p$ sont indépendantes sous $\mathbb{P}_{\theta}$, et que $\bar{Y}_p,V_n$ le sont aussi. Donc, les deux variables aléatoires réelles nouvellement construites, $\frac{(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)}{\sqrt{\sigma^2/n+\sigma^2/p}}$ et $\frac{1}{\sigma^2}(nV_n+pW_p)$, sont indépendantes sous $\mathbb{P}_{\theta}$. Cela permet de conclure que sous $\mathbb{P}_{\theta}$,
-$$
-\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\sim F(1,n+p-2).
-$$
-Alors, pour tout $\theta\in \Theta$,
-$$
-\mathbb{P}_{\theta}\left(\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\le q_{1-\alpha}^{F(1,n+p-2)}\right)=1-\alpha.
-$$
-On en tire donc une intervalle de confiance de niveau de confiance $1-\alpha$ pour $\mu_0-\mu_1$ :
-$$
-\textstyle
-\left[(\bar{X}_n-\bar{Y}_p)\pm \sqrt{nV_n+pW_p}\sqrt{(\frac{1}{n}+\frac{1}{p})q_{1-\alpha}^{F(1,n+p-2)}}\right]
-$$
+<details open>
+  <summary>Solution</summary>
+  <p>
+    Soit $\theta\in \Theta$ et travaillons sous $\mathbb{P}_{\theta}$. D'une part, $\bar{X}_n\sim \mathcal{N}(\mu_0,\sigma^2/n)$, $\bar{Y}_p\sim \mathcal{N}(\mu_1,\sigma^2/p)$, et elles sont indépendentes, d'où
+    $$
+    \frac{(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)}{\sigma \sqrt{1/n+1/p}}\sim \mathcal{N}(0,1).
+    $$
+    D'autre part, en appliquant le théorème de Gosset, on voit que
+    $$
+    \frac{1}{\sigma^2}(nV_n+pW_p)\sim \chi^2(n+p-2),
+    $$
+    et que $\bar{X}_n$ et $V_n$, ainsi que $\bar{Y}_p$ et $W_p$, sont indépendantes. De plus, $\bar{X}_n$ et $W_p$, ainsi que $\bar{Y}_p$ et $V_n$, sont évidemment indépendantes. On conclut que $\frac{(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)}{\sigma \sqrt{1/n+1/p}}$ et $\frac{1}{\sigma^2}(nV_n+pW_p)$ sont indépendantes et donc que
+    $$
+    \frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\sim F(1,n+p-2).
+    $$
+    Alors, pour tout $\theta\in \Theta$,
+    $$
+    \mathbb{P}_{\theta}\left(\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\le q_{1-\alpha}^{F(1,n+p-2)}\right)=1-\alpha.
+    $$
+    On en tire donc une intervalle de confiance de niveau de confiance $1-\alpha$ $(0<\alpha<1)$ pour $\mu_0-\mu_1$ :
+    $$
+    \textstyle
+    \left[(\bar{X}_n-\bar{Y}_p)\pm \sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right].
+    $$
+  </p>
+</details>
 
 <p class="exo">
   5\. En déduire un test de niveau $\alpha$ de l'hypothèse
@@ -151,26 +182,32 @@ $$
   $$
 </p>
 
-D'après la question précédente, le test défini par
-$$
-\phi(Z):=\mathbb{1}\left\{\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge q_{1-\alpha}^{F(1,n+p-2)}\right\}
-$$
-est un test de taille (et donc de niveau) $\alpha$.
+<details open>
+  <summary>Solution</summary>
+  <p>
+    D'après la question précédente, le test
+    $$
+    \phi(Z):=\mathbb{1}\left\{\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge q_{1-\alpha}^{F(1,n+p-2)}\right\}
+    $$
+    est un test de taille (et donc de niveau) $\alpha$ de l'hypothèse $H_0:\mu_0=\mu_1$ contre $H_1:\mu_0\neq \mu_1$.
+  </p>
+</details>
 
 <p class="exo">
   6\. Calculer la $p$-valeur du test.
 </p>
 
-Dans notre cas, la statistique de test est $T(Z):=\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}$, et la valeur critique du test est $c_{\alpha}:=q_{1-\alpha}^{F(1,n+p-2)}$, qui est décroissante par rapport à $\alpha\in [0,1]$.
-Ainsi, la $p$-valeur du test est
-$$
-\begin{align*}
-  \hat{\alpha}(Z)
-  &=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
-  &=1-\Psi\left(\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\right),
-\end{align*}
-$$
-où $\Psi$ désigne la fonction de répartition de la loi de Fisher de $(1,n+p-2)$ degrés de liberté.
+<details open>
+  <summary>Solution</summary>
+  <p>
+    Dans notre cas, la statistique de test est $T(Z):=\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}$, et la valeur critique du test est $c_{\alpha}:=q_{1-\alpha}^{F(1,n+p-2)}$, qui est décroissante par rapport à $\alpha\in [0,1]$.
+    Ainsi, la $p$-valeur du test est
+    $$
+    \hat{\alpha}(Z)=\inf\{\alpha\in [0,1] \,:\, T(Z)\ge c_{\alpha}\}=1-\Psi\left(\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\right),
+    $$
+    où $\Psi$ désigne la fonction de répartition de la loi de Fisher de $(1,n+p-2)$ degrés de liberté.
+  </p>
+</details>
 
 <p class="exo"> 
   7\. Construire un test de niveau $\alpha$ de l'hypothèse
@@ -179,39 +216,48 @@ où $\Psi$ désigne la fonction de répartition de la loi de Fisher de $(1,n+p-2
   $$
 </p>
 
-On considère l'estimateur de la différence $\mu_0-\mu_1$ donné par $T(Z):=\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}$.
-On observe que sous $H_0$,
-$$
-\begin{align*}
-\mathbb{P}_{\theta}\left(T(Z)\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)
-&\le \mathbb{P}_{\theta}\left(T(Z)-\frac{\mu_0-\mu_1}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)\\
-&\le \mathbb{P}_{\theta}\left(\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge q_{1-\alpha}^{F(1,n+p-2)}\right)\\
-&= \alpha.
-\end{align*}
-$$
-Ainsi, le test
-$$
-\phi(Z):=\mathbb{1}\left\{\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right\}
-$$
-est un test de niveau $\alpha$ de l'hypothèse $H_0:\mu_0\le \mu_1$ contre $H_1:\mu_0>\mu_1$.
+<details open>
+  <summary>Solution</summary>
+  <p>
+    On considère l'estimateur de la différence $\mu_0-\mu_1$ donné par $T(Z):=\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}$.
+    On observe que sous $H_0$,
+    $$
+    \begin{align*}
+    \mathbb{P}_{\theta}\left(T(Z)\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)
+    &\le \mathbb{P}_{\theta}\left(T(Z)-\frac{\mu_0-\mu_1}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)\\
+    &\le \mathbb{P}_{\theta}\left(\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge q_{1-\alpha}^{F(1,n+p-2)}\right)= \alpha.
+    \end{align*}
+    $$
+    Ainsi, le test \[^[On pourrait ignorer le cas où $\alpha=1$.]\]
+    $$
+    \phi(Z):=\mathbb{1}\left\{\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right\}
+    $$
+    est un test de niveau $\alpha$ de l'hypothèse $H_0:\mu_0\le \mu_1$ contre $H_1:\mu_0>\mu_1$.
+  </p>
+</details>
 
 <p class="exo">
    8\. Calculer la $p$-valeur du test.
 </p>
 
-Dans notre cas, la statistique de test est $T(Z):=\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}$ et la valeur critique du test est $c_{\alpha}:=\sqrt{q_{1-\alpha}^{F(1,n+p-2)}}$, qui est décroissante par rapport à $\alpha\in [0,1]$. Ainsi, la $p$-valeur du test est
-$$
-\begin{align*}
-  \hat{\alpha}(Z)
-  &=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
-  &=
-  \begin{cases}
-    1-\Psi\left(\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\right), & \text{si $\bar{X}_n>\bar{Y}_p$;}\\
-    +\infty, & \text{sinon,}
-  \end{cases}
-\end{align*}
-$$
-où $\Psi$ désigne la fonction de répartition de la loi de Fisher de $(1,n+p-2)$ degrés de liberté.
+<details open>
+  <summary>Solution</summary>
+  <p>
+    Dans notre cas, la statistique de test est $T(Z):=\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}$ et la valeur critique du test est $c_{\alpha}:=\sqrt{q_{1-\alpha}^{F(1,n+p-2)}}$ \[^[On pourrait convenir que $c_1=-\infty$.]\], qui est décroissante par rapport à $\alpha\in [0,1]$. Ainsi, la $p$-valeur du test est
+    $$
+    \begin{align*}
+      \hat{\alpha}(Z)
+      &=\inf\{\alpha\in [0,1] \,:\, T(Z)\ge c_{\alpha}\}\\
+      &=
+      \begin{cases}
+        1-\Psi\left(\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\right), & \text{si $\bar{X}_n>\bar{Y}_p$;}\\
+        1, & \text{sinon,}
+      \end{cases}
+    \end{align*}
+    $$
+    où $\Psi$ désigne la fonction de répartition de la loi de Fisher de $(1,n+p-2)$ degrés de liberté.
+  </p>
+</details>
 
 <!-- ## Exercice 2 : Le test du rapport de vraisemblance généralisé
 

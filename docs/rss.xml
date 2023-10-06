@@ -23,7 +23,7 @@
         
             <copyright>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</copyright>
         
-        <lastBuildDate>Fri, 06 Oct 2023 20:51:48 &#43;0200</lastBuildDate>
+        <lastBuildDate>Sat, 07 Oct 2023 00:43:21 &#43;0200</lastBuildDate>
         
             <atom:link rel="self" type="application/rss&#43;xml" href="https://haosen-zju-x.github.io/rss.xml" />
         
@@ -41,12 +41,15 @@
                     <description>&lt;style&gt;
   p.context
   {
-    border-style:dashed;
-    border-width:1.5px;
-    border-color:#3CB371;
-    background-color:#F5FFFA;
-    padding-left:8px;
-    padding-right:5px;
+    border-left-width:3px;
+    border-left-style:solid;
+    border-right-style:none;
+    border-top-style:none;
+    border-bottom-style:none;
+    border-radius:3px;
+    border-color:#00FF00;
+    padding-left:7px;
+    padding-right:3px;
   }
 &lt;/style&gt;
 &lt;style&gt;
@@ -57,18 +60,40 @@
     border-right-style:none;
     border-top-style:none;
     border-bottom-style:none;
+    border-radius:3px;
+    border-color:#228B22;
+    padding-left:7px;
+    padding-right:3px;
+  }
+&lt;/style&gt;
+&lt;style&gt;
+  details
+  {
+    border: 1px solid #aaa;
     border-radius: 3px;
-    border-color:#8A2BE2;
-    background-color:#F8F8FF;
-    padding-left:5px;
-    padding-right:5px;
+    padding: 0.5em 0.5em 0;
+  }
+  summary
+  {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+  }
+  details[open]
+  {
+    padding: 0.5em;
+  }
+  details[open] summary
+  {
+    border-bottom: 1px solid #aaa;
+    margin-bottom: 0.5em;
   }
 &lt;/style&gt;
 &lt;h1 id=&#34;exercices&#34;&gt;Exercices&lt;/h1&gt;
 &lt;h2
-id=&#34;test-de-comparaison-de-deux-variances-test-de-comparaison-de-deux-moyennes&#34;&gt;Test
+id=&#34;test-de-comparaison-de-deux-variances-test-de-comparaison-de-deux-moyennes-03102023&#34;&gt;Test
 de comparaison de deux variances &amp;amp; Test de comparaison de deux
-moyennes&lt;/h2&gt;
+moyennes (03/10/2023)&lt;/h2&gt;
 &lt;p class=&#34;context&#34;&gt;
 Considérons le modèle statistique &lt;span class=&#34;math display&#34;&gt;\[
   \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes
@@ -128,14 +153,14 @@ Solution
 &lt;/summary&gt;
 &lt;p&gt;
 Pour tout &lt;span class=&#34;math inline&#34;&gt;\(\theta\in \Theta\)&lt;/span&gt;, sous
-&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt; on a &lt;span
+&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, &lt;span
 class=&#34;math inline&#34;&gt;\(nV_n/\sigma_0^2\sim \chi^2(n-1)\)&lt;/span&gt; et &lt;span
 class=&#34;math inline&#34;&gt;\(pW_p/\sigma_1^2\sim \chi^2(p-1)\)&lt;/span&gt;, d’où
 &lt;span class=&#34;math display&#34;&gt;\[
     \frac{nV_n/\sigma_0^2}{pW_p/\sigma_1^2}\sim F(n-1,p-1),
     \]&lt;/span&gt; ce qui ne dépend pas du paramètre &lt;span
 class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. Par conséquent, sous &lt;span
-class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
+class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;, &lt;span class=&#34;math display&#34;&gt;\[
     \mathbb{P}_{\theta}\left(\frac{nV_n}{pW_p}\le
 q_{1-\alpha}^{F(n-1,p-1)}\right)=1-\alpha.
     \]&lt;/span&gt; Ainsi, &lt;span
@@ -147,18 +172,25 @@ donc de niveau) &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;.
 &lt;p class=&#34;exo&#34;&gt;
 3. Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test.
 &lt;/p&gt;
-&lt;p&gt;Dans notre cas, la statistique de test est &lt;span
+&lt;details open&gt;
+&lt;summary&gt;
+Solution
+&lt;/summary&gt;
+&lt;p&gt;
+Dans notre cas, la statistique de test est &lt;span
 class=&#34;math inline&#34;&gt;\(T(Z):=\frac{nV_n}{pW_p}\)&lt;/span&gt; et la valeur
 critique du test est &lt;span
 class=&#34;math inline&#34;&gt;\(c_{\alpha}:=q_{1-\alpha}^{F(n-1,p-1)}\)&lt;/span&gt;,
 qui est décroissante par rapport à &lt;span class=&#34;math inline&#34;&gt;\(\alpha\in
 [0,1]\)&lt;/span&gt;. Ainsi, la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur
 du test est &lt;span class=&#34;math display&#34;&gt;\[
-\hat{\alpha}(Z)=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge
-c_{\alpha}\}=1-\Phi\left(\frac{nV_n}{pW_p}\right),
-\]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Phi\)&lt;/span&gt; désigne la
+    \hat{\alpha}(Z)=\inf\{\alpha\in [0,1] \,:\, T(Z)\ge
+c_{\alpha}\}=1-\Psi\left(\frac{nV_n}{pW_p}\right),
+    \]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Psi\)&lt;/span&gt; désigne la
 fonction de répartition de la loi de Fisher de &lt;span
-class=&#34;math inline&#34;&gt;\((n-1,p-1)\)&lt;/span&gt; degrés de liberté.&lt;/p&gt;
+class=&#34;math inline&#34;&gt;\((n-1,p-1)\)&lt;/span&gt; degrés de liberté.
+&lt;/p&gt;
+&lt;/details&gt;
 &lt;p class=&#34;context&#34;&gt;
 Nous considérons dans la suite le modèle statistique &lt;span
 class=&#34;math display&#34;&gt;\[
@@ -174,52 +206,54 @@ class=&#34;math display&#34;&gt;\[
 class=&#34;math inline&#34;&gt;\(\mu_0-\mu_1\)&lt;/span&gt; de niveau de confiance &lt;span
 class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt;.
 &lt;/p&gt;
-&lt;p&gt;Sous &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, les
-deux variables aléatoires réelles &lt;span
+&lt;details open&gt;
+&lt;summary&gt;
+Solution
+&lt;/summary&gt;
+&lt;p&gt;
+Soit &lt;span class=&#34;math inline&#34;&gt;\(\theta\in \Theta\)&lt;/span&gt; et
+travaillons sous &lt;span
+class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;. D’une part, &lt;span
 class=&#34;math inline&#34;&gt;\(\bar{X}_n\sim
-\mathcal{N}(\mu_0,\sigma^2/n)\)&lt;/span&gt; et &lt;span
+\mathcal{N}(\mu_0,\sigma^2/n)\)&lt;/span&gt;, &lt;span
 class=&#34;math inline&#34;&gt;\(\bar{Y}_p\sim
-\mathcal{N}(\mu_1,\sigma^2/p)\)&lt;/span&gt; sont indépendentes, et donc &lt;span
-class=&#34;math display&#34;&gt;\[
-\frac{(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)}{\sqrt{\sigma^2/n+\sigma^2/p}}\sim
-\mathcal{N}(0,1).
-\]&lt;/span&gt; D’autre part, on sait que sous &lt;span
-class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, &lt;span
-class=&#34;math display&#34;&gt;\[
-\frac{1}{\sigma^2}(nV_n+pW_p)\sim \chi^2(n+p-2).
-\]&lt;/span&gt; On rappelle aussi que &lt;span
-class=&#34;math inline&#34;&gt;\(\bar{X}_n,V_n\)&lt;/span&gt; sont indépendantes sous
-&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, et que &lt;span
-class=&#34;math inline&#34;&gt;\(\bar{Y}_p,W_p\)&lt;/span&gt; le sont aussi. En plus,
-comme &lt;span class=&#34;math inline&#34;&gt;\(X_1,\cdots,X_n\)&lt;/span&gt; et &lt;span
-class=&#34;math inline&#34;&gt;\(Y_1,\cdots,Y_p\)&lt;/span&gt; sont indépendantes entre
-elles sous &lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, on
-voit que &lt;span class=&#34;math inline&#34;&gt;\(\bar{X}_n,W_p\)&lt;/span&gt; sont
-indépendantes sous &lt;span
-class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, et que &lt;span
-class=&#34;math inline&#34;&gt;\(\bar{Y}_p,V_n\)&lt;/span&gt; le sont aussi. Donc, les
-deux variables aléatoires réelles nouvellement construites, &lt;span
-class=&#34;math inline&#34;&gt;\(\frac{(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)}{\sqrt{\sigma^2/n+\sigma^2/p}}\)&lt;/span&gt;
-et &lt;span class=&#34;math inline&#34;&gt;\(\frac{1}{\sigma^2}(nV_n+pW_p)\)&lt;/span&gt;,
-sont indépendantes sous &lt;span
-class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;. Cela permet de
-conclure que sous &lt;span
-class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, &lt;span
-class=&#34;math display&#34;&gt;\[
-\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\sim
+\mathcal{N}(\mu_1,\sigma^2/p)\)&lt;/span&gt;, et elles sont indépendentes,
+d’où &lt;span class=&#34;math display&#34;&gt;\[
+    \frac{(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)}{\sigma
+\sqrt{1/n+1/p}}\sim \mathcal{N}(0,1).
+    \]&lt;/span&gt; D’autre part, en appliquant le théorème de Gosset, on voit
+que &lt;span class=&#34;math display&#34;&gt;\[
+    \frac{1}{\sigma^2}(nV_n+pW_p)\sim \chi^2(n+p-2),
+    \]&lt;/span&gt; et que &lt;span class=&#34;math inline&#34;&gt;\(\bar{X}_n\)&lt;/span&gt; et
+&lt;span class=&#34;math inline&#34;&gt;\(V_n\)&lt;/span&gt;, ainsi que &lt;span
+class=&#34;math inline&#34;&gt;\(\bar{Y}_p\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(W_p\)&lt;/span&gt;, sont indépendantes. De plus, &lt;span
+class=&#34;math inline&#34;&gt;\(\bar{X}_n\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(W_p\)&lt;/span&gt;, ainsi que &lt;span
+class=&#34;math inline&#34;&gt;\(\bar{Y}_p\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(V_n\)&lt;/span&gt;, sont évidemment indépendantes. On
+conclut que &lt;span
+class=&#34;math inline&#34;&gt;\(\frac{(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)}{\sigma
+\sqrt{1/n+1/p}}\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(\frac{1}{\sigma^2}(nV_n+pW_p)\)&lt;/span&gt; sont
+indépendantes et donc que &lt;span class=&#34;math display&#34;&gt;\[
+    \frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\sim
 F(1,n+p-2).
-\]&lt;/span&gt; Alors, pour tout &lt;span class=&#34;math inline&#34;&gt;\(\theta\in
+    \]&lt;/span&gt; Alors, pour tout &lt;span class=&#34;math inline&#34;&gt;\(\theta\in
 \Theta\)&lt;/span&gt;, &lt;span class=&#34;math display&#34;&gt;\[
-\mathbb{P}_{\theta}\left(\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\le
+    \mathbb{P}_{\theta}\left(\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\le
 q_{1-\alpha}^{F(1,n+p-2)}\right)=1-\alpha.
-\]&lt;/span&gt; On en tire donc une intervalle de confiance de niveau de
-confiance &lt;span class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt; pour &lt;span
+    \]&lt;/span&gt; On en tire donc une intervalle de confiance de niveau de
+confiance &lt;span class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt; &lt;span
+class=&#34;math inline&#34;&gt;\((0&amp;lt;\alpha&amp;lt;1)\)&lt;/span&gt; pour &lt;span
 class=&#34;math inline&#34;&gt;\(\mu_0-\mu_1\)&lt;/span&gt; : &lt;span
 class=&#34;math display&#34;&gt;\[
-\textstyle
-\left[(\bar{X}_n-\bar{Y}_p)\pm
-\sqrt{nV_n+pW_p}\sqrt{(\frac{1}{n}+\frac{1}{p})q_{1-\alpha}^{F(1,n+p-2)}}\right]
-\]&lt;/span&gt;&lt;/p&gt;
+    \textstyle
+    \left[(\bar{X}_n-\bar{Y}_p)\pm
+\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right].
+    \]&lt;/span&gt;
+&lt;/p&gt;
+&lt;/details&gt;
 &lt;p class=&#34;exo&#34;&gt;
 5. En déduire un test de niveau &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
@@ -227,30 +261,42 @@ class=&#34;math display&#34;&gt;\[
   H_0 : \mu_0=\mu_1,\quad\text{contre}\quad H_1 : \mu_0\neq \mu_1.
   \]&lt;/span&gt;
 &lt;/p&gt;
-&lt;p&gt;D’après la question précédente, le test défini par &lt;span
-class=&#34;math display&#34;&gt;\[
-\phi(Z):=\mathbb{1}\left\{\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge
+&lt;details open&gt;
+&lt;summary&gt;
+Solution
+&lt;/summary&gt;
+&lt;p&gt;
+D’après la question précédente, le test &lt;span class=&#34;math display&#34;&gt;\[
+    \phi(Z):=\mathbb{1}\left\{\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge
 q_{1-\alpha}^{F(1,n+p-2)}\right\}
-\]&lt;/span&gt; est un test de taille (et donc de niveau) &lt;span
-class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;.&lt;/p&gt;
+    \]&lt;/span&gt; est un test de taille (et donc de niveau) &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
+class=&#34;math inline&#34;&gt;\(H_0:\mu_0=\mu_1\)&lt;/span&gt; contre &lt;span
+class=&#34;math inline&#34;&gt;\(H_1:\mu_0\neq \mu_1\)&lt;/span&gt;.
+&lt;/p&gt;
+&lt;/details&gt;
 &lt;p class=&#34;exo&#34;&gt;
 6. Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test.
 &lt;/p&gt;
-&lt;p&gt;Dans notre cas, la statistique de test est &lt;span
+&lt;details open&gt;
+&lt;summary&gt;
+Solution
+&lt;/summary&gt;
+&lt;p&gt;
+Dans notre cas, la statistique de test est &lt;span
 class=&#34;math inline&#34;&gt;\(T(Z):=\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\)&lt;/span&gt;,
 et la valeur critique du test est &lt;span
 class=&#34;math inline&#34;&gt;\(c_{\alpha}:=q_{1-\alpha}^{F(1,n+p-2)}\)&lt;/span&gt;,
 qui est décroissante par rapport à &lt;span class=&#34;math inline&#34;&gt;\(\alpha\in
 [0,1]\)&lt;/span&gt;. Ainsi, la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur
 du test est &lt;span class=&#34;math display&#34;&gt;\[
-\begin{align*}
-  \hat{\alpha}(Z)
-  &amp;amp;=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
-  &amp;amp;=1-\Psi\left(\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\right),
-\end{align*}
-\]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Psi\)&lt;/span&gt; désigne la
+    \hat{\alpha}(Z)=\inf\{\alpha\in [0,1] \,:\, T(Z)\ge
+c_{\alpha}\}=1-\Psi\left(\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\right),
+    \]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Psi\)&lt;/span&gt; désigne la
 fonction de répartition de la loi de Fisher de &lt;span
-class=&#34;math inline&#34;&gt;\((1,n+p-2)\)&lt;/span&gt; degrés de liberté.&lt;/p&gt;
+class=&#34;math inline&#34;&gt;\((1,n+p-2)\)&lt;/span&gt; degrés de liberté.
+&lt;/p&gt;
+&lt;/details&gt;
 &lt;p class=&#34;exo&#34;&gt;
 7. Construire un test de niveau &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
@@ -258,51 +304,69 @@ class=&#34;math display&#34;&gt;\[
   H_0 : \mu_0\le \mu_1,\quad\text{contre}\quad H_1 : \mu_0&amp;gt;\mu_1.
   \]&lt;/span&gt;
 &lt;/p&gt;
-&lt;p&gt;On considère l’estimateur de la différence &lt;span
+&lt;details open&gt;
+&lt;summary&gt;
+Solution
+&lt;/summary&gt;
+&lt;p&gt;
+On considère l’estimateur de la différence &lt;span
 class=&#34;math inline&#34;&gt;\(\mu_0-\mu_1\)&lt;/span&gt; donné par &lt;span
 class=&#34;math inline&#34;&gt;\(T(Z):=\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\)&lt;/span&gt;.
 On observe que sous &lt;span class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt;, &lt;span
 class=&#34;math display&#34;&gt;\[
-\begin{align*}
-\mathbb{P}_{\theta}\left(T(Z)\ge \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)
-&amp;amp;\le
+    \begin{align*}
+    \mathbb{P}_{\theta}\left(T(Z)\ge
+\sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)
+    &amp;amp;\le
 \mathbb{P}_{\theta}\left(T(Z)-\frac{\mu_0-\mu_1}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\ge
 \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right)\\
-&amp;amp;\le
+    &amp;amp;\le
 \mathbb{P}_{\theta}\left(\frac{[(\bar{X}_n-\bar{Y}_p)-(\mu_0-\mu_1)]^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\ge
-q_{1-\alpha}^{F(1,n+p-2)}\right)\\
-&amp;amp;= \alpha.
-\end{align*}
-\]&lt;/span&gt; Ainsi, le test &lt;span class=&#34;math display&#34;&gt;\[
-\phi(Z):=\mathbb{1}\left\{\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\ge
+q_{1-\alpha}^{F(1,n+p-2)}\right)= \alpha.
+    \end{align*}
+    \]&lt;/span&gt; Ainsi, le test [&lt;a href=&#34;https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/#fn1&#34; class=&#34;footnote-ref&#34;
+id=&#34;fnref1&#34; role=&#34;doc-noteref&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;] &lt;span
+class=&#34;math display&#34;&gt;\[
+    \phi(Z):=\mathbb{1}\left\{\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\ge
 \sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\right\}
-\]&lt;/span&gt; est un test de niveau &lt;span
+    \]&lt;/span&gt; est un test de niveau &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
 class=&#34;math inline&#34;&gt;\(H_0:\mu_0\le \mu_1\)&lt;/span&gt; contre &lt;span
-class=&#34;math inline&#34;&gt;\(H_1:\mu_0&amp;gt;\mu_1\)&lt;/span&gt;.&lt;/p&gt;
+class=&#34;math inline&#34;&gt;\(H_1:\mu_0&amp;gt;\mu_1\)&lt;/span&gt;.
+&lt;/p&gt;
+&lt;/details&gt;
 &lt;p class=&#34;exo&#34;&gt;
 8. Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test.
 &lt;/p&gt;
-&lt;p&gt;Dans notre cas, la statistique de test est &lt;span
+&lt;details open&gt;
+&lt;summary&gt;
+Solution
+&lt;/summary&gt;
+&lt;p&gt;
+Dans notre cas, la statistique de test est &lt;span
 class=&#34;math inline&#34;&gt;\(T(Z):=\frac{\bar{X}_n-\bar{Y}_p}{\sqrt{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}}\)&lt;/span&gt;
 et la valeur critique du test est &lt;span
-class=&#34;math inline&#34;&gt;\(c_{\alpha}:=\sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\)&lt;/span&gt;,
-qui est décroissante par rapport à &lt;span class=&#34;math inline&#34;&gt;\(\alpha\in
-[0,1]\)&lt;/span&gt;. Ainsi, la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur
-du test est &lt;span class=&#34;math display&#34;&gt;\[
-\begin{align*}
-  \hat{\alpha}(Z)
-  &amp;amp;=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
-  &amp;amp;=
-  \begin{cases}
-    1-\Psi\left(\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\right),
+class=&#34;math inline&#34;&gt;\(c_{\alpha}:=\sqrt{q_{1-\alpha}^{F(1,n+p-2)}}\)&lt;/span&gt;
+[&lt;a href=&#34;https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/#fn2&#34; class=&#34;footnote-ref&#34; id=&#34;fnref2&#34;
+role=&#34;doc-noteref&#34;&gt;&lt;sup&gt;2&lt;/sup&gt;&lt;/a&gt;], qui est décroissante par rapport à
+&lt;span class=&#34;math inline&#34;&gt;\(\alpha\in [0,1]\)&lt;/span&gt;. Ainsi, la &lt;span
+class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test est &lt;span
+class=&#34;math display&#34;&gt;\[
+    \begin{align*}
+      \hat{\alpha}(Z)
+      &amp;amp;=\inf\{\alpha\in [0,1] \,:\, T(Z)\ge c_{\alpha}\}\\
+      &amp;amp;=
+      \begin{cases}
+        1-\Psi\left(\frac{(\bar{X}_n-\bar{Y}_p)^2}{(\frac{1}{n}+\frac{1}{p})(nV_n+pW_p)}\right),
 &amp;amp; \text{si $\bar{X}_n&amp;gt;\bar{Y}_p$;}\\
-    +\infty, &amp;amp; \text{sinon,}
-  \end{cases}
-\end{align*}
-\]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Psi\)&lt;/span&gt; désigne la
+        1, &amp;amp; \text{sinon,}
+      \end{cases}
+    \end{align*}
+    \]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Psi\)&lt;/span&gt; désigne la
 fonction de répartition de la loi de Fisher de &lt;span
-class=&#34;math inline&#34;&gt;\((1,n+p-2)\)&lt;/span&gt; degrés de liberté.&lt;/p&gt;
+class=&#34;math inline&#34;&gt;\((1,n+p-2)\)&lt;/span&gt; degrés de liberté.
+&lt;/p&gt;
+&lt;/details&gt;
 &lt;!-- ## Exercice 2 : Le test du rapport de vraisemblance généralisé
 
 Coming soon...
@@ -310,6 +374,18 @@ Coming soon...
 ## Exercice 3 : Un cas où il n&#39;existe pas de test uniformément plus puissant &amp; Test uniformément plus puissant *parmi les tests sans biais*
 
 Coming soon... --&gt;
+&lt;section class=&#34;footnotes footnotes-end-of-document&#34;
+role=&#34;doc-endnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34; role=&#34;doc-endnote&#34;&gt;&lt;p&gt;On pourrait ignorer le cas où &lt;span
+class=&#34;math inline&#34;&gt;\(\alpha=1\)&lt;/span&gt;.&lt;a href=&#34;https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/#fnref1&#34;
+class=&#34;footnote-back&#34; role=&#34;doc-backlink&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;li id=&#34;fn2&#34; role=&#34;doc-endnote&#34;&gt;&lt;p&gt;On pourrait convenir que &lt;span
+class=&#34;math inline&#34;&gt;\(c_1=-\infty\)&lt;/span&gt;.&lt;a href=&#34;https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/#fnref2&#34;
+class=&#34;footnote-back&#34; role=&#34;doc-backlink&#34;&gt;↩︎&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/section&gt;
 </description>
                 
                 
