@@ -12,13 +12,29 @@ markup: pandoc
 ---
 
 <style>
-  p.mybox 
+  p.context
   {
     border-style:dashed;
     border-width:1.5px;
-    border-color:blue;
-    background-color:#e6e6fa;
-    padding-left:10px;
+    border-color:#3CB371;
+    background-color:#F5FFFA;
+    padding-left:8px;
+    padding-right:5px;
+  }
+</style>
+
+<style>
+  p.exo
+  {
+    border-left-width:3px;
+    border-left-style:solid;
+    border-right-style:none;
+    border-top-style:none;
+    border-bottom-style:none;
+    border-radius: 3px;
+    border-color:#8A2BE2;
+    background-color:#F8F8FF;
+    padding-left:5px;
     padding-right:5px;
   }
 </style>
@@ -27,69 +43,81 @@ markup: pandoc
 
 ## Test de comparaison de deux variances & Test de comparaison de deux moyennes
 
-Considérons le modèle statistique
-$$
-\left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes (n+p)}=(\mathcal{N}(\mu_0,\sigma_0^2))^{\otimes n}\otimes (\mathcal{N}(\mu_1,\sigma_1^2))^{\otimes p} \,\Big|\, \theta = (\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \mathbb{R}^2\times (\mathbb{R}_+^*)^2\right\}\right).
-$$
+<p class="context">
+  Considérons le modèle statistique
+  $$
+  \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes (n+p)}=(\mathcal{N}(\mu_0,\sigma_0^2))^{\otimes n}\otimes (\mathcal{N}(\mu_1,\sigma_1^2))^{\otimes p} \,\Big|\, \theta = (\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \Theta=\mathbb{R}^2\times (\mathbb{R}_+^*)^2\right\}\right).
+  $$
+  Nous noterons $X_1,\cdots,X_n$ les observations du *groupe "0"*, est $Y_1,\cdots,Y_p$ les observations du *groupe "1"*.
+</p>
 
-<p class="mybox">
+<p class="exo">
   1\. Déterminer l'estimateur du maximum de vraisemblance du paramètre $\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)$.
 </p>
 
-On remarque que
-$$
-L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot L(\theta_1;Y_1,\cdots,Y_p),
-$$
-où $\theta_0=(\mu_0,\sigma_0^2)$ et $\theta_1=(\mu_1,\sigma_1^2)$. Comme l'estimateur du maximum de vraisemblance du paramètre $\theta_0$ est $\left(\bar{X}_n,V_n\right)$, où
-$$
-\bar{X}_n:=\frac{1}{n}\sum_{i=1}^{n}X_i,\quad V_n:=\frac{1}{n}\sum_{i=1}^{n}(X_i-\bar{X}_n)^2,
-$$
-et que l'estimateur du maximum de vraisemblance du paramètre $\theta_1$ est $(\bar{Y}_p,W_p)$, où
-$$
-\bar{Y}_p:=\frac{1}{p}\sum_{j=1}^{n}Y_j,\quad W_p:=\frac{1}{p}\sum_{j=1}^{p}(Y_j-\bar{Y}_p)^2,
-$$
-on en conclut que l'estimateur du maximum de vraisemblance du paramètre $\theta$ est
-$$
-\hat{\theta}_{n,p}^{\text{MV}}=(\bar{X}_n,\bar{Y}_p,V_n,W_p).
-$$
+<details open="">
+  <summary>
+    Solution
+  </summary>
+  <p>
+    Remarquons le fait que
+    $$
+    L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot L(\theta_1;Y_1,\cdots,Y_p),
+    $$
+    où $\theta_0:=(\mu_0,\sigma_0^2)$ et $\theta_1:=(\mu_1,\sigma_1^2)$. Comme l'EMV du paramètre $\theta_0$ est $\left(\bar{X}_n,V_n\right)$, où
+    $$
+    \bar{X}_n:=\frac{1}{n}\sum_{i=1}^{n}X_i,\quad V_n:=\frac{1}{n}\sum_{i=1}^{n}(X_i-\bar{X}_n)^2,
+    $$
+    et que l'EMV du paramètre $\theta_1$ est $(\bar{Y}_p,W_p)$, où
+    $$
+    \bar{Y}_p:=\frac{1}{p}\sum_{j=1}^{n}Y_j,\quad W_p:=\frac{1}{p}\sum_{j=1}^{p}(Y_j-\bar{Y}_p)^2,
+    $$
+    on en déduit que l'EMV du paramètre $\theta$ est $(\bar{X}_n,\bar{Y}_p,V_n,W_p)$.
+  </p>
+</details>
 
-<p class="mybox">
+<p class="exo">
   2\. Déterminer un test de niveau $\alpha$ de l'hypothèse
   $$
   H_0 : \sigma_0^2=\sigma_1^2,\quad\text{contre}\quad H_1 : \sigma_0^2>\sigma_1^2.
   $$
 </p>
 
-Rappelons que sous $\mathbb{P}_{\theta}$, $nV_n/\sigma_0^2=\frac{1}{\sigma_0^2}\sum_{i=1}^{n}(X_i-\bar{X}_n)^2\sim \chi^2(n-1)$ et $pW_p/\sigma_1^2=\frac{1}{\sigma_1^2}\sum_{j=1}^{p}(Y_j-\bar{Y}_p)^2\sim \chi^2(p-1)$. Alors, pour tout $\theta\in \Theta\triangleq\mathbb{R}^2\times (\mathbb{R}_+^*)^2$, on a sous $\mathbb{P}_{\theta}$
-$$
-\frac{nV_n/\sigma_0^2}{pW_p/\sigma_1^2}\sim F(n-1,p-1),
-$$
-ce qui ne dépend pas du paramètre $\theta$. Par conséquent, sous $H_0$ (qui suppose que $\sigma_0^2=\sigma_1^2$) on a
-$$
-\mathbb{P}_{\theta}\left(\frac{nV_n}{pW_p}\le q_{1-\alpha}^{F(n-1,p-1)}\right)=1-\alpha.
-$$
-Ainsi, $\phi(Z):=\mathbb{1}\left\{\dfrac{nV_n}{pW_p}\ge q_{1-\alpha}^{F(n-1,p-1)}\right\}$ est un test de taille (et donc de niveau) $\alpha$.
+<details open="">
+  <summary>
+    Solution
+  </summary>
+  <p>
+    Pour tout $\theta\in \Theta$, sous $\mathbb{P}_{\theta}$ on a $nV_n/\sigma_0^2\sim \chi^2(n-1)$ et $pW_p/\sigma_1^2\sim \chi^2(p-1)$, d'où
+    $$
+    \frac{nV_n/\sigma_0^2}{pW_p/\sigma_1^2}\sim F(n-1,p-1),
+    $$
+    ce qui ne dépend pas du paramètre $\theta$. Par conséquent, sous $H_0$
+    $$
+    \mathbb{P}_{\theta}\left(\frac{nV_n}{pW_p}\le q_{1-\alpha}^{F(n-1,p-1)}\right)=1-\alpha.
+    $$
+    Ainsi, $\phi(Z):=\mathbb{1}\left\{\dfrac{nV_n}{pW_p}\ge q_{1-\alpha}^{F(n-1,p-1)}\right\}$ est un test de taille (et donc de niveau) $\alpha$.
+  </p>
+</details>
 
-<p class="mybox">
+<p class="exo">
   3\. Calculer la $p$-valeur du test.
 </p>
 
 Dans notre cas, la statistique de test est $T(Z):=\frac{nV_n}{pW_p}$ et la valeur critique du test est $c_{\alpha}:=q_{1-\alpha}^{F(n-1,p-1)}$, qui est décroissante par rapport à $\alpha\in [0,1]$. Ainsi, la $p$-valeur du test est
 $$
-\begin{align*}
-  \hat{\alpha}(Z)
-  &=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
-  &=1-\Phi\left(\frac{nV_n}{pW_p}\right),
-\end{align*}
+\hat{\alpha}(Z)=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}=1-\Phi\left(\frac{nV_n}{pW_p}\right),
 $$
 où $\Phi$ désigne la fonction de répartition de la loi de Fisher de $(n-1,p-1)$ degrés de liberté.
 
-Nous considérons dans la suite le modèle statistique
-$$
-\left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes (n+p)}=(\mathcal{N}(\mu_0,\sigma^2))^{\otimes n}\otimes (\mathcal{N}(\mu_1,\sigma^2))^{\otimes p} \,\Big|\, \theta = (\mu_0,\mu_1,\sigma^2)\in \mathbb{R}^2\times \mathbb{R}_+^*\right\}\right).
-$$
+<p class="context">
+  Nous considérons dans la suite le modèle statistique
+  $$
+  \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes (n+p)}=(\mathcal{N}(\mu_0,\sigma^2))^{\otimes n}\otimes (\mathcal{N}(\mu_1,\sigma^2))^{\otimes p} \,\Big|\, \theta = (\mu_0,\mu_1,\sigma^2)\in \mathbb{R}^2\times \mathbb{R}_+^*\right\}\right).
+  $$
+</p>
 
-<p class="mybox">
+<p class="exo">
   4\. Construire un intervalle de confiance de $\mu_0-\mu_1$ de niveau de confiance $1-\alpha$.
 </p>
 
@@ -116,7 +144,7 @@ $$
 \left[(\bar{X}_n-\bar{Y}_p)\pm \sqrt{nV_n+pW_p}\sqrt{(\frac{1}{n}+\frac{1}{p})q_{1-\alpha}^{F(1,n+p-2)}}\right]
 $$
 
-<p class="mybox">
+<p class="exo">
   5\. En déduire un test de niveau $\alpha$ de l'hypothèse
   $$
   H_0 : \mu_0=\mu_1,\quad\text{contre}\quad H_1 : \mu_0\neq \mu_1.
@@ -129,7 +157,7 @@ $$
 $$
 est un test de taille (et donc de niveau) $\alpha$.
 
-<p class="mybox">
+<p class="exo">
   6\. Calculer la $p$-valeur du test.
 </p>
 
@@ -144,7 +172,7 @@ $$
 $$
 où $\Psi$ désigne la fonction de répartition de la loi de Fisher de $(1,n+p-2)$ degrés de liberté.
 
-<p class="mybox"> 
+<p class="exo"> 
   7\. Construire un test de niveau $\alpha$ de l'hypothèse
   $$
   H_0 : \mu_0\le \mu_1,\quad\text{contre}\quad H_1 : \mu_0>\mu_1.
@@ -167,7 +195,7 @@ $$
 $$
 est un test de niveau $\alpha$ de l'hypothèse $H_0:\mu_0\le \mu_1$ contre $H_1:\mu_0>\mu_1$.
 
-<p class="mybox">
+<p class="exo">
    8\. Calculer la $p$-valeur du test.
 </p>
 

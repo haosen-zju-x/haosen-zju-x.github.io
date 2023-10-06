@@ -4,7 +4,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-cn">
     <title type="text">L&#39;Astéroïde de Haosen</title>
     <subtitle type="html">MemE is a powerful and highly customizable GoHugo theme for personal blogs.</subtitle>
-    <updated>2023-10-05T13:37:25&#43;02:00</updated>
+    <updated>2023-10-06T20:51:48&#43;02:00</updated>
     <id>https://haosen-zju-x.github.io/</id>
     <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/" />
     <link rel="self" type="application/atom&#43;xml" href="https://haosen-zju-x.github.io/atom.xml" />
@@ -20,24 +20,38 @@
             <title type="text">Tests et Régions de Confiance</title>
             <link rel="alternate" type="text/html" href="https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/" />
             <id>https://haosen-zju-x.github.io/posts/tests-et-regions-de-confiance/</id>
-            <updated>2023-10-05T13:37:17&#43;02:00</updated>
+            <updated>2023-10-06T20:51:25&#43;02:00</updated>
             <published>2023-10-01T19:24:26&#43;00:00</published>
             <author>
                     <name>Haosen</name>
                     <uri>https://haosen-zju-x.github.io/</uri>
                     <email>chenhaosen@yandex.com</email>
                     </author>
-            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Exercices Test de comparaison de deux variances &amp;amp; Test de comparaison de deux moyennes Considérons le modèle statistique \[ \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes (n+p)}=(\mathcal{N}(\mu_0,\sigma_0^2))^{\otimes n}\otimes (\mathcal{N}(\mu_1,\sigma_1^2))^{\otimes p} \,\Big|\, \theta = (\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \mathbb{R}^2\times (\mathbb{R}_+^*)^2\right\}\right). \]
-1. Déterminer l’estimateur du maximum de vraisemblance du paramètre \(\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\). On remarque que \[ L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot L(\theta_1;Y_1,\cdots,Y_p), \] où \(\theta_0=(\mu_0,\sigma_0^2)\) et \(\theta_1=(\mu_1,\sigma_1^2)\).</summary>
+            <rights>[CC BY-NC-SA 4.0](https://creativecommons.org/licenses/by-nc-sa/4.0/deed.en)</rights><summary type="html">Exercices Test de comparaison de deux variances &amp;amp; Test de comparaison de deux moyennes Considérons le modèle statistique \[ \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes (n+p)}=(\mathcal{N}(\mu_0,\sigma_0^2))^{\otimes n}\otimes (\mathcal{N}(\mu_1,\sigma_1^2))^{\otimes p} \,\Big|\, \theta = (\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \Theta=\mathbb{R}^2\times (\mathbb{R}_+^*)^2\right\}\right). \] Nous noterons \(X_1,\cdots,X_n\) les observations du groupe “0”, est \(Y_1,\cdots,Y_p\) les observations du groupe “1”.</summary>
             
                 <content type="html">&lt;style&gt;
-  p.mybox 
+  p.context
   {
     border-style:dashed;
     border-width:1.5px;
-    border-color:blue;
-    background-color:#e6e6fa;
-    padding-left:10px;
+    border-color:#3CB371;
+    background-color:#F5FFFA;
+    padding-left:8px;
+    padding-right:5px;
+  }
+&lt;/style&gt;
+&lt;style&gt;
+  p.exo
+  {
+    border-left-width:3px;
+    border-left-style:solid;
+    border-right-style:none;
+    border-top-style:none;
+    border-bottom-style:none;
+    border-radius: 3px;
+    border-color:#8A2BE2;
+    background-color:#F8F8FF;
+    padding-left:5px;
     padding-right:5px;
   }
 &lt;/style&gt;
@@ -46,42 +60,52 @@
 id=&#34;test-de-comparaison-de-deux-variances-test-de-comparaison-de-deux-moyennes&#34;&gt;Test
 de comparaison de deux variances &amp;amp; Test de comparaison de deux
 moyennes&lt;/h2&gt;
-&lt;p&gt;Considérons le modèle statistique &lt;span class=&#34;math display&#34;&gt;\[
-\left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes
+&lt;p class=&#34;context&#34;&gt;
+Considérons le modèle statistique &lt;span class=&#34;math display&#34;&gt;\[
+  \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes
 (n+p)}=(\mathcal{N}(\mu_0,\sigma_0^2))^{\otimes n}\otimes
 (\mathcal{N}(\mu_1,\sigma_1^2))^{\otimes p} \,\Big|\, \theta =
-(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \mathbb{R}^2\times
+(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\in \Theta=\mathbb{R}^2\times
 (\mathbb{R}_+^*)^2\right\}\right).
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&#34;mybox&#34;&gt;
+  \]&lt;/span&gt; Nous noterons &lt;span
+class=&#34;math inline&#34;&gt;\(X_1,\cdots,X_n\)&lt;/span&gt; les observations du
+&lt;em&gt;groupe “0”&lt;/em&gt;, est &lt;span
+class=&#34;math inline&#34;&gt;\(Y_1,\cdots,Y_p\)&lt;/span&gt; les observations du
+&lt;em&gt;groupe “1”&lt;/em&gt;.
+&lt;/p&gt;
+&lt;p class=&#34;exo&#34;&gt;
 1. Déterminer l’estimateur du maximum de vraisemblance du paramètre
 &lt;span
 class=&#34;math inline&#34;&gt;\(\theta=(\mu_0,\mu_1,\sigma_0^2,\sigma_1^2)\)&lt;/span&gt;.
 &lt;/p&gt;
-&lt;p&gt;On remarque que &lt;span class=&#34;math display&#34;&gt;\[
-L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot
+&lt;details open&gt;
+&lt;summary&gt;
+Solution
+&lt;/summary&gt;
+&lt;p&gt;
+Remarquons le fait que &lt;span class=&#34;math display&#34;&gt;\[
+    L(\theta;X_1,\cdots,X_n,Y_1,\cdots,Y_p)=L(\theta_0;X_1,\cdots,X_n)\cdot
 L(\theta_1;Y_1,\cdots,Y_p),
-\]&lt;/span&gt; où &lt;span
-class=&#34;math inline&#34;&gt;\(\theta_0=(\mu_0,\sigma_0^2)\)&lt;/span&gt; et &lt;span
-class=&#34;math inline&#34;&gt;\(\theta_1=(\mu_1,\sigma_1^2)\)&lt;/span&gt;. Comme
-l’estimateur du maximum de vraisemblance du paramètre &lt;span
-class=&#34;math inline&#34;&gt;\(\theta_0\)&lt;/span&gt; est &lt;span
+    \]&lt;/span&gt; où &lt;span
+class=&#34;math inline&#34;&gt;\(\theta_0:=(\mu_0,\sigma_0^2)\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(\theta_1:=(\mu_1,\sigma_1^2)\)&lt;/span&gt;. Comme l’EMV
+du paramètre &lt;span class=&#34;math inline&#34;&gt;\(\theta_0\)&lt;/span&gt; est &lt;span
 class=&#34;math inline&#34;&gt;\(\left(\bar{X}_n,V_n\right)\)&lt;/span&gt;, où &lt;span
 class=&#34;math display&#34;&gt;\[
-\bar{X}_n:=\frac{1}{n}\sum_{i=1}^{n}X_i,\quad
+    \bar{X}_n:=\frac{1}{n}\sum_{i=1}^{n}X_i,\quad
 V_n:=\frac{1}{n}\sum_{i=1}^{n}(X_i-\bar{X}_n)^2,
-\]&lt;/span&gt; et que l’estimateur du maximum de vraisemblance du paramètre
-&lt;span class=&#34;math inline&#34;&gt;\(\theta_1\)&lt;/span&gt; est &lt;span
+    \]&lt;/span&gt; et que l’EMV du paramètre &lt;span
+class=&#34;math inline&#34;&gt;\(\theta_1\)&lt;/span&gt; est &lt;span
 class=&#34;math inline&#34;&gt;\((\bar{Y}_p,W_p)\)&lt;/span&gt;, où &lt;span
 class=&#34;math display&#34;&gt;\[
-\bar{Y}_p:=\frac{1}{p}\sum_{j=1}^{n}Y_j,\quad
+    \bar{Y}_p:=\frac{1}{p}\sum_{j=1}^{n}Y_j,\quad
 W_p:=\frac{1}{p}\sum_{j=1}^{p}(Y_j-\bar{Y}_p)^2,
-\]&lt;/span&gt; on en conclut que l’estimateur du maximum de vraisemblance du
-paramètre &lt;span class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; est &lt;span
-class=&#34;math display&#34;&gt;\[
-\hat{\theta}_{n,p}^{\text{MV}}=(\bar{X}_n,\bar{Y}_p,V_n,W_p).
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&#34;mybox&#34;&gt;
+    \]&lt;/span&gt; on en déduit que l’EMV du paramètre &lt;span
+class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt; est &lt;span
+class=&#34;math inline&#34;&gt;\((\bar{X}_n,\bar{Y}_p,V_n,W_p)\)&lt;/span&gt;.
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p class=&#34;exo&#34;&gt;
 2. Déterminer un test de niveau &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
 class=&#34;math display&#34;&gt;\[
@@ -89,29 +113,29 @@ class=&#34;math display&#34;&gt;\[
 \sigma_0^2&amp;gt;\sigma_1^2.
   \]&lt;/span&gt;
 &lt;/p&gt;
-&lt;p&gt;Rappelons que sous &lt;span
-class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt;, &lt;span
-class=&#34;math inline&#34;&gt;\(nV_n/\sigma_0^2=\frac{1}{\sigma_0^2}\sum_{i=1}^{n}(X_i-\bar{X}_n)^2\sim
-\chi^2(n-1)\)&lt;/span&gt; et &lt;span
-class=&#34;math inline&#34;&gt;\(pW_p/\sigma_1^2=\frac{1}{\sigma_1^2}\sum_{j=1}^{p}(Y_j-\bar{Y}_p)^2\sim
-\chi^2(p-1)\)&lt;/span&gt;. Alors, pour tout &lt;span
-class=&#34;math inline&#34;&gt;\(\theta\in \Theta\triangleq\mathbb{R}^2\times
-(\mathbb{R}_+^*)^2\)&lt;/span&gt;, on a sous &lt;span
-class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt; &lt;span
-class=&#34;math display&#34;&gt;\[
-\frac{nV_n/\sigma_0^2}{pW_p/\sigma_1^2}\sim F(n-1,p-1),
-\]&lt;/span&gt; ce qui ne dépend pas du paramètre &lt;span
+&lt;details open&gt;
+&lt;summary&gt;
+Solution
+&lt;/summary&gt;
+&lt;p&gt;
+Pour tout &lt;span class=&#34;math inline&#34;&gt;\(\theta\in \Theta\)&lt;/span&gt;, sous
+&lt;span class=&#34;math inline&#34;&gt;\(\mathbb{P}_{\theta}\)&lt;/span&gt; on a &lt;span
+class=&#34;math inline&#34;&gt;\(nV_n/\sigma_0^2\sim \chi^2(n-1)\)&lt;/span&gt; et &lt;span
+class=&#34;math inline&#34;&gt;\(pW_p/\sigma_1^2\sim \chi^2(p-1)\)&lt;/span&gt;, d’où
+&lt;span class=&#34;math display&#34;&gt;\[
+    \frac{nV_n/\sigma_0^2}{pW_p/\sigma_1^2}\sim F(n-1,p-1),
+    \]&lt;/span&gt; ce qui ne dépend pas du paramètre &lt;span
 class=&#34;math inline&#34;&gt;\(\theta\)&lt;/span&gt;. Par conséquent, sous &lt;span
-class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt; (qui suppose que &lt;span
-class=&#34;math inline&#34;&gt;\(\sigma_0^2=\sigma_1^2\)&lt;/span&gt;) on a &lt;span
-class=&#34;math display&#34;&gt;\[
-\mathbb{P}_{\theta}\left(\frac{nV_n}{pW_p}\le
+class=&#34;math inline&#34;&gt;\(H_0\)&lt;/span&gt; &lt;span class=&#34;math display&#34;&gt;\[
+    \mathbb{P}_{\theta}\left(\frac{nV_n}{pW_p}\le
 q_{1-\alpha}^{F(n-1,p-1)}\right)=1-\alpha.
-\]&lt;/span&gt; Ainsi, &lt;span
+    \]&lt;/span&gt; Ainsi, &lt;span
 class=&#34;math inline&#34;&gt;\(\phi(Z):=\mathbb{1}\left\{\dfrac{nV_n}{pW_p}\ge
 q_{1-\alpha}^{F(n-1,p-1)}\right\}\)&lt;/span&gt; est un test de taille (et
-donc de niveau) &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p class=&#34;mybox&#34;&gt;
+donc de niveau) &lt;span class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;.
+&lt;/p&gt;
+&lt;/details&gt;
+&lt;p class=&#34;exo&#34;&gt;
 3. Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test.
 &lt;/p&gt;
 &lt;p&gt;Dans notre cas, la statistique de test est &lt;span
@@ -121,23 +145,22 @@ class=&#34;math inline&#34;&gt;\(c_{\alpha}:=q_{1-\alpha}^{F(n-1,p-1)}\)&lt;/spa
 qui est décroissante par rapport à &lt;span class=&#34;math inline&#34;&gt;\(\alpha\in
 [0,1]\)&lt;/span&gt;. Ainsi, la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur
 du test est &lt;span class=&#34;math display&#34;&gt;\[
-\begin{align*}
-  \hat{\alpha}(Z)
-  &amp;amp;=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge c_{\alpha}\}\\
-  &amp;amp;=1-\Phi\left(\frac{nV_n}{pW_p}\right),
-\end{align*}
+\hat{\alpha}(Z)=\inf\{\alpha\in ]0,1[ \,:\, T(Z)\ge
+c_{\alpha}\}=1-\Phi\left(\frac{nV_n}{pW_p}\right),
 \]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Phi\)&lt;/span&gt; désigne la
 fonction de répartition de la loi de Fisher de &lt;span
 class=&#34;math inline&#34;&gt;\((n-1,p-1)\)&lt;/span&gt; degrés de liberté.&lt;/p&gt;
-&lt;p&gt;Nous considérons dans la suite le modèle statistique &lt;span
+&lt;p class=&#34;context&#34;&gt;
+Nous considérons dans la suite le modèle statistique &lt;span
 class=&#34;math display&#34;&gt;\[
-\left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes
+  \left(\mathbb{R}^{n+p},\mathcal{B}(\mathbb{R}^{n+p}),\left\{\mathbb{P}_{\theta}=p_{\theta}\cdot\mathrm{d}\text{Leb}^{\otimes
 (n+p)}=(\mathcal{N}(\mu_0,\sigma^2))^{\otimes n}\otimes
 (\mathcal{N}(\mu_1,\sigma^2))^{\otimes p} \,\Big|\, \theta =
 (\mu_0,\mu_1,\sigma^2)\in \mathbb{R}^2\times
 \mathbb{R}_+^*\right\}\right).
-\]&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&#34;mybox&#34;&gt;
+  \]&lt;/span&gt;
+&lt;/p&gt;
+&lt;p class=&#34;exo&#34;&gt;
 4. Construire un intervalle de confiance de &lt;span
 class=&#34;math inline&#34;&gt;\(\mu_0-\mu_1\)&lt;/span&gt; de niveau de confiance &lt;span
 class=&#34;math inline&#34;&gt;\(1-\alpha\)&lt;/span&gt;.
@@ -188,7 +211,7 @@ class=&#34;math display&#34;&gt;\[
 \left[(\bar{X}_n-\bar{Y}_p)\pm
 \sqrt{nV_n+pW_p}\sqrt{(\frac{1}{n}+\frac{1}{p})q_{1-\alpha}^{F(1,n+p-2)}}\right]
 \]&lt;/span&gt;&lt;/p&gt;
-&lt;p class=&#34;mybox&#34;&gt;
+&lt;p class=&#34;exo&#34;&gt;
 5. En déduire un test de niveau &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
 class=&#34;math display&#34;&gt;\[
@@ -201,7 +224,7 @@ class=&#34;math display&#34;&gt;\[
 q_{1-\alpha}^{F(1,n+p-2)}\right\}
 \]&lt;/span&gt; est un test de taille (et donc de niveau) &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p class=&#34;mybox&#34;&gt;
+&lt;p class=&#34;exo&#34;&gt;
 6. Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test.
 &lt;/p&gt;
 &lt;p&gt;Dans notre cas, la statistique de test est &lt;span
@@ -219,7 +242,7 @@ du test est &lt;span class=&#34;math display&#34;&gt;\[
 \]&lt;/span&gt; où &lt;span class=&#34;math inline&#34;&gt;\(\Psi\)&lt;/span&gt; désigne la
 fonction de répartition de la loi de Fisher de &lt;span
 class=&#34;math inline&#34;&gt;\((1,n+p-2)\)&lt;/span&gt; degrés de liberté.&lt;/p&gt;
-&lt;p class=&#34;mybox&#34;&gt;
+&lt;p class=&#34;exo&#34;&gt;
 7. Construire un test de niveau &lt;span
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
 class=&#34;math display&#34;&gt;\[
@@ -248,7 +271,7 @@ q_{1-\alpha}^{F(1,n+p-2)}\right)\\
 class=&#34;math inline&#34;&gt;\(\alpha\)&lt;/span&gt; de l’hypothèse &lt;span
 class=&#34;math inline&#34;&gt;\(H_0:\mu_0\le \mu_1\)&lt;/span&gt; contre &lt;span
 class=&#34;math inline&#34;&gt;\(H_1:\mu_0&amp;gt;\mu_1\)&lt;/span&gt;.&lt;/p&gt;
-&lt;p class=&#34;mybox&#34;&gt;
+&lt;p class=&#34;exo&#34;&gt;
 8. Calculer la &lt;span class=&#34;math inline&#34;&gt;\(p\)&lt;/span&gt;-valeur du test.
 &lt;/p&gt;
 &lt;p&gt;Dans notre cas, la statistique de test est &lt;span
